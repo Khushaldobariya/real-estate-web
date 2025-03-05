@@ -1,0 +1,48 @@
+import React from 'react'
+import { VectorIcon } from '../../utils/icons.tsx'
+import { ServiceData } from '../../utils/consents.ts'
+
+const Innovations = () => {
+  return (
+    <div className="py-16 px-8 flex flex-col md:flex-row items-center">
+    {/* Image Section */}
+    <div className="w-full md:w-1/2">
+        <img 
+            className="object-cover w-full h-[500px]  shadow-lg" 
+            src="/assets/image/Innovations.png"  
+            alt="Innovations"
+            draggable="false" 
+        />
+    </div>
+
+    {/* Text Section */}
+    <div className="w-full md:w-1/2 flex flex-col gap-7 mt-8 md:mt-0 md:pl-10">
+        <h2 className="text-4xl">Our <span className="text-[#905c87]">Innovations</span></h2>
+        <p>
+            We prioritize developing innovative solutions that directly address their needs. Our dedicated team is driven by a customer-centric approach, ensuring every product and service we create enhances customer experiences and delivers tangible results.
+        </p>
+
+        {/* Service List */}
+        <div className="mt-8 space-y-6">
+            {ServiceData.map((service, index) => (
+                <div key={index} className="flex items-start space-x-4">
+                    <div className="flex-shrink-0">
+                        <VectorIcon />
+                    </div>
+                    <div>
+                        <h2 className="text-lg font-semibold text-gray-900">{service.title}</h2>
+                        <p className="text-gray-600 text-sm">{service.description}</p>
+                        <a href={service.link} className="text-[#905c87] text-sm font-medium mt-2 inline-block">
+                            Learn more →
+                        </a>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+</div>
+
+  )
+}
+
+export default Innovations
