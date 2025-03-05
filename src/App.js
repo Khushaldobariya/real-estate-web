@@ -14,8 +14,8 @@ function App() {
  <>
 
 <BrowserRouter>
-{/* <Home /> */}
-<About />
+<Home />
+{/* <About /> */}
  <Footer />
 </BrowserRouter>
 
