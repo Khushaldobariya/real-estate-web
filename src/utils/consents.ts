@@ -66,26 +66,26 @@ export const Testimonials = [
 
  export  const News_Blog = [
     {
-      image: "/assets/image/blog1.png",
+      image: "/assets/images/blog1.png",
       title: "Rashmi Group's Visionary Move: Unveiling the Future",
       description: "Commitment to Growth and Innovation.",
       link: "#",
       label: "Featured",
     },
     {
-      image: "/assets/image/blog2.png",
+      image: "/assets/images/blog2.png",
       title: "Ghar Ho To Aisa’s Swapnapuri Ganesh Temple Inauguration",
       description: "Unites Tradition in Vasai.",
       link: "#",
     },
     {
-      image: "/assets/image/blog3.png",
+      image: "/assets/images/blog3.png",
       title: "Unleashing the Power of Strategic Investment",
       description: "Embracing Growth Partner Strategies.",
       link: "#",
     },
      {
-      image: "/assets/image/blog4.png",
+      image: "/assets/images/blog4.png",
       title: "Unleashing the Power of Strategic Investment",
       description: "Embracing Growth Partner Strategies.",
       link: "#",
@@ -108,16 +108,16 @@ export const Testimonials = [
   };
 
   export const Partners_Bank = [
-    "/assets/image/partner/1.svg",
-      "/assets/image/partner/4.svg",
-    "/assets/image/partner/5.svg",
-    "/assets/image/partner/6.svg",
-    "/assets/image/partner/7.svg",
-    "/assets/image/partner/8.svg",
-    "/assets/image/partner/9.svg",
-    "/assets/image/partner/10.svg",
-    "/assets/image/partner/11.svg",
-    "/assets/image/partner/12.svg",
+    "/assets/images/partner/1.svg",
+      "/assets/images/partner/4.svg",
+    "/assets/images/partner/5.svg",
+    "/assets/images/partner/6.svg",
+    "/assets/images/partner/7.svg",
+    "/assets/images/partner/8.svg",
+    "/assets/images/partner/9.svg",
+    "/assets/images/partner/10.svg",
+    "/assets/images/partner/11.svg",
+    "/assets/images/partner/12.svg",
 
   ]
 

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer
       className="relative bg-cover bg-center bg-no-repeat text-white pt-12"
-      style={{ backgroundImage: "url('/assets/image/footer.png')" }}
+      style={{ backgroundImage: "url('/assets/images/footer.png')" }}
     >
       <div className="container mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-8">
         <div>
@@ -44,7 +44,7 @@ const Footer = () => {
          <div className="w-full md:w-1/2">
 
             <div>
-              <img src="/assets/image/footerLogo.png" alt="Logo" />
+              <img src="/assets/images/footerLogo.png" alt="Logo" />
             </div>
             <div>
               <h3 className="text-xl font-semibold mt-6 text-[#ad3399]">

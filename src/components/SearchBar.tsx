@@ -1,7 +1,7 @@
 import  React from 'react'
 import { useState } from 'react';
 import FilterSelect from './FilterSelect.tsx';
-import { Configurations, Locations, PriceRanges, ProjectTypes } from '../../utils/consents.ts';
+import { Configurations, Locations, PriceRanges, ProjectTypes } from '../utils/consents.ts';
 
 const SearchBar = () => {
       const [filters, setFilters] = useState({

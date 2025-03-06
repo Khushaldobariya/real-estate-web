@@ -18,13 +18,13 @@ const Banner = () => {
 
       <Swiper spaceBetween={0} slidesPerView={1} loop={true} autoplay={{ delay: 5000 }}>
         <SwiperSlide>
-          <img src="/assets/image/banner.png" alt="banner" className="w-full h-screen object-cover" />
+          <img src="/assets/images/banner.png" alt="banner" className="w-full h-screen object-cover" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/image/banner.png" alt="banner" className="w-full h-screen object-cover" />
+          <img src="/assets/images/banner.png" alt="banner" className="w-full h-screen object-cover" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/image/banner.png" alt="banner" className="w-full h-screen object-cover" />
+          <img src="/assets/images/banner.png" alt="banner" className="w-full h-screen object-cover" />
         </SwiperSlide>
       </Swiper>
 

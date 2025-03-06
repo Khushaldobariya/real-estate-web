@@ -4,7 +4,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Testimonials } from "../../utils/consents.ts";
+import { Testimonials } from "../utils/consents.ts";
 
 
 const TestimonialSlider = () => {

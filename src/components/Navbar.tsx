@@ -16,7 +16,7 @@ const Navbar = ({className}:Props) => {
     <div className="container mx-auto flex items-center justify-between">
       {/* Logo */}
       <div className="text-xl font-bold italic">
-      <img src={className ? "/assets/image/footerLogo.png": "/assets/image/logo.png"} alt="Logo" />
+      <img src={className ? "/assets/images/footerLogo.png" : "/assets/images/logo.png"} alt="Logo" />
       </div>
 
       {/* Desktop Menu */}

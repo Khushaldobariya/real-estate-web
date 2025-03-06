@@ -1,5 +1,5 @@
 import React from "react";
-import { Partners_Bank } from "../../utils/consents.ts";
+import { Partners_Bank } from "../utils/consents.ts";
 import { motion } from "motion/react";
 
 const Partner = () => {

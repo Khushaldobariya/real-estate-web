@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../home/Navbar.tsx'
+import Navbar from '../Navbar.tsx'
 import StoryTimeLine from './StoryTimeLine.tsx'
 
 const About = () => {

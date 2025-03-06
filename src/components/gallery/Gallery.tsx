@@ -36,16 +36,16 @@
 //         className="swiper_container"
 //       >
 //         <SwiperSlide>
-//           <img src="/assets/image/gallery/gallery1.png" draggable="false" alt="gallery" />
+//           <img src="/assets/images/gallery/gallery1.png" draggable="false" alt="gallery" />
 //         </SwiperSlide>
 //         <SwiperSlide>
-//           <img src="/assets/image/gallery/gallery2.png" draggable="false" alt="gallery" />
+//           <img src="/assets/images/gallery/gallery2.png" draggable="false" alt="gallery" />
 //         </SwiperSlide>
 //         <SwiperSlide>
-//           <img src="/assets/image/gallery/gallery3.png" draggable="false" alt="gallery" />
+//           <img src="/assets/images/gallery/gallery3.png" draggable="false" alt="gallery" />
 //         </SwiperSlide>
 //         <SwiperSlide>
-//           <img src="/assets/image/gallery/gallery4.png" draggable="false" alt="gallery" />
+//           <img src="/assets/images/gallery/gallery4.png" draggable="false" alt="gallery" />
 //         </SwiperSlide>
 
 //         {/* Custom Navigation Buttons */}
@@ -105,25 +105,25 @@ const Gallery = () => {
         className="swiper_container"
       >
         <SwiperSlide>
-          <img src="/assets/image/gallery/gallery1.png" draggable="false" alt="gallery"  className="rounded-2xl"/>
+          <img src="/assets/images/gallery/gallery1.png" draggable="false" alt="gallery"  className="rounded-2xl"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/image/gallery/gallery2.png" draggable="false" alt="gallery" className="rounded-2xl" />
+          <img src="/assets/images/gallery/gallery2.png" draggable="false" alt="gallery" className="rounded-2xl" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/image/gallery/gallery1.png" draggable="false" alt="gallery"  className="rounded-2xl"/>
+          <img src="/assets/images/gallery/gallery1.png" draggable="false" alt="gallery"  className="rounded-2xl"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/image/gallery/gallery3.png" draggable="false" alt="gallery" className="rounded-2xl" />
+          <img src="/assets/images/gallery/gallery3.png" draggable="false" alt="gallery" className="rounded-2xl" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/image/gallery/gallery4.png" draggable="false" alt="gallery"  className="rounded-2xl"/>
+          <img src="/assets/images/gallery/gallery4.png" draggable="false" alt="gallery"  className="rounded-2xl"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/image/gallery/gallery4.png" draggable="false" alt="gallery" className="rounded-2xl" />
+          <img src="/assets/images/gallery/gallery4.png" draggable="false" alt="gallery" className="rounded-2xl" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/image/gallery/gallery3.png" draggable="false" alt="gallery" className="rounded-2xl" />
+          <img src="/assets/images/gallery/gallery3.png" draggable="false" alt="gallery" className="rounded-2xl" />
         </SwiperSlide>
 
         {/* Custom Navigation Buttons */}

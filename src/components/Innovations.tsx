@@ -1,6 +1,6 @@
 import React from 'react'
-import { VectorIcon } from '../../utils/icons.tsx'
-import { ServiceData } from '../../utils/consents.ts'
+import { VectorIcon } from '../utils/icons.tsx'
+import { ServiceData } from '../utils/consents.ts'
 
 const Innovations = () => {
   return (
@@ -9,7 +9,7 @@ const Innovations = () => {
     <div className="w-full md:w-1/2">
         <img 
             className="object-cover w-full h-[500px]  shadow-lg" 
-            src="/assets/image/Innovations.png"  
+            src="/assets/images/Innovations.png"  
             alt="Innovations"
             draggable="false" 
         />

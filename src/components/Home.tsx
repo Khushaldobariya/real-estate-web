@@ -7,9 +7,9 @@ import Innovations from './Innovations.tsx'
 import LocationExplorer from './LocationExplorer.tsx'
 import TestimonialSlider from './TestimonialSlider.tsx'
 import Partner from './Partner.tsx'
-import Gallery from '../gallery/Gallery.tsx'
-import Blog from '../blog/Blog.tsx'
-import { News_Blog } from '../../utils/consents.ts'
+import Gallery from './gallery/Gallery.tsx'
+import Blog from './blog/Blog.tsx'
+import { News_Blog } from '../utils/consents.ts'
 
 
 const Home = () => {

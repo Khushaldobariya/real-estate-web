@@ -1,5 +1,5 @@
 import React from 'react'
-import { LocationsArea } from '../../utils/consents.ts'
+import { LocationsArea } from '../utils/consents.ts'
 
 const LocationExplorer = () => {
   return (

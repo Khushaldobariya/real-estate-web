@@ -30,13 +30,13 @@ const SwiperSidlerImage = () => {
   modules={[Navigation, Autoplay]}
 >
   <SwiperSlide>
-    <img src="/assets/image/add.png" alt="add" className="w-full min-h-screen object-cover" />
+    <img src="/assets/images/add.png" alt="add" className="w-full min-h-screen object-cover" />
   </SwiperSlide>
   <SwiperSlide>
-    <img src="/assets/image/add.png" alt="add" className="w-full min-h-screen object-cover" />
+    <img src="/assets/images/add.png" alt="add" className="w-full min-h-screen object-cover" />
   </SwiperSlide>
   <SwiperSlide>
-    <img src="/assets/image/add.png" alt="add" className="w-full min-h-screen object-cover" />
+    <img src="/assets/images/add.png" alt="add" className="w-full min-h-screen object-cover" />
   </SwiperSlide>
 </Swiper>
 
