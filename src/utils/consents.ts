@@ -1,4 +1,5 @@
-import { Building, Landmark, Lightbulb, Hammer, Users, Hospital, School, MapPin, Church } from "lucide-react";
+
+
 
 export const ProjectTypes = ["Apartment", "Villa", "Plot", "Commercial"];
 
@@ -123,76 +124,80 @@ export const Testimonials = [
 
 
 
+
+
   export const Store_Timeline = [
     {
       year: "2024",
       title: "Launch of ‘Horizon Complex’",
       description:
         "Introducing our 50th project in our home ground of Mira Road, where the next generation paves the way forward. Join us as we continue our legacy of innovation and excellence, creating homes that redefine modern living.",
-     
+      icon: "Building2",
     },
     {
       year: "2024",
       title: "Mandir Inauguration at Vasai",
       description:
         "Join us for the grand inauguration of our Mandir in Vasai, a testament to our belief in fostering a thriving community. Together, let's celebrate the spirit of togetherness and unity.",
-     
+      icon: "Landmark",
     },
     {
       year: "2023",
       title: "“Growth Partner” 3rd Innovation, Launch",
       description:
         "An Investor Centric Plan Launched by Mr. Siddharth Bosmiya, Next Gen of Rashmi Group.",
-      
+      icon: "TrendingUp",
     },
     {
       year: "2023",
       title: "COVID pandemic starts, but construction continues",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-    
+        "Despite challenges, our commitment to progress remained unwavering, ensuring steady development.",
+      icon: "AlertTriangle",
     },
     {
       year: "2021",
       title: "Next Generation joins",
       description:
         "Rooted in the wisdom of our first generation and invigorated by the visionary ideas of the second, we blend experience with innovation to create homes that embody the best of tradition and the promise of the future.",
-   
+      icon: "Users",
     },
     {
       year: "2017",
       title: "Started Hospital in Naigaon",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-     
+        "Providing healthcare facilities to the community with modern medical infrastructure.",
+      icon: "Hospital",
     },
     {
       year: "2017",
       title: "“BKC Event” - creating a mark in Mumbai Market",
-
+      icon: "MapPin",
     },
     {
       year: "2016",
       title: "Started Secondary School in Naigaon",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-   
+        "Building a strong foundation for education in the community.",
+      icon: "School",
     },
     {
       year: "2015",
       title: "Mandir inauguration at Naigaon",
-   
+      icon: "Landmark",
     },
     {
       year: "2015",
       title: "Rashmi Classic & Heights, 12 buildings, Vasai",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-      
+        "Developing quality housing solutions in Vasai with a focus on modern living.",
+      icon: "Home",
     },
     {
       year: "2013",
       title: "Ventured into a new city, Hyderabad",
-   
+      icon: "MapPin",
     },
   ];
+  
+  

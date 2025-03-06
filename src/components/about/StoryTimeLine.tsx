@@ -29,7 +29,7 @@ const StoryTimeLine: React.FC = () => {
   
     <motion.div
       style={{ scaleY }}
-      className="absolute h-full w-1 bg-pink-500 top-0 left-1/2 -translate-x-1/2 origin-top"
+      className="absolute h-full w-1 bg-pink-500 top-0 left-3 md:left-1/2 md:-translate-x-1/2 origin-top"
     />
 
 
