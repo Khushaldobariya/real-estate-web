@@ -22,16 +22,16 @@ const Navbar = ({className}:Props) => {
       {/* Desktop Menu */}
       <ul className="hidden md:flex space-x-6 text-lg font-medium">
         <li>
-          <Link to="/" className="hover:text-pink-400">HOME</Link>
+          <Link to="/" className="hover:text-pink-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white">HOME</Link>
         </li>
         <li>
-          <Link to="/commercial" className="hover:text-pink-400">COMMERCIAL</Link>
+          <Link to="/commercial" className="hover:text-pink-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white">COMMERCIAL</Link>
         </li>
         <li>
-          <Link to="/residential" className="hover:text-pink-400">RESIDENTIAL</Link>
+          <Link to="/residential" className="hover:text-pink-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white">RESIDENTIAL</Link>
         </li>
         <li>
-          <Link to="/contact" className="hover:text-pink-400">CONTACT US</Link>
+          <Link to="/contact" className="hover:text-pink-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white">CONTACT US</Link>
         </li>
       </ul>
 
@@ -46,18 +46,18 @@ const Navbar = ({className}:Props) => {
 
     {/* Mobile Menu */}
     {isOpen && (
-      <ul className="md:hidden flex flex-col items-center space-y-4 mt-4 text-lg font-medium bg-blue-600 p-4 rounded-md">
+      <ul className="md:hidden flex flex-col items-center space-y-4 mt-4 text-lg font-medium bg-white/10 p-4 rounded-md">
         <li>
-          <Link to="/" className="hover:text-pink-400" onClick={() => setIsOpen(false)}>HOME</Link>
+          <Link to="/" className="hover:text-pink-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white" onClick={() => setIsOpen(false)}>HOME</Link>
         </li>
         <li>
-          <Link to="/commercial" className="hover:text-pink-400" onClick={() => setIsOpen(false)}>COMMERCIAL</Link>
+          <Link to="/commercial" className="hover:text-pink-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white " onClick={() => setIsOpen(false)}>COMMERCIAL</Link>
         </li>
         <li>
-          <Link to="/residential" className="hover:text-pink-400" onClick={() => setIsOpen(false)}>RESIDENTIAL</Link>
+          <Link to="/residential" className="hover:text-pink-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white" onClick={() => setIsOpen(false)}>RESIDENTIAL</Link>
         </li>
         <li>
-          <Link to="/contact" className="hover:text-pink-400" onClick={() => setIsOpen(false)}>CONTACT US</Link>
+          <Link to="/contact" className="hover:text-pink-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white" onClick={() => setIsOpen(false)}>CONTACT US</Link>
         </li>
       </ul>
     )}
