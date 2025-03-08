@@ -1,9 +1,11 @@
-
-import React from 'react';
-export interface TimelineItem {
-    year: string;
-    title: string;
-    description?: string;
-    icon: React.Element;
-  }
- 
+export interface ProjectProps {
+  id: number;
+  title: string;
+  image: string;
+  description?: string;
+}
+export interface TeamMember {
+  name: string
+  title: string
+  image: string
+}

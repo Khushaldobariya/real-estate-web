@@ -10,6 +10,7 @@ function App() {
       <Routes>
         {/* Fix: Use "path" instead of "to" */}
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
 

@@ -11,7 +11,7 @@ const JourneySection = () => {
       <p className="text-black mt-4 text-base" >   Immensely grateful for the journey we&apos;ve undertaken together, reaching this far with your unwavering support. Our story wouldn&apos;t be complete without you. We consider ourselves blessed for the opportunity to deliver your dream home and be a part of your journey.
       </p>
 
-      <div className="grid grid-cols-2 gap-6 mt-8 text-[#905c87] text-xl font-semibold">
+      <div className="grid grid-cols-4 gap-6 mt-8 text-[#905c87] text-xl font-semibold">
         <div>
           <span className="text-3xl">25</span>
           <p className="text-black text-base">Years</p>

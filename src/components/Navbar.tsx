@@ -1,138 +1,118 @@
-// import React from 'react'
-// import { useState } from 'react';
-// import { Menu } from 'lucide-react';
-// import { Link } from 'react-router-dom';
-// import { twMerge } from 'tailwind-merge'
 
-// interface Props {
-//   className?: string;
-// }
+import React, { useState, useEffect } from "react";
+import { Menu } from "lucide-react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
-
-// const Navbar = ({className}:Props) => {
-//     const [isOpen, setIsOpen] = useState(false);
-//   return (
-//     <nav className={twMerge(`bg-transparent p-4 `, className)}>
-//     <div className="container mx-auto flex items-center justify-between">
-//       {/* Logo */}
-//       <div className="text-xl font-bold italic">
-//       <img src={className ? "/assets/images/footerLogo.png" : "/assets/images/logo.png"} alt="Logo" />
-//       </div>
-
-//       {/* Desktop Menu */}
-//       <ul className="hidden md:flex space-x-6 text-lg font-medium">
-//         <li>
-//           <Link to="/" className="hover:text-pink-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white">HOME</Link>
-//         </li>
-//         <li>
-//           <Link to="/commercial" className="hover:text-pink-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white">COMMERCIAL</Link>
-//         </li>
-//         <li>
-//           <Link to="/residential" className="hover:text-pink-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white">RESIDENTIAL</Link>
-//         </li>
-//         <li>
-//           <Link to="/contact" className="hover:text-pink-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white">CONTACT US</Link>
-//         </li>
-//       </ul>
-
-//       {/* Mobile Menu Button */}
-//       <button
-//         className="md:hidden text-white focus:outline-none"
-//         onClick={() => setIsOpen(!isOpen)}
-//       >
-//         <Menu size={28} />
-//       </button>
-//     </div>
-
-//     {/* Mobile Menu */}
-//     {isOpen && (
-//       <ul className="md:hidden flex flex-col items-center space-y-4 mt-4 text-lg font-medium bg-white/10 p-4 rounded-md">
-//         <li>
-//           <Link to="/" className="hover:text-pink-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white" onClick={() => setIsOpen(false)}>HOME</Link>
-//         </li>
-//         <li>
-//           <Link to="/commercial" className="hover:text-pink-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white " onClick={() => setIsOpen(false)}>COMMERCIAL</Link>
-//         </li>
-//         <li>
-//           <Link to="/residential" className="hover:text-pink-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white" onClick={() => setIsOpen(false)}>RESIDENTIAL</Link>
-//         </li>
-//         <li>
-//           <Link to="/contact" className="hover:text-pink-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white" onClick={() => setIsOpen(false)}>CONTACT US</Link>
-//         </li>
-//       </ul>
-//     )}
-//   </nav>
-
-//   )
-// }
-
-// export default Navbar
-import React, { useState } from 'react';
-import { Menu } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { twMerge } from 'tailwind-merge';
-
-interface Props {
-  className?: string;
+interface Props{
+  isHome: boolean;
 }
 
-const Navbar = ({ className }: Props) => {
+const Navbar = ({isHome}:Props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [header, setHeader] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHeader);
+    return () => {
+      window.addEventListener("scroll", scrollHeader);
+    };
+  }, []);
+
+  const scrollHeader = () => {
+    if (window.scrollY >= 20) {
+      setHeader(true);
+    } else {
+      setHeader(false);
+    }
+  };
+
   return (
-    <nav className={twMerge(`bg-transparent p-4`, className)}>
-      <div className="container mx-auto flex items-center justify-between">
-        {/* Logo */}
-        <div className="text-xl font-bold italic">
-          <img
-            src={className ? "/assets/images/footerLogo.png" : "/assets/images/logo.png"}
-            alt="Logo"
-          />
-        </div>
 
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-6 text-lg font-medium">
-          {['HOME', 'COMMERCIAL', 'RESIDENTIAL', 'CONTACT US'].map((item, index) => (
-            <li key={index}>
-              <Link
-                to={`/${item.toLowerCase().replace(' ', '')}`}
-                className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white 
-                           transition-transform ease-in-out duration-300 transform hover:scale-110 
-                           hover:from-white hover:to-pink-400"
-              >
-                {item}
-              </Link>
-            </li>
-          ))}
-        </ul>
+    <motion.nav
+    initial={{ y: -100, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.5 }}
+    className={`fixed w-full top-0 px-5 py-3 transition-all duration-300 z-10 ${
+      header ? "bg-white shadow-lg" : "bg-transparent"
+    }`}
+  >
+    <div className="container mx-auto flex items-center justify-between">
+      {/* Logo */}
+      <motion.div
+  initial={{ opacity: 0, scale: 0.8 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.5 }}
+  className="text-xl font-bold italic"
+>
+  <img
+    src={
+      isHome
+        ? header
+          ? "/assets/images/footerLogo.png"
+          : "/assets/images/logo.png"
+        : "/assets/images/footerLogo.png"
+    }
+    alt="Logo"
+    className="w-auto h-auto"
+    loading="eager" // Ensures faster loading
+  />
+</motion.div>
 
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-white focus:outline-none"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <Menu size={28} />
-        </button>
-      </div>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <ul className="md:hidden flex flex-col items-center space-y-4 mt-4 text-lg font-medium bg-white/10 p-4 rounded-md">
-          {['HOME', 'COMMERCIAL', 'RESIDENTIAL', 'CONTACT US'].map((item, index) => (
-            <li key={index}>
-              <Link
-                to={`/${item.toLowerCase().replace(' ', '')}`}
-                className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white 
-                           transition-transform duration-300 transform hover:scale-110 
-                           hover:from-white hover:to-pink-400"
-                onClick={() => setIsOpen(false)}
-              >
-                {item}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
-    </nav>
+      {/* Desktop Menu */}
+      <ul className="hidden md:flex space-x-6 text-lg font-medium">
+        {["HOME", "COMMERCIAL","ABOUT",  "RESIDENTIAL", "CONTACT US"].map((item, index) => (
+          <motion.li
+            key={index}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <Link
+              to={`/${item.toLowerCase().replace(" ", "")}`}
+              className="text-black hover:underline ease-in-out transition-all delay-200"
+            >
+              {item}
+            </Link> 
+          </motion.li>
+        ))}
+      </ul>
+
+      {/* Mobile Menu Button */}
+      <button
+        className="md:hidden text-black focus:outline-none"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <Menu size={28} />
+      </button>
+    </div>
+
+    {/* Mobile Menu */}
+    {isOpen && (
+      <motion.ul
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        className="md:hidden flex flex-col items-center space-y-4 mt-4 text-lg font-medium bg-white p-4 rounded-md shadow-lg"
+      >
+        {["HOME", "COMMERCIAL", "RESIDENTIAL", "CONTACT US"].map((item, index) => (
+          <motion.li
+            key={index}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <Link
+              to={`/${item.toLowerCase().replace(" ", "")}`}
+              className="text-black"
+              onClick={() => setIsOpen(false)}
+            >
+              {item}
+            </Link>
+          </motion.li>
+        ))}
+      </motion.ul>
+    )}
+  </motion.nav>
   );
 };
 

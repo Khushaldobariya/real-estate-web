@@ -1,3 +1,4 @@
+import { ProjectProps, TeamMember } from "./type";
 
 
 
@@ -201,3 +202,49 @@ export const Testimonials = [
   ];
   
   
+
+
+export const projects: ProjectProps[] = [
+  {
+    id: 1,
+    title: "VASAI-E",
+    image: "/assets/images/project/project1.webp",
+
+  },
+  {
+    id: 2,
+    title: "Project 2",
+    image: "/assets/images/project/project2.webp",
+  },
+  {
+    id: 3,
+    title: "Project 3",
+    image: "/assets/images/project/project3.webp",
+  },
+  {
+    id: 4,
+    title: "Project 4",
+    image: "/assets/images/project/project4.webp",
+  },
+];
+
+
+
+
+export const TeamMembers_list: TeamMember[] = [
+  {
+    name: "Ram",
+    title: "Chief Creative Officer",
+    image: "/assets/images/teamMember/chiefCreativeOfficer.webp",
+  },
+  {
+    name: "Shyam",
+    title: "Chief Talent Officer",
+    image: "/assets/images/teamMember/ChiefTalentOfficer.webp",
+  },
+  {
+    name: "Adarsh",
+    title: "Chief Marketing Officer",
+    image: "assets/images/teamMember/ChiefMarketingOfficer.webp",
+  },
+]

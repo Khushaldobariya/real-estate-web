@@ -145,7 +145,7 @@ const TimeLineEvent = () => {
                     </h3>
                   </div>
                 )}
-              </div>
+              </div>  
             </div>
           )})}
         </div>
@@ -155,3 +155,6 @@ const TimeLineEvent = () => {
 };
 
 export default TimeLineEvent;
+
+
+

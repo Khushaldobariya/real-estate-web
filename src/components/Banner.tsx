@@ -10,11 +10,10 @@ const Banner = () => {
     <>
 
    <div className="relative w-full ">
-      {/* Fixed Navbar */}
-      <div className="absolute top-0 left-0 w-full z-50">
-        <Navbar />
-      </div>
 
+      <div className="absolute top-0 left-0 w-full z-50">
+        <Navbar isHome={true}  />
+      </div>
 
       <Swiper spaceBetween={0} slidesPerView={1} loop={true} autoplay={{ delay: 5000 }}>
         <SwiperSlide>
