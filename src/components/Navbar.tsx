@@ -62,7 +62,7 @@ const Navbar = ({isHome}:Props) => {
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex space-x-6 text-lg font-medium">
-        {["HOME", "COMMERCIAL","ABOUT",  "RESIDENTIAL", "CONTACT US"].map((item, index) => (
+        {["HOME", "COMMERCIAL","ABOUT",  "PROJECTS", "CONTACT US"].map((item, index) => (
           <motion.li
             key={index}
             whileHover={{ scale: 1.1 }}
@@ -70,7 +70,7 @@ const Navbar = ({isHome}:Props) => {
           >
             <Link
               to={`/${item.toLowerCase().replace(" ", "")}`}
-              className="text-black hover:underline ease-in-out transition-all delay-200"
+              className={`{${!header ?"text-black":"hover:text-pink-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-400"} hover:underline ease-in-out transition-all delay-200 `}
             >
               {item}
             </Link> 

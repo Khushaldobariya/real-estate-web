@@ -1,11 +1,13 @@
 import React from "react";
 import Navbar from "../Navbar.tsx";
-import StoryTimeLine from "./StoryTimeLine.tsx";
+
 import { Home } from "lucide-react";
 import CurrentProjects from "./CurrentProjects.tsx";
 import Vision from "./Vision.tsx";
 import TeamMember from "./TeamMember.tsx";
 import KnowMore from "./KnowMore.tsx";
+import MapLine from "./MapLine.tsx";
+
 
 const About = () => {
   return (
@@ -33,7 +35,7 @@ const About = () => {
         </div>
 
         <div>
-          <StoryTimeLine />
+          <MapLine />         
         </div>
       </div>
 

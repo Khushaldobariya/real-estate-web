@@ -15,12 +15,12 @@ const Banner = () => {
         <Navbar isHome={true}  />
       </div>
 
-      <Swiper spaceBetween={0} slidesPerView={1} loop={true} autoplay={{ delay: 5000 }}>
+      <Swiper spaceBetween={0} slidesPerView={1} loop={true} autoplay={{ delay: 7000 }} >
         <SwiperSlide>
           <img src="/assets/images/banner.png" alt="banner" className="w-full h-screen object-cover" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/images/banner.png" alt="banner" className="w-full h-screen object-cover" />
+          <video loop src="/assets/video/banner.mp4" autoPlay alt="banner" className="w-full h-screen object-cover" />
         </SwiperSlide>
         <SwiperSlide>
           <img src="/assets/images/banner.png" alt="banner" className="w-full h-screen object-cover" />
@@ -46,3 +46,4 @@ const Banner = () => {
 }
 
 export default Banner
+
