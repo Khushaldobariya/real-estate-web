@@ -1,19 +1,28 @@
 
-import { motion, useScroll } from "framer-motion";
-import React from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import React, { useRef } from "react";
 import TimeLineEvent from "./TimeLineEvent.tsx";
+
 const StoryTimeLine: React.FC = () => {
-  const { scrollYProgress } = useScroll();
+  const containerRef = useRef(null); 
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"],
+  });
+
+
+  const scaleY = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <div className="relative w-full mx-auto">
-      {/* Timeline Scroll Bar */}
+    <div ref={containerRef} className="relative w-full mx-auto overflow-hidden">
+      
       <motion.div
-        style={{ scaleY: scrollYProgress }}
+        style={{ scaleY }} 
+        transition={{ type: "tween", duration: 0.1 }}
         className="absolute h-full w-1 bg-pink-500 top-0 left-3 md:left-1/2 md:-translate-x-1/2 origin-top"
       />
 
-      {/* Timeline Events */}
+    
       <div className="relative flex flex-col gap-10">
         <TimeLineEvent />
       </div>
@@ -22,6 +31,3 @@ const StoryTimeLine: React.FC = () => {
 };
 
 export default StoryTimeLine;
-
-
-

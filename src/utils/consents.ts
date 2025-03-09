@@ -127,79 +127,182 @@ export const Testimonials = [
 
 
 
+
+  
   export const Store_Timeline = [
     {
       year: "2024",
       title: "Launch of ‘Horizon Complex’",
       description:
         "Introducing our 50th project in our home ground of Mira Road, where the next generation paves the way forward. Join us as we continue our legacy of innovation and excellence, creating homes that redefine modern living.",
-      icon: "Building2",
+      icon: 'Building2',
     },
     {
       year: "2024",
       title: "Mandir Inauguration at Vasai",
       description:
         "Join us for the grand inauguration of our Mandir in Vasai, a testament to our belief in fostering a thriving community. Together, let's celebrate the spirit of togetherness and unity.",
-      icon: "Landmark",
+      icon: 'Landmark',
     },
     {
       year: "2023",
       title: "“Growth Partner” 3rd Innovation, Launch",
       description:
         "An Investor Centric Plan Launched by Mr. Siddharth Bosmiya, Next Gen of Rashmi Group.",
-      icon: "TrendingUp",
+      icon: 'TrendingUp',
+    },
+    {
+      year: "2023",
+      title: "Horizon Complex, Mira Road, construction starts.",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      icon: 'TrendingUp',
     },
     {
       year: "2023",
       title: "COVID pandemic starts, but construction continues",
       description:
         "Despite challenges, our commitment to progress remained unwavering, ensuring steady development.",
-      icon: "AlertTriangle",
+      icon: 'AlertTriangle',
     },
     {
       year: "2021",
       title: "Next Generation joins",
       description:
         "Rooted in the wisdom of our first generation and invigorated by the visionary ideas of the second, we blend experience with innovation to create homes that embody the best of tradition and the promise of the future.",
-      icon: "Users",
+      icon: 'Users',
     },
     {
       year: "2017",
       title: "Started Hospital in Naigaon",
       description:
         "Providing healthcare facilities to the community with modern medical infrastructure.",
-      icon: "Hospital",
+      icon: 'Hospital',
     },
     {
       year: "2017",
       title: "“BKC Event” - creating a mark in Mumbai Market",
-      icon: "MapPin",
+      icon: 'MapPin',
     },
     {
       year: "2016",
       title: "Started Secondary School in Naigaon",
-      description:
-        "Building a strong foundation for education in the community.",
-      icon: "School",
+      description: "Building a strong foundation for education in the community.",
+      icon: 'School',
     },
     {
       year: "2015",
       title: "Mandir inauguration at Naigaon",
-      icon: "Landmark",
+      icon: 'Landmark',
     },
     {
       year: "2015",
       title: "Rashmi Classic & Heights, 12 buildings, Vasai",
       description:
         "Developing quality housing solutions in Vasai with a focus on modern living.",
-      icon: "Home",
+      icon: 'Home',
     },
     {
       year: "2013",
       title: "Ventured into a new city, Hyderabad",
-      icon: "MapPin",
+      icon: 'MapPin',
+    },
+    {
+      year: "2012",
+      title: "Land Bank Asset up to #####",
+      icon: 'MapPin',
+    },
+    {
+      year: "2012",
+      title:
+        "Star City Launching. Phase 2,3 & 5, Township of 25 buildings, Naigaon",
+      icon: 'MapPin',
+    },
+    {
+      year: "2011",
+      title: "Rashmi Complex & Lakeview, 10 buildings, Vasai",
+      icon: 'MapPin',
+    },
+    {
+      year: "2012",
+      title: "Primary School",
+      icon: 'School',
+    },
+    {
+      year: "2009",
+      title: "Star City Phase I, Township of 30 buildings, Naigaon",
+      icon: 'MapPin',
+    },
+    {
+      year: "2008",
+      title: "Pink City I & II, Township of 25 buildings, Naigaon",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      icon: 'MapPin',
+    },
+    {
+      year: "2007",
+      title: "1st Redevelopment Project, Rashmi Yug, Malad",
+      icon: 'MapPin',
+    },
+    {
+      year: "2006",
+      title: "Ventured into 3 new locations: Vasai, Mira Road & Gujarat",
+      icon: 'MapPin',
+    },
+    {
+      year: "2006",
+      title: "Rashmi Residency, 14 buildings, Vasai Bungalow Scheme, Surendranagar",
+      icon: 'MapPin',
+    },
+    {
+      year: "2006",
+      title: "Mandir inauguration at Mira Road",
+      icon: 'Landmark',
+    },
+    {
+      year: "2006",
+      title: "Started Primary School in Mira Road",
+      icon: 'School',
+    },
+    {
+      year: "2005",
+      title: "Ventured into a new location",
+      icon: 'MapPin',
+    },
+    {
+      year: "2006",
+      title: "Divya Complex, 8 buildings, Vasai",
+      icon: 'MapPin',
+    },
+    {
+      year: "2006",
+      title: "Rashmi Harsh, 6 buildings, Mira Road",
+      icon: 'MapPin',
+    },
+    {
+      year: "2004",
+      title: "Started Primary School in Mira Road",
+      icon: 'School',
+    },
+    {
+      year: "2000",
+      title: '1st Innovation, “Ghar Ho To Aisa” Brand established',
+      icon: 'MapPin',
+    },
+    {
+      year: "2000",
+      title: "Rashmi Crystal, 2 buildings, Mira Road",
+      icon: 'MapPin',
+    },
+    {
+      year: "2000",
+      title: "Started Our Journey",
+      icon: 'MapPin',
     },
   ];
+  
+
   
   
 
