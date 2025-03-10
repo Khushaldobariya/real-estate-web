@@ -12,11 +12,11 @@ const Partner = () => {
 <div className="w-full overflow-hidden flex items-center">
   <motion.div
     initial={{ x: 0 }}
-    animate={{ x: "-100%" }}
+    animate={{ x: "-50%" }}
     transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
     className="flex gap-7 md:gap-10 shrink-0"
   >
-    {[...Partners_Bank, ...Partners_Bank].map((item, index) => (
+    {[...Partners_Bank, ...Partners_Bank ,...Partners_Bank].map((item, index) => (
       <img src={item} key={index}  alt={`Partner ${index}`} />
     ))}
   </motion.div>
