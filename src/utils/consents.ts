@@ -1,4 +1,4 @@
-import { ProjectProps, TeamMember } from "./type";
+import { ProjectDataType, ProjectProps, TeamMember } from "./type";
 
 export const ProjectTypes = ["Apartment", "Villa", "Plot", "Commercial"];
 
@@ -433,3 +433,84 @@ export const NavLinks = [
     path: "/contact",
   },
 ];
+
+
+export const CompleteProject: ProjectDataType[] = [
+  {
+    id: 1,
+    image: "assets/images/project/image.webp",
+    title: "Rashmi's Hetal",
+    project_type: "Residential",
+    address: "Mira Road, Mumbai, India",
+    description:
+      "Inaugurated in 2003, Rashmi Hetal stands tall with its 6 wings, G+4 storeys, and efficient 1BHK layouts, offering zero wastage flats for optimal living.",
+    project_status: "Completed",
+  },
+  {
+    id: 2,
+    title: "Rashmi Star City Phase 1",
+    project_type: "Residential",
+    address: "Vasai, Mumbai, India",
+    description:
+      "Completed in 2014, Rashmi Star City Phase 1 comprised 8 buildings, each rising to G+4 storeys, offering meticulously designed 1BHK residences with zero wastage flats.",
+    project_status: "Completed",
+  },
+  {
+    id: 3,
+    title: "Rashmi’s Sarvesh",
+    project_type: "Residential",
+    image: "assets/images/project/image1.webp",
+    address: "Thane, Mumbai, India",
+    description: "Under Construction.",
+    project_status: "Current",
+  },
+  {
+    id: 4,
+    title: "Rashmi Star City Phase 1",
+    project_type: "Residential",
+    address: "Vasai, Mumbai, India",
+    description:
+      "Completed in 2014, Rashmi Star City Phase 1 comprised 8 buildings, each rising to G+4 storeys, offering meticulously designed 1BHK residences with zero wastage flats.",
+    project_status: "Completed",
+  },
+  {
+    id: 5,
+    title: "Rashmi’s Sarvesh",
+    project_type: "Residential",
+    image: "assets/images/project/image2.webp",
+    address: "Thane, Mumbai, India",
+    description: "Under Construction.",
+    project_status: "Current",
+  },
+  {
+    id: 6,
+    title: "Rashmi’s Residency",
+    project_type: "Residential",
+    image: "assets/images/project/image3.webp",
+    address: "Vasai, Mumbai, India",
+    description:
+      "Inaugurated in 2007, Rashmi's Residency boasted 14 wings rising majestically to G+7 storeys, featuring meticulously crafted 1 and 2BHK residences with zero wastage flats.",
+    project_status: "Completed",
+  },
+  {
+    id: 7,
+    title: "Rashmi’s Divya Complex",
+    project_type: "Residential",
+    image: "assets/images/project/image4.webp",
+    address: "Vasai, Mumbai, India",
+    description:
+      "Completed in 2014, Rashmi's Divya Complex comprised 8 buildings spanning up to G+4 storeys, offering meticulously designed 1BHK residences with zero wastage flats.",
+    project_status: "Completed",
+  },
+  {
+    id: 8,
+    title: "Rashmi’s Laxmi Sadan",
+    project_type: "Residential",
+    image: "assets/images/project/image.webp",
+    address: "Vasai, Mumbai, India",
+    description:
+      "Inaugurated in 2006, Rashmi's Laxmi Sadan boasted 8 buildings rising to G+4 storeys, presenting a range of thoughtfully crafted 1 and 2BHK residences, featuring zero wastage flats.",
+    project_status: "UpComing",
+  },
+];
+

@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer.tsx";
 import Home from './components/Home.tsx';
 import About from './components/about/About.tsx';
+import Project from './components/project/index.tsx';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/commercial" element={<Project />} />
       </Routes>
 
       {/* Footer should be outside of Routes to display on all pages */}

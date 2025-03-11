@@ -13,8 +13,8 @@ interface Props {
 const Navbar = ({ isHome }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [header, setHeader] = useState(false);
-  const [dropdown, setDropdown] = useState(null);
-  const [mobileDropdown, setMobileDropdown] = useState(null);
+  const [dropdown, setDropdown] = useState<null | number>(null);
+  const [mobileDropdown, setMobileDropdown] = useState<null | number>(null);
 
   useEffect(() => {
     window.addEventListener("scroll", scrollHeader);
@@ -33,7 +33,7 @@ const Navbar = ({ isHome }: Props) => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
       className={`fixed w-full top-0 px-5 py-3 transition-all duration-300 z-10 ${
-        header ? "bg-white shadow-lg" : "bg-transparent"
+        header ? "bg-black/40 shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between">
@@ -70,15 +70,15 @@ const Navbar = ({ isHome }: Props) => {
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
                 <Link
                   to={item.path || "#"}
-                  className={`${
+                  className={` capitalize ${
                     !item.subLink
                       ? "text-black hover:text-pink-400"
                       : "text-black"
                   } ${
-                    isHome && !header
+                    !header
                       ? "text-black"
-                      : "hover:text-pink-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-400"
-                  } hover:underline ease-in-out transition-all delay-200`}
+                      : "hover:text-pink-400 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-white"
+                  }  hover:underline ease-in-out transition-all delay-200`}
                 >
                   {item.title}
                 </Link>
