@@ -27,17 +27,17 @@ const Banner = () => {
         >
           <SwiperSlide>
             <img
-              src="/assets/images/banner.png"
+              src="/assets/images/img1.jpg"
               alt="banner"
               className="w-full h-screen object-cover"
             />
-                <div className="absolute top-1/3 left-10 text-white z-10">
+                {/* <div className="absolute top-1/3 left-10 text-white z-10">
           <h2 className="text-4xl font-light">Delivering</h2>
           <h1 className="text-6xl font-bold">
             <span className="text-[#905c87]">Happiness</span>
           </h1>
           <p className="text-lg mt-2">Since 1998</p>
-        </div>
+        </div> */}
           </SwiperSlide>
           <SwiperSlide>
             <video
