@@ -114,7 +114,7 @@ import { MoveLeft, MoveRight } from "lucide-react";
 
 const Gallery = () => {
   return (
-    <div className="px-10 mx-auto  text-center">
+    <div className="px-10 mx-auto  text-center" id="gallery">
       <h2 className="text-3xl font-semibold mb-5">Gallery</h2>
 
       <Swiper
@@ -147,7 +147,7 @@ const Gallery = () => {
             <img
               src={`/assets/images/gallery/gallery${num}.png`}
               alt={`Gallery ${num}`}
-              className="rounded-xl w-96 h-64 object-cover md:h-96  "
+              className="rounded-xl w-full h-full object-cover md:h-96  "
             />
           </SwiperSlide>
         ))}

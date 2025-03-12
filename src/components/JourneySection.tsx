@@ -2,7 +2,7 @@ import React from 'react'
 
 const JourneySection = () => {
   return (
-    <div className="  my-16 px-10 relative flex justify-between items-center">
+    <div className=" mt-28 my-16 px-10 relative flex justify-between items-center">
     <div className="max-w-2xl">
       <h2 className="text-3xl md:text-4xl font-semibold">
         Our Journey Towards{" "}

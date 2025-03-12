@@ -9,7 +9,7 @@ import MobileSearchBar from "./searchBar/MobileSearchBar.tsx";
 const Banner = () => {
   return (
     <>
-      <div className="relative w-full ">
+      <div className="relative w-full">
         <div className="absolute top-0 left-0 w-full z-50">
           <Navbar isHome={true} />
         </div>
@@ -65,7 +65,7 @@ const Banner = () => {
     
         <div className="absolute w-full p-4 z-10 
                 top-24 left-1/2 -translate-x-1/2 
-                md:left-auto md:bottom-0 md:top-auto md:translate-x-0">
+                md:left-auto md:-bottom-16 md:top-auto md:translate-x-0">
   <MobileSearchBar />
   <SearchBar />
 </div>
