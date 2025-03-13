@@ -384,7 +384,7 @@ export const TeamMembers_list: TeamMember[] = [
   {
     name: "Ram",
     title: "Chief Creative Officer",
-    image: "/assets/images/teamMember/chiefCreativeOfficer.webp",
+    image: "/assets/images/teamMember/ChiefCreativeOfficer.webp",
   },
   {
     name: "Shyam",
@@ -438,7 +438,7 @@ export const NavLinks = [
 export const CompleteProject: ProjectDataType[] = [
   {
     id: 1,
-    image: "assets/images/project/image.webp",
+    image: "assets/images/project/Image.webp",
     title: "Rashmi's Hetal",
     project_type: "Residential",
     address: "Mira Road, Mumbai, India",
@@ -459,7 +459,7 @@ export const CompleteProject: ProjectDataType[] = [
     id: 3,
     title: "Rashmi’s Sarvesh",
     project_type: "Residential",
-    image: "assets/images/project/image1.webp",
+    image: "assets/images/project/Image1.webp",
     address: "Thane, Mumbai, India",
     description: "Under Construction.",
     project_status: "Current",
@@ -477,7 +477,7 @@ export const CompleteProject: ProjectDataType[] = [
     id: 5,
     title: "Rashmi’s Sarvesh",
     project_type: "Residential",
-    image: "assets/images/project/image2.webp",
+    image: "assets/images/project/Image2.webp",
     address: "Thane, Mumbai, India",
     description: "Under Construction.",
     project_status: "Current",
@@ -486,7 +486,7 @@ export const CompleteProject: ProjectDataType[] = [
     id: 6,
     title: "Rashmi’s Residency",
     project_type: "Residential",
-    image: "assets/images/project/image3.webp",
+    image: "assets/images/project/Image3.webp",
     address: "Vasai, Mumbai, India",
     description:
       "Inaugurated in 2007, Rashmi's Residency boasted 14 wings rising majestically to G+7 storeys, featuring meticulously crafted 1 and 2BHK residences with zero wastage flats.",
@@ -496,7 +496,7 @@ export const CompleteProject: ProjectDataType[] = [
     id: 7,
     title: "Rashmi’s Divya Complex",
     project_type: "Residential",
-    image: "assets/images/project/image4.webp",
+    image: "assets/images/project/Image4.webp",
     address: "Vasai, Mumbai, India",
     description:
       "Completed in 2014, Rashmi's Divya Complex comprised 8 buildings spanning up to G+4 storeys, offering meticulously designed 1BHK residences with zero wastage flats.",
@@ -506,7 +506,7 @@ export const CompleteProject: ProjectDataType[] = [
     id: 8,
     title: "Rashmi’s Laxmi Sadan",
     project_type: "Residential",
-    image: "assets/images/project/image.webp",
+    image: "assets/images/project/Image.webp",
     address: "Vasai, Mumbai, India",
     description:
       "Inaugurated in 2006, Rashmi's Laxmi Sadan boasted 8 buildings rising to G+4 storeys, presenting a range of thoughtfully crafted 1 and 2BHK residences, featuring zero wastage flats.",
