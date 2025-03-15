@@ -5,17 +5,17 @@ import { ServiceData } from '../utils/consents.ts'
 const InnovationsSection = () => {
   return (
     <div className="py-16 px-8 flex flex-col md:flex-row items-center">
-    {/* Image Section */}
+
     <div className="w-full md:w-1/2">
         <img 
-            className="object-cover w-full h-[500px]  shadow-lg" 
-            src="/assets/images/Innovations.png"  
+            className="object-contain w-full h-[500px]  shadow-lg" 
+            src="/assets/images/innovations.webp"  
             alt="Innovations"
             draggable="false" 
         />
     </div>
 
-    {/* Text Section */}
+   
     <div className="w-full md:w-1/2 flex flex-col gap-7 mt-8 md:mt-0 md:pl-10">
         <h2 className="text-4xl">Our <span className="text-[#905c87]">Innovations</span></h2>
         <p>

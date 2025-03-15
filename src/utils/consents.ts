@@ -558,3 +558,11 @@ export const SocialMediaData = [
     username: "@GharHoToAisa",
   },
 ];
+
+
+export const Home_Images_SLider: string[] = [
+  "/assets/images/home/horizonHeights.webp",
+  "/assets/images/home/rashmiAmara.webp",
+  "/assets/images/home/rashmiHorizonComplex.webp",
+  "/assets/images/home/view4.webp",
+];

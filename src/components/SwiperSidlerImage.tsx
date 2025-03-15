@@ -1,72 +1,33 @@
-// import React from 'react'
-// import { useRef } from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import { Navigation, Autoplay } from "swiper/modules";
-// import { MoveLeft, MoveRight } from 'lucide-react';
 
-// const SwiperSidlerImage = () => {
-//   const prevRef = useRef(null);
-//   const nextRef = useRef(null);
-//   return (
-
-// <div className="my-16">
-// <Swiper
-//   spaceBetween={0}
-//   slidesPerView={1}
-//   loop={true}
-//   autoplay={{ delay: 5000 }}
-//   navigation={{
-//     prevEl: prevRef.current,
-//     nextEl: nextRef.current,
-//   }}
-//   onInit={(swiper) => {
-//     swiper.params.navigation.prevEl = prevRef.current;
-//     swiper.params.navigation.nextEl = nextRef.current;
-//     swiper.navigation.init();
-//     swiper.navigation.update();
-//   }}
-//   modules={[Navigation, Autoplay]}
-// >
-//   <SwiperSlide>
-//     <img src="/assets/images/add.png" alt="add" className="w-full min-h-screen object-cover" />
-//   </SwiperSlide>
-//   <SwiperSlide>
-//     <img src="/assets/images/add.png" alt="add" className="w-full min-h-screen object-cover" />
-//   </SwiperSlide>
-//   <SwiperSlide>
-//     <img src="/assets/images/add.png" alt="add" className="w-full min-h-screen object-cover" />
-//   </SwiperSlide>
-// </Swiper>
-
-
-// <div className="justify-end flex gap-5 z-10">
-//   <button ref={prevRef} className="border rounded-full border-[#905c87] p-2">
-//     <MoveLeft className="hover:text-[#905c87]" />
-//   </button>
-//   <button ref={nextRef} className="border rounded-full border-[#905c87] p-2">
-//     <MoveRight className="hover:text-[#905c87]" />
-//   </button>
-// </div>
-// </div>
-
-//   )
-// }
-
-// export default SwiperSidlerImage
-
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 import { MoveLeft, MoveRight } from "lucide-react";
+import SwiperCore from "swiper";
+import { NavigationOptions } from "swiper/types";
+import { Home_Images_SLider } from "../utils/consents.ts";
 
-const SwiperSliderImage = () => {
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
-  const swiperRef = useRef(null);
+// Image data array
+
+const SwiperSliderImage: React.FC = () => {
+  const prevRef = useRef<HTMLButtonElement | null>(null);
+  const nextRef = useRef<HTMLButtonElement | null>(null);
+  const swiperRef = useRef<SwiperCore | null>(null);
+
+  useEffect(() => {
+    if (swiperRef.current) {
+      const swiper = swiperRef.current;
+      const navigation = swiper.params.navigation as NavigationOptions;
+      if (navigation) {
+        navigation.prevEl = prevRef.current;
+        navigation.nextEl = nextRef.current;
+        swiper.navigation.init();
+        swiper.navigation.update();
+      }
+    }
+  }, []);
 
   return (
     <div className="my-16 relative">
@@ -76,43 +37,20 @@ const SwiperSliderImage = () => {
         loop={true}
         autoplay={{ delay: 5000 }}
         modules={[Navigation, Autoplay]}
+     
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
-          if (swiper.navigation) {
-            swiper.navigation.init();
-            swiper.navigation.update();
-          }
         }}
-        navigation={{
-          prevEl: prevRef.current,
-          nextEl: nextRef.current,
-        }}
+        navigation={{ prevEl: prevRef.current, nextEl: nextRef.current }}
       >
-        <SwiperSlide>
-          <img
-            src="/assets/images/add.png"
-            alt="add"
-            className="w-full min-h-screen object-cover"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="/assets/images/add.png"
-            alt="add"
-            className="w-full min-h-screen object-cover"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="/assets/images/add.png"
-            alt="add"
-            className="w-full min-h-screen object-cover"
-          />
-        </SwiperSlide>
+        {Home_Images_SLider.map((src, index) => (
+          <SwiperSlide key={index}>
+            <img src={src} alt={`Slide ${index + 1}`} className="w-full h-[900px] object-cover" />
+          </SwiperSlide>
+        ))}
       </Swiper>
 
-
-      <div className=" justify-end mt-10 flex gap-4 z-10">
+      <div className="justify-end mt-10 flex gap-4 z-10">
         <button
           ref={prevRef}
           className="border rounded-full border-[#905c87] p-3 bg-white shadow-md"
@@ -133,3 +71,4 @@ const SwiperSliderImage = () => {
 };
 
 export default SwiperSliderImage;
+

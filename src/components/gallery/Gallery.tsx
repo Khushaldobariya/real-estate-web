@@ -1,104 +1,3 @@
-// import React from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import "swiper/css/effect-coverflow";
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
-// import "./gallerySwiper.css";
-
-// import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
-// import { MoveLeft, MoveRight } from "lucide-react";
-
-// const Gallery = () => {
-//   return (
-//     <div className="px-14 mx-auto text-center overflow-hidden">
-//       <h2 className=" text-3xl mb-5">Gallery</h2>
-      
-//       <Swiper
-
-//         effect={"coverflow"}
-//         grabCursor={true}
-//         centeredSlides={true}
-//         loop={true}
-//         slidesPerView={3}  
-//         spaceBetween={-80} 
-//         loopAdditionalSlides={2} 
-//         coverflowEffect={{
-//           rotate: 0,
-//           stretch: 50, 
-//           depth: 100,
-//           modifier: 2.5,
-//           slideShadows: false, 
-//         }}
-//         navigation={false} 
-//         pagination={{ clickable: true }}
-//         modules={[EffectCoverflow, Pagination, Navigation]}
-
-//         breakpoints={{
-//           576: {
-//             width: 576,
-//             slidesPerView: 1,
-//           },
-//           768: {
-//             width: 768,
-//             slidesPerView: 2,
-//           },
-//             968:{
-//               width:968,
-//               sildsPerView:2,
-//             },
-//             1080:{
-//               width:10280,
-//               slidePerView:3
-//             },
-//             1120:{
-//               width:1080,
-//               sliderPreView:4
-//             }
-//           }
-//         }
-//         className="swiper_container"
-//       >
-//         <SwiperSlide>
-//           <img src="/assets/images/gallery/gallery1.png" draggable="false" alt="gallery"  className="rounded-2xl"/>
-//         </SwiperSlide>
-//         <SwiperSlide>
-//           <img src="/assets/images/gallery/gallery2.png" draggable="false" alt="gallery" className="rounded-2xl" />
-//         </SwiperSlide>
-//         <SwiperSlide>
-//           <img src="/assets/images/gallery/gallery1.png" draggable="false" alt="gallery"  className="rounded-2xl"/>
-//         </SwiperSlide>
-//         <SwiperSlide>
-//           <img src="/assets/images/gallery/gallery3.png" draggable="false" alt="gallery" className="rounded-2xl" />
-//         </SwiperSlide>
-//         <SwiperSlide>
-//           <img src="/assets/images/gallery/gallery4.png" draggable="false" alt="gallery"  className="rounded-2xl"/>
-//         </SwiperSlide>
-//         <SwiperSlide>
-//           <img src="/assets/images/gallery/gallery4.png" draggable="false" alt="gallery" className="rounded-2xl" />
-//         </SwiperSlide>
-//         <SwiperSlide>
-//           <img src="/assets/images/gallery/gallery3.png" draggable="false" alt="gallery" className="rounded-2xl" />
-//         </SwiperSlide>
-
-//         {/* Custom Navigation Buttons */}
-//         <div className="slider-controler">
-//           <div className="swiper-button-prev slider-arrow">
-//             <MoveLeft />
-//           </div>
-//           <div className="swiper-button-next slider-arrow">
-//             <MoveRight />
-//           </div>
-//         </div>
-
-//         {/* Pagination */}
-//         <div className="swiper-pagination"></div>
-//       </Swiper>
-//     </div>
-//   );
-// };
-
-// export default Gallery;
 
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -137,15 +36,15 @@ const Gallery = () => {
         breakpoints={{
           640: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-          1280: { slidesPerView: 4 },
+          1024: { slidesPerView: 2 },
+          1280: { slidesPerView: 2 },
         }}
         className="swiper-container "
       >
         {[1, 2, 3, 4, 2,3,1].map((num) => (
           <SwiperSlide key={num}>
             <img
-              src={`/assets/images/gallery/gallery${num}.png`}
+              src={`/assets/images/gallery/gallery${num}.webp`}
               alt={`Gallery ${num}`}
               className="rounded-xl w-full h-full object-cover md:h-96  "
             />
