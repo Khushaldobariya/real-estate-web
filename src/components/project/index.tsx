@@ -36,7 +36,7 @@ const Project = () => {
 
     <div className="space-y-4 mt-28 px-5 md:px-20">
       <div className="flex justify-between items-center">
-        <div>
+        <div className="mt-10">
           <p>Home {">"} Project</p>
           <h1 className="text-xl md:text-5xl lg:text-9xl">
             Our <span className="text-[#a0238a]">Project</span>
@@ -75,7 +75,7 @@ const Project = () => {
       ))}
     </div>
 
-    {/* Project List Section */}
+
     <div className="flex flex-col gap-10 py-24">
       {filteredProjects.map((item, index) => (
         <div key={item.id}>

@@ -104,26 +104,26 @@ export const Testimonials = [
 
 export const News_Blog = [
   {
-    image: "/assets/images/blog1.png",
+    image: "/assets/images/blog/blog1.webp",
     title: "Rashmi Group's Visionary Move: Unveiling the Future",
     description: "Commitment to Growth and Innovation.",
     link: "#",
     label: "Featured",
   },
   {
-    image: "/assets/images/blog2.png",
+    image: "/assets/images/blog/blog4.webp",
     title: "Ghar Ho To Aisa’s Swapnapuri Ganesh Temple Inauguration",
     description: "Unites Tradition in Vasai.",
     link: "#",
   },
   {
-    image: "/assets/images/blog3.png",
+    image: "/assets/images/blog/blog3.webp",
     title: "Unleashing the Power of Strategic Investment",
     description: "Embracing Growth Partner Strategies.",
     link: "#",
   },
   {
-    image: "/assets/images/blog4.png",
+    image: "/assets/images/blog/blog2.webp",
     title: "Unleashing the Power of Strategic Investment",
     description: "Embracing Growth Partner Strategies.",
     link: "#",
@@ -165,196 +165,284 @@ export const Partners_Bank = [
   "/assets/images/partner/12.svg",
 ];
 
-// export const Store_Timeline = [
-//   {
-//     year: 2024,
-//     title: "Launch of ‘Horizon Complex’",
-//     description:
-//       "Introducing our 50th project in our home ground of Mira Road, where the next generation paves the way forward. Join us as we continue our legacy of innovation and excellence, creating homes that redefine modern living.",
-//     icon: "Building2",
-//     lat: 19.2952,
-//     lng: 72.8544,
-//   },
-//   {
-//     year: 2024,
-//     title: "Mandir Inauguration at Vasai",
-//     description:
-//       "Join us for the grand inauguration of our Mandir in Vasai, a testament to our belief in fostering a thriving community. Together, let's celebrate the spirit of togetherness and unity.",
-//     icon: "Landmark",
-//     lat: 19.3650,
-//     lng: 72.8328, // Vasai
-//   },
-//   {
-//     year: 2023,
-//     title: "Horizon Complex, Mira Road, construction starts.",
-//     description:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-//     icon: "TrendingUp",
-//     lat: 19.2952,
-//     lng: 72.8544, // Mira Road
-//   },
-//   {
-//     year: 2017,
-//     title: "Started Hospital in Naigaon",
-//     description:
-//       "Providing healthcare facilities to the community with modern medical infrastructure.",
-//     icon: "Hospital",
-//     lat: 19.4251,
-//     lng: 72.8310, // Naigaon
-//   },
-//   {
-//     year: 2016,
-//     title: "Started Secondary School in Naigaon",
-//     description: "Building a strong foundation for education in the community.",
-//     icon: "School",
-//     lat: 19.4251,
-//     lng: 72.8310, // Naigaon
-//   },
-//   {
-//     year: 2015,
-//     title: "Mandir inauguration at Naigaon",
-//     description: "A spiritual landmark fostering community togetherness.",
-//     icon: "Landmark",
-//     lat: 19.4251,
-//     lng: 72.8310, // Naigaon
-//   },
-//   {
-//     year: 2015,
-//     title: "Rashmi Classic & Heights, 12 buildings, Vasai",
-//     description:
-//       "Developing quality housing solutions in Vasai with a focus on modern living.",
-//     icon: "Home",
-//     lat: 19.3650,
-//     lng: 72.8328, // Vasai
-//   },
-//   {
-//     year: 2006,
-//     title: "Mandir inauguration at Mira Road",
-//     description: "A place of worship and peace for the community.",
-//     icon: "Landmark",
-//     lat: 19.2952,
-//     lng: 72.8544, // Mira Road
-//   },
-//   {
-//     year: 2006,
-//     title: "Started Primary School in Mira Road",
-//     description: "Providing education for the younger generation.",
-//     icon: "School",
-//     lat: 19.2952,
-//     lng: 72.8544, // Mira Road
-//   },
-//   {
-//     year: 2004,
-//     title: "Started Primary School in Mira Road",
-//     description: "Creating an early learning foundation for students.",
-//     icon: "School",
-//     lat: 19.2952,
-//     lng: 72.8544, // Mira Road
-//   },
-//   // {
-//   //   year: 2000,
-//   //   title: "Started Our Journey",
-//   //   description: "Marking the beginning of our legacy in real estate.",
-//   //   icon: "MapPin",
-//   //   lat: null,
-//   //   lng: null, // No specific location provided
-//   // },
-// ];
+
+
+
+
 
 export const Store_Timeline = [
   {
-    year: 2024,
-    title: "Launch of ‘Horizon Complex’",
-    description:
-      "Introducing our 50th project in our home ground of Mira Road, where the next generation paves the way forward.",
-    icon: "Building2",
-    lat: 19.2952,
-    lng: 72.8544, // Mira Road
+    name: "Rashmi' Hetal",
+    location: "Mira Road",
+    description: "Inaugurated in 2003, Rashmi Hetal stands tall with its 6 wings, G+4 storeys, and efficient 1BHK layouts, offering zero wastage flats for optimal living.",
+    year: 2003,
+    lat: 19.2813,
+    lng: 72.8684
   },
   {
-    year: 2024,
-    title: "Mandir Inauguration at Vasai",
-    description:
-      "Join us for the grand inauguration of our Mandir in Vasai, a testament to our belief in fostering a thriving community.",
-    icon: "Landmark",
-    lat: 19.365,
-    lng: 72.8328, // Vasai
+    name: "Rashmi Star City Phase 1",
+    location: "Vasai",
+    description: "Completed in 2014, Rashmi Star City Phase 1 comprised 8 buildings, each rising to G+4 storeys, offering meticulously designed 1BHK residences with zero wastage flats.",
+    year: 2014,
+    lat: 19.3919,
+    lng: 72.8335
   },
   {
-    year: 2023,
-    title: "Horizon Complex, Mira Road, construction starts.",
-    description:
-      "Construction begins on Horizon Complex in Mira Road, pushing forward innovation in real estate.",
-    icon: "TrendingUp",
-    lat: 19.2952,
-    lng: 72.8544, // Mira Road
+    name: "Rashmi's Residency",
+    location: "Vasai",
+    description: "Inaugurated in 2007, Rashmi's Residency boasted 14 wings rising majestically to G+7 storeys, featuring meticulously crafted 1 and 2BHK residences with zero wastage flats.",
+    year: 2007,
+    lat: 19.3919,
+    lng: 72.8335
   },
   {
-    year: 2017,
-    title: "Started Hospital in Naigaon",
-    description:
-      "Providing healthcare facilities to the community with modern medical infrastructure.",
-    icon: "Hospital",
-    lat: 19.4251,
-    lng: 72.831, // Naigaon
+    name: "Rashmi's Divya Complex",
+    location: "Vasai",
+    description: "Completed in 2014, Rashmi's Divya Complex comprised 8 buildings spanning up to G+4 storeys, offering meticulously designed 1BHK residences with zero wastage flats.",
+    year: 2014,
+    lat: 19.3919,
+    lng: 72.8335
   },
   {
-    year: 2016,
-    title: "Started Secondary School in Naigaon",
-    description: "Building a strong foundation for education in the community.",
-    icon: "School",
-    lat: 19.4251,
-    lng: 72.831, // Naigaon
-  },
-  {
-    year: 2015,
-    title: "Mandir inauguration at Naigaon",
-    description: "A spiritual landmark fostering community togetherness.",
-    icon: "Landmark",
-    lat: 19.4251,
-    lng: 72.831, // Naigaon
-  },
-  {
-    year: 2015,
-    title: "Rashmi Classic & Heights, 12 buildings, Vasai",
-    description:
-      "Developing quality housing solutions in Vasai with a focus on modern living.",
-    icon: "Home",
-    lat: 19.365,
-    lng: 72.8328, // Vasai
-  },
-  {
+    name: "Rashmi's Laxmi Sadan",
+    location: "Bhayander",
+    description: "Inaugurated in 2006, Rashmi's Laxmi Sadan boasted 8 buildings rising to G+4 storeys, presenting a range of thoughtfully crafted 1 and 2BHK residences, featuring zero wastage flats.",
     year: 2006,
-    title: "Mandir inauguration at Mira Road",
-    description: "A place of worship and peace for the community.",
-    icon: "Landmark",
-    lat: 19.2952,
-    lng: 72.8544, // Mira Road
+    lat: 19.3016,
+    lng: 72.8510
   },
   {
+    name: "Rashmi's Prime Corner",
+    location: "Mira Road",
+    description: "Rashmi's Prime Corner, completed in 2005, featured three buildings reaching up to G+7 storeys, offering a range of 1, 2, and 3BHK residences with zero wastage flats.",
+    year: 2005,
+    lat: 19.2813,
+    lng: 72.8684
+  },
+  {
+    name: "Rashmi's Villa",
+    location: "Vasai",
+    description: "In 2006, Rashmi's Villa, featuring three luxurious villas, was completed, boasting stunning architecture and a serene environment.",
     year: 2006,
-    title: "Started Primary School in Mira Road",
-    description: "Providing education for the younger generation.",
-    icon: "School",
-    lat: 19.2952,
-    lng: 72.8544, // Mira Road
+    lat: 19.3919,
+    lng: 72.8335
   },
   {
-    year: 2004,
-    title: "Started Primary School in Mira Road",
-    description: "Creating an early learning foundation for students.",
-    icon: "School",
-    lat: 19.2952,
-    lng: 72.8544,
+    name: "Rashmi's Pride",
+    location: "Vasai",
+    description: "In 2008, Rashmi's Pride featured two buildings each soaring to G+7 storeys with modern designs.",
+    year: 2008,
+    lat: 19.3919,
+    lng: 72.8335
   },
   {
+    name: "Rashmi's Dhruvita Park",
+    location: "Vasai East",
+    description: "Inaugurated in 2009 with eight wings standing tall at G+7 storeys.",
+    year: 2009,
+    lat: 19.3982,
+    lng: 72.8576
+  },
+  {
+    name: "Rashmi's Lake City",
+    location: "Hafeezpet, Hyderabad",
+    description: "Constructed in 2015, Rashmi's Lake City boasted 4 wings rising up to G+9 storeys, featuring spacious 2 and 3BHK residences with zero wastage flats.",
+    year: 2015,
+    lat: 17.4443,
+    lng: 78.3944
+  },
+  {
+    name: "Rashmi Complex A To I",
+    location: "Vasai",
+    description: "Constructed in 2010, Rashmi Complex A To I boasted 9 wings, each rising up to G+4 storeys, featuring thoughtfully crafted 1 and 2BHK residences, ensuring zero wastage flats.",
+    year: 2010,
+    lat: 19.3919,
+    lng: 72.8335
+  },
+  {
+    name: "Rashmi's Crystal",
+    location: "Mira Road",
+    description: "Inaugurated in the year 2000, Rashmi's Crystal boasted two wings with up to G+7 storeys, offering an array of meticulously crafted 1 and 2BHK residences, characterized by zero wastage flats.",
     year: 2000,
-    title: "Started Our Journey",
-    description: "Marking the beginning of our legacy in real estate.",
-    icon: "MapPin",
-    lat: 19.2952,
-    lng: 72.8544,
+    lat: 19.2813,
+    lng: 72.8684
   },
+  {
+    name: "Rashmi's Harsh",
+    location: "Mira Road",
+    description: "Inaugurated in 2006, Rashmi's Harsh boasted 6 wings across G+4/7 storeys, presenting a range of 1&2BHK residences with zero wastage flats, setting new benchmarks in modern living.",
+    year: 2006,
+    lat: 19.2813,
+    lng: 72.8684
+  },
+  {
+    name: "Rashmi's Hill View",
+    location: "Vasai",
+    description: "Rashmi's Hill View, completed in 2010, boasted 3 wings rising up to G+7 storeys, presenting a range of 1&2BHK residences, featuring zero wastage flats for optimal living space.",
+    year: 2010,
+    lat: 19.3919,
+    lng: 72.8335
+  },
+  {
+    name: "Rashmi's Mangal Nagar",
+    location: "Mira Road",
+    description: "Inaugurated in 2002, Rashmi's Mangal Nagar featured 6 wings with G+4 storeys, offering a range of meticulously designed 1 and 2BHK residences, characterized by zero wastage flats.",
+    year: 2002,
+    lat: 19.2813,
+    lng: 72.8684
+  },
+  {
+    name: "Rashmi Swastik Sadan",
+    location: "Bhayander",
+    description: "Inaugurated in 2014, Rashmi Swastik Sadan stood tall with its single wing structure spanning up to G+9 floors, offering residents meticulously designed 1 and 2BHK residences with zero wastage flats.",
+    year: 2014,
+    lat: 19.3016,
+    lng: 72.8510
+  },
+  {
+    name: "Rashmi's Yug",
+    location: "Malad",
+    description: "Inaugurated in 2010, Rashmi's Yug stood tall with its single wing, featuring G+7 storeys of 2BHK residences, each meticulously crafted with zero wastage flats.",
+    year: 2010,
+    lat: 19.1794,
+    lng: 72.8487
+  },
+  {
+    name: "Rashmi Complex",
+    location: "Mira Road",
+    description: "Rashmi Complex, with its 6 wings and G+4 storeys, offered 2BHK residences completed in 2005. Each unit boasted zero wastage flats, ensuring optimal space utilization.",
+    year: 2005,
+    lat: 19.2813,
+    lng: 72.8684
+  },
+  {
+    name: "Rashmi Hetal 2",
+    location: "Mira Road",
+    description: "Inaugurated in 2010, Rashmi Hetal 2 featured 6 wings, rising gracefully up to G+7 storeys, offering a blend of 1 and 2BHK residences with zero wastage flats.",
+    year: 2010,
+    lat: 19.2813,
+    lng: 72.8684
+  },
+  {
+    name: "Rashmi Pride",
+    location: "Mira Road",
+    description: "Inaugurated in 2010, Rashmi Pride stood tall with its 2 wings, each soaring to G+9 storeys, presenting a blend of 2 and 3BHK residences, characterized by zero wastage flats.",
+    year: 2010,
+    lat: 19.2813,
+    lng: 72.8684
+  },
+  {
+    name: "Rashmi Pride Rowhouse",
+    location: "Mira Road",
+    description: "In 2010, Rashmi Pride Rowhouse project was completed, featuring 8 rowhouses built over two stories each.",
+    year: 2010,
+    lat: 19.2813,
+    lng: 72.8684
+  },
+  {
+    name: "Rashmi Pride 2",
+    location: "Mira Road",
+    description: "In 2007, Rashmi Pride 2, a singular wing with G+7 storeys, presented lavish 4BHK residences, boasting zero wastage flats, marking the completion of another successful project.",
+    year: 2007,
+    lat: 19.2813,
+    lng: 72.8684
+  },
+  {
+    name: "Rashmi Villa - Nityanand Nagar",
+    location: "Mira Road",
+    description: "Rashmi Villa - Nityanand Nagar, consisting of 11 villas with Steal+2 structures, was completed in the year 2006, offering a serene living experience.",
+    year: 2006,
+    lat: 19.2813,
+    lng: 72.8684
+  },
+  {
+    name: "Rashmi Regency 1",
+    location: "Vasai",
+    description: "Inaugurated in 2009, Rashmi Regency 1 featured 4 wings, each rising to G+7 storeys, presenting a range of meticulously crafted 1 and 2BHK residences with zero wastage flats.",
+    year: 2009,
+    lat: 19.3919,
+    lng: 72.8335
+  },
+  {
+    name: "Rashmi Regency 2",
+    location: "Vasai",
+    description: "In the year 2010, Rashmi Regency 2, with its 4 wings towering up to G+7 storeys, presented flawlessly crafted 1 and 2BHK residences, featuring zero wastage flats.",
+    year: 2010,
+    lat: 19.3919,
+    lng: 72.8335
+  },
+  {
+    name: "Rashmi Pride Rowhouse",
+    location: "Vasai",
+    description: "Rashmi Pride Rowhouse, featuring 2 stunning rowhouses with Steel+2 structure, was completed in 2011, offering unparalleled elegance and comfort in its design.",
+    year: 2011,
+    lat: 19.3919,
+    lng: 72.8335
+  },
+  {
+    name: "Rashmi Garden",
+    location: "Vasai",
+    description: "Inaugurated in 2010, Rashmi Garden boasted 5 wings standing tall at G+7 storeys, featuring meticulously crafted 1 & 2BHK residences with zero wastage flats.",
+    year: 2010,
+    lat: 19.3919,
+    lng: 72.8335
+  },
+  {
+    name: "Rashmi Garden",
+    location: "Virar",
+    description: "Inaugurated in 2011, Rashmi Garden boasted 8 wings rising to G+7 storeys, featuring thoughtfully crafted 1 and 2BHK residences, all with zero wastage flats.",
+    year: 2011,
+    lat: 19.4597,
+    lng: 72.8023
+  },
+  {
+    name: "Rashmi Utsav",
+    location: "Mira Road",
+    description: "Inaugurated in 2008, Rashmi Utsav boasted 4 wings reaching up to G+7 storeys, presenting a range of thoughtfully crafted 1&2BHK residences, each featuring zero wastage flats.",
+    year: 2008,
+    lat: 19.2813,
+    lng: 72.8684
+  },
+  {
+    name: "Rashmi Siddharth",
+    location: "Mira Road",
+    description: "Inaugurated in 2009, Rashmi Siddharth boasted 3 wings rising up to G+7 floors, featuring meticulously crafted 1&2BHK residences, ensuring zero wastage flats.",
+    year: 2009,
+    lat: 19.2813,
+    lng: 72.8684
+  },
+  {
+    name: "Rashmi Star City Phase 3",
+    location: "Vasai",
+    description: "Under Construction",
+    year: null,
+    lat: 19.3919,
+    lng: 72.8335
+  },
+  {
+    name: "Rashmi Star City Phase 2",
+    location: "Vasai",
+    description: "Under Construction",
+    year: null,
+    lat: 19.3919,
+    lng: 72.8335
+  },
+  {
+    name: "Rashmi's Sarvesh",
+    location: "Thane",
+    description: "Under Construction",
+    year: null,
+    lat: 19.1974,
+    lng: 72.9636
+  },
+  {
+    name: "Rashmi Residency",
+    location: "Udaipur, Rajasthan",
+    description: "Residential",
+    year: null,
+    lat: 24.5854,
+    lng: 73.7125
+  }
 ];
 
 export const projects: ProjectProps[] = [

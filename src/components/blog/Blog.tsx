@@ -46,7 +46,7 @@ const Blog = ({news}:NewsSectionProps) => {
                 src={item.image}
                 alt={item.title}
           
-                className="rounded-lg object-cover w-28 h-28"
+                className="rounded-lg object-contain w-28 h-28"
               />
               <div>
                 <h4 className="text-lg font-semibold">{item.title}</h4>
