@@ -2,7 +2,7 @@ import React from 'react'
 import { VectorIcon } from '../utils/icons.tsx'
 import { ServiceData } from '../utils/consents.ts'
 
-const Innovations = () => {
+const InnovationsSection = () => {
   return (
     <div className="py-16 px-8 flex flex-col md:flex-row items-center">
     {/* Image Section */}
@@ -45,4 +45,4 @@ const Innovations = () => {
   )
 }
 
-export default Innovations
+export default InnovationsSection

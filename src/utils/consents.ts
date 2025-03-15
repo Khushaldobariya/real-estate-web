@@ -412,6 +412,10 @@ export const NavLinks = [
     path: "/gallery",
   },
   {
+    title: "innovations",
+    path: "/innovations",
+  },
+  {
     title: "properties",
     subLink: [
       {
@@ -514,3 +518,43 @@ export const CompleteProject: ProjectDataType[] = [
   },
 ];
 
+
+
+
+export const InnovationsData = [
+  {
+  
+    number: "1st",
+    title: "Ghar Ho Toh Aisa",
+    description:
+      "Introducing 'Ghar Ho Toh Aisa' - where your home truly feels like a dream. Our first innovation approach to flat interiors that maximizes space usability. Our zero wastage design ensures every inch serves a purpose, reducing unnecessary costs for our customers. Say goodbye to paying for unused areas and hello to a cost-effective yet luxurious living experience.",
+    points: ["Zero Wastage Design", "Top Notch Interior Design", "Pocket Centric Approach"],
+    image: "/assets/images/innovations1.png",
+  },
+  {
+    number: "2nd",
+    title: "Apne Dam Par",
+    description:
+      "A solution to streamline home financing. With traditional home loans burdening customers with hefty interest payments over 15 years, our plan divides the flat cost into three parts: 30-40-30. You pay 30% as a down payment, 40% in interest-free monthly installments until possession, and the remaining 30% upon possession. This strategic approach reduces the loan amount from 100% to 30% at the end, significantly cutting interest and shortening the repayment period.",
+    points: ["0% interest-free EMI", "Loan Tenure Reduces to 15 years", "Save Min 8-12Lac on Home Loan"],
+    image: "/assets/images/innovations1.png",
+  },
+];
+
+export const SocialMediaData = [
+  {
+    image: "/assets/images/social/social2.png",
+    platform: "Instagram",
+    username: "@rashmigroupofficial_",
+  },
+  {
+    image: "/assets/images/social/social1.png",
+    platform: "Facebook",
+    username: "@Rashmigroupmumbai",
+  },
+  {
+    image: "/assets/images/social/social.png",
+    platform: "Youtube",
+    username: "@GharHoToAisa",
+  },
+];

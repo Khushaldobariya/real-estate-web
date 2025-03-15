@@ -45,7 +45,7 @@ const ContactForm = () => {
                 type="text"
                 placeholder="First name"
                 {...register("firstName")}
-                className="w-full  p-2 rounded"
+                className="w-full  p-2 rounded border-black border"
               />
               <p className="text-red-500 text-sm">{errors.firstName?.message}</p>
             </div>

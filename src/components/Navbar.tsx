@@ -1,8 +1,6 @@
-
-
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { NavLinks } from "../utils/consents.ts";
 
@@ -15,6 +13,8 @@ const Navbar = ({ isHome }: Props) => {
   const [header, setHeader] = useState(false);
   const [dropdown, setDropdown] = useState<null | number>(null);
   const [mobileDropdown, setMobileDropdown] = useState<null | number>(null);
+
+  const navigate = useNavigate()
 
   useEffect(() => {
     window.addEventListener("scroll", scrollHeader);
@@ -67,7 +67,10 @@ const Navbar = ({ isHome }: Props) => {
               onMouseEnter={() => setDropdown(index)}
               onMouseLeave={() => setDropdown(null)}
             >
-              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
                 <Link
                   to={item.path || "#"}
                   className={` capitalize ${
@@ -134,23 +137,29 @@ const Navbar = ({ isHome }: Props) => {
             exit={{ opacity: 0, y: -20 }}
             className="md:hidden flex flex-col items-center space-y-4 mt-4 text-lg font-medium bg-white p-4 rounded-md shadow-lg"
           >
-            {NavLinks.map((item, index) => (
-              <motion.li key={index} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+            {/* {NavLinks.map((item, index) => (
+              <motion.li
+                key={index}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
                 <div className="w-full flex flex-col items-center">
                   <button
-                    className="text-black w-full text-left py-2"
+                    className="text-black w-full text-left py-2 capitalize"
                     onClick={() => {
                       if (item.subLink) {
                         setMobileDropdown(mobileDropdown === index ? null : index);
                       } else {
+                        
                         setIsOpen(false);
+                        
                       }
                     }}
                   >
                     {item.title}
                   </button>
 
-                  {/* Mobile Dropdown */}
+
                   {item.subLink && mobileDropdown === index && (
                     <motion.ul
                       initial={{ opacity: 0, y: -10 }}
@@ -162,7 +171,7 @@ const Navbar = ({ isHome }: Props) => {
                         <motion.li key={subIndex} whileHover={{ scale: 1.05 }}>
                           <Link
                             to={sub.path}
-                            className="block px-4 py-2 text-black hover:text-pink-400 hover:bg-gray-200 rounded-md"
+                            className="block  px-4 py-2 text-black hover:text-pink-400 hover:bg-gray-200 rounded-md"
                             onClick={() => setIsOpen(false)}
                           >
                             {sub.title}
@@ -173,7 +182,54 @@ const Navbar = ({ isHome }: Props) => {
                   )}
                 </div>
               </motion.li>
-            ))}
+            ))} */}
+            {NavLinks.map((item, index) => (
+  <motion.li
+    key={index}
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    <div className="w-full flex flex-col items-center">
+      <button
+        className="text-black w-full text-left py-2 capitalize"
+        onClick={() => {
+          if (item.subLink) {
+            // Toggle submenu
+            setMobileDropdown(mobileDropdown === index ? null : index);
+          } else {
+            // Redirect and close menu
+            setIsOpen(false);
+            navigate(item.path || "#"); 
+          }
+        }}
+      >
+        {item.title}
+      </button>
+
+      {item.subLink && mobileDropdown === index && (
+        <motion.ul
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          className="w-full bg-gray-100 rounded-md shadow-md p-2"
+        >
+          {item.subLink.map((sub, subIndex) => (
+            <motion.li key={subIndex} whileHover={{ scale: 1.05 }}>
+              <Link
+                to={sub.path}
+                className="block px-4 py-2 text-black hover:text-pink-400 hover:bg-gray-200 rounded-md"
+                onClick={() => setIsOpen(false)}
+              >
+                {sub.title}
+              </Link>
+            </motion.li>
+          ))}
+        </motion.ul>
+      )}
+    </div>
+  </motion.li>
+))}
+
           </motion.ul>
         )}
       </AnimatePresence>
@@ -182,4 +238,3 @@ const Navbar = ({ isHome }: Props) => {
 };
 
 export default Navbar;
-

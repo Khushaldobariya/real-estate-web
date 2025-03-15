@@ -5,6 +5,8 @@ import Home from './components/Home.tsx';
 import About from './components/about/About.tsx';
 import Project from './components/project/index.tsx';
 import Contact from './components/contact/Contact.tsx';
+import Innovations from './components/innovations/Innovations.tsx';
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/commercial" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/innovations" element={<Innovations />} />
       </Routes>
 
       {/* Footer should be outside of Routes to display on all pages */}

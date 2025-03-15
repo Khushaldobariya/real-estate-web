@@ -24,6 +24,14 @@
   color: white;
 }
 
+
+@font-face {
+  font-family: 'Optimal Pro';
+  src: url('../public/assets/fonts/OptimaLTPro-Roman.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .App-link {
   color: #61dafb;
 }
