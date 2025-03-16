@@ -6,7 +6,7 @@ import { BhayanderComingProject, GhatkoparComingProject, MiraRoadComingProject, 
 const UpComingProject = () => {
   return (
     <div className="max-w-7xl mx-auto space-y-12">
-         <div>
+         <div className="space-y-3">
         <h3 className="text-xl font-bold text-center">Vasai Coming Project</h3>
         <MapLine
        lat={19.3667}
@@ -14,7 +14,7 @@ const UpComingProject = () => {
           mapArrayValue={VasaiComingProject}
         />
       </div>
-      <div>
+      <div className="space-y-3">
         <h3 className="text-xl font-bold text-center">Thane Project</h3>
         <MapLine
           lat={ 19.2183}
@@ -22,7 +22,7 @@ const UpComingProject = () => {
           mapArrayValue={ThaneComingProject}
         />
       </div>
-      <div>
+      <div className="space-y-3">
         <h3 className="text-xl font-bold text-center">MiraRoad Coming Project</h3>
         <MapLine
                lat={19.2853}
@@ -30,7 +30,7 @@ const UpComingProject = () => {
           mapArrayValue={MiraRoadComingProject}
         />
       </div>
-      <div>
+      <div className="space-y-3">
         <h3 className="text-xl font-bold text-center">Naigaon Coming Project</h3>
         <MapLine
                lat={19.3906}
@@ -38,7 +38,7 @@ const UpComingProject = () => {
           mapArrayValue={NaigaonComingProject}
         />
       </div>
-      <div>
+      <div className="space-y-3">
         <h3 className="text-xl font-bold text-center">Bhayander Coming Project</h3>
         <MapLine
                lat={19.3062}
@@ -46,7 +46,7 @@ const UpComingProject = () => {
           mapArrayValue={BhayanderComingProject}
         />
       </div>
-      <div>
+      <div className="space-y-3">
         <h3 className="text-xl font-bold text-center">Ghatkopar Coming Project</h3>
         <MapLine
                lat={19.0866}

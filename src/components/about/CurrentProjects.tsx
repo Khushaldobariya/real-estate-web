@@ -1,6 +1,5 @@
 import React from 'react'
-import { ProjectProps } from '../../utils/type'
-import { projects } from '../../utils/consents.ts'
+
 
 
 const CurrentProjects = () => {

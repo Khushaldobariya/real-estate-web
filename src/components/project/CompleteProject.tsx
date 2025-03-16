@@ -5,7 +5,7 @@ import { BhayanderCompleteProject, MaladCompleteProject, MiraRoadCompleteProject
 const CompleteProject = () => {
   return (
     <div className="max-w-7xl mx-auto space-y-12">
-    <div>
+    <div className="space-y-3">
       <h3 className="text-xl font-bold text-center">Vasai Project</h3>
       <MapLine
         lat={19.3667}
@@ -13,7 +13,7 @@ const CompleteProject = () => {
         mapArrayValue={VasaiCompleteProject}
       />
     </div>
-    <div>
+    <div className="space-y-3">
       <h3 className="text-xl font-bold text-center">Mira Road Project</h3>
       <MapLine
         lat={19.2952}
@@ -21,12 +21,12 @@ const CompleteProject = () => {
         mapArrayValue={MiraRoadCompleteProject}
       />
     </div>
-    <div>
+    <div className="space-y-3">
       <h3 className="text-xl font-bold text-center">Malad Project</h3>
       <MapLine lat={19.1861} lng={72.8484} mapArrayValue={MaladCompleteProject} />
     </div>
 
-    <div>
+    <div className="space-y-3">
       <h3 className="text-xl font-bold text-center">Bhayander Project</h3>
       <MapLine lat={19.312} lng={72.851} mapArrayValue={BhayanderCompleteProject} />
     </div>

@@ -7,6 +7,7 @@ import Vision from "./Vision.tsx";
 import TeamMember from "./TeamMember.tsx";
 import KnowMore from "./KnowMore.tsx";
 import MapLine from "./MapLine.tsx";
+import Project from "./Project.tsx";
 
 const About = () => {
   return (
@@ -41,7 +42,7 @@ const About = () => {
             />
           </div>
         </div>
-
+        <Project />
         <CurrentProjects />
         <Vision />
         <TeamMember />

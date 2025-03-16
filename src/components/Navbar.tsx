@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
@@ -37,12 +38,13 @@ const Navbar = ({ isHome }: Props) => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between">
-        {/* Logo */}
+     
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
           className="text-xl font-bold italic"
+          onClick={() => navigate("/")}
         >
           <img
             src={
@@ -137,52 +139,7 @@ const Navbar = ({ isHome }: Props) => {
             exit={{ opacity: 0, y: -20 }}
             className="md:hidden flex flex-col items-center space-y-4 mt-4 text-lg font-medium bg-white p-4 rounded-md shadow-lg"
           >
-            {/* {NavLinks.map((item, index) => (
-              <motion.li
-                key={index}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <div className="w-full flex flex-col items-center">
-                  <button
-                    className="text-black w-full text-left py-2 capitalize"
-                    onClick={() => {
-                      if (item.subLink) {
-                        setMobileDropdown(mobileDropdown === index ? null : index);
-                      } else {
-                        
-                        setIsOpen(false);
-                        
-                      }
-                    }}
-                  >
-                    {item.title}
-                  </button>
-
-
-                  {item.subLink && mobileDropdown === index && (
-                    <motion.ul
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      className="w-full bg-gray-100 rounded-md shadow-md p-2"
-                    >
-                      {item.subLink.map((sub, subIndex) => (
-                        <motion.li key={subIndex} whileHover={{ scale: 1.05 }}>
-                          <Link
-                            to={sub.path}
-                            className="block  px-4 py-2 text-black hover:text-pink-400 hover:bg-gray-200 rounded-md"
-                            onClick={() => setIsOpen(false)}
-                          >
-                            {sub.title}
-                          </Link>
-                        </motion.li>
-                      ))}
-                    </motion.ul>
-                  )}
-                </div>
-              </motion.li>
-            ))} */}
+      
             {NavLinks.map((item, index) => (
   <motion.li
     key={index}
