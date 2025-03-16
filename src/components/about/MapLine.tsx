@@ -3,8 +3,9 @@
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import { Store_Timeline } from '../../utils/consents.ts';
+
 import L from 'leaflet';
+
 
 const DefaultIcon = new L.Icon({
   iconUrl: "/assets/images/location-pin.png",
@@ -17,35 +18,50 @@ const DefaultIcon = new L.Icon({
 
 L.Marker.prototype.options.icon = DefaultIcon;
 
-const MapLine = () => {
-  const center: [number, number] = [19.366, 72.805];
+
+interface mapArrayValue  {
+  name: string;
+  location: string;
+  description: string;
+  lat:number;
+  lng:number;
+  year: number | null;
+}
+interface Props {
+lat: number;
+lng: number;
+mapArrayValue:mapArrayValue[]
+}
+
+const MapLine = ({lat , lng , mapArrayValue}:Props) => {
+  const center: [number, number] =[lat, lng];
 
   return (
     <MapContainer
 
       center={center}
-      zoom={11}
+      zoom={12}
       scrollWheelZoom={false}
       doubleClickZoom={true} 
       style={{ height: '500px', width: '100%'  }}
     >
-      <TileLayer
+     <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
 
-      {Store_Timeline.map((store, index) => (
+      {mapArrayValue.map((store, index) => (
         <Marker
           key={index}
           position={[store.lat, store.lng]}
           eventHandlers={{
-            mouseover: (e) => e.target.openPopup(), // Open popup on hover
-            mouseout: (e) => e.target.closePopup(), // Close popup when not hovering
-            dblclick: (e) => e.originalEvent.stopPropagation(), // Prevent double-click zoom on marker
+            mouseover: (e) => e.target.openPopup(),
+            mouseout: (e) => e.target.closePopup(), 
+            dblclick: (e) => e.originalEvent.stopPropagation(),
           }}
         >
           <Popup autoClose={false} closeOnClick={false}>
-            <strong>{store.title}</strong>
+            <strong>{store.name}</strong>
             <br />
             {store.description || 'No description available.'}
             <br />
