@@ -4,8 +4,6 @@ const ExpertiseSection = () => {
   return (
     
 <div className="bg-pink-100 p-8 flex flex-col items-center px-10">
-  
-
       <div className=" w-full flex  ">
         <div className="w-2/5">
 
