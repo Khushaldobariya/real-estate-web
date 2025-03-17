@@ -1,4 +1,13 @@
-import { ProjectDataType, ProjectProps, TeamMember } from "./type";
+import { About_Project, ProjectDataType, ProjectProps, TeamMember } from "./type";
+import {
+  Building2,
+  Landmark,
+  School,
+  Hospital,
+  MapPin,
+  Home,
+
+} from "lucide-react";
 
 export const ProjectTypes = ["Apartment", "Villa", "Plot", "Commercial"];
 
@@ -175,69 +184,82 @@ interface mapArrayValue {
 }
 
 
-export const About_project = [
+
+
+
+export const About_project :About_Project[] = [
   {
     year: 2024,
     title: "Launch of ‘Horizon Complex’",
     description:
-      "Introducing our 50th project in our home ground of Mira Road, where the next generation paves the way forward. Join us as we continue our legacy of innovation and excellence, creating homes that redefine modern living.",
+      "Introducing our 50th project in our home ground of Mira Road, where the next generation paves the way forward.",
+    icon: Building2,
   },
   {
     year: 2024,
     title: "Mandir Inauguration at Vasai",
     description:
-      "Join us for the grand inauguration of our Mandir in Vasai, a testament to our belief in fostering a thriving community. Together, let's celebrate the spirit of togetherness and unity.",
+      "Join us for the grand inauguration of our Mandir in Vasai, a testament to our belief in fostering a thriving community.",
+    icon: Landmark,
   },
   {
     year: 2023,
     title: "Horizon Complex, Mira Road, construction starts.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "Construction begins on our latest residential project at Mira Road.",
+    icon: Building2,
   },
   {
     year: 2017,
     title: "Started Hospital in Naigaon",
     description:
       "Providing healthcare facilities to the community with modern medical infrastructure.",
+    icon: Hospital,
   },
   {
     year: 2016,
     title: "Started Secondary School in Naigaon",
     description: "Building a strong foundation for education in the community.",
+    icon: School,
   },
   {
     year: 2015,
     title: "Mandir inauguration at Naigaon",
     description: "A spiritual landmark fostering community togetherness.",
+    icon: Landmark,
   },
   {
     year: 2015,
     title: "Rashmi Classic & Heights, 12 buildings, Vasai",
     description:
       "Developing quality housing solutions in Vasai with a focus on modern living.",
+    icon: Home,
   },
   {
     year: 2006,
     title: "Mandir inauguration at Mira Road",
     description: "A place of worship and peace for the community.",
+    icon: Landmark,
   },
   {
     year: 2006,
     title: "Started Primary School in Mira Road",
     description: "Providing education for the younger generation.",
+    icon: School,
   },
   {
     year: 2004,
     title: "Started Primary School in Mira Road",
     description: "Creating an early learning foundation for students.",
+    icon: School ,
   },
   {
     year: 2000,
     title: "Started Our Journey",
     description: "Marking the beginning of our legacy in real estate.",
+    icon: MapPin,
   },
 ];
-
 
 export const MiraRoadCompleteProject: mapArrayValue[] = [
   {

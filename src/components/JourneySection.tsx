@@ -33,7 +33,7 @@ const JourneySection = () => {
 
     {/* House Shape Image */}
     <div className="relative hidden md:block">
-      <div className="w-48 h-48 md:w-64 md:h-64 bg-cover bg-center">
+      <div className="w-48 h-48 md:w-72 mx-auto md:h-72 bg-cover bg-center">
         <img src="/assets/images/home.gif" className="h-full object-cover " />
       </div>
     </div>

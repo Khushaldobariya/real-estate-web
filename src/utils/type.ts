@@ -1,3 +1,5 @@
+import { LucideIcon } from "lucide-react";
+
 export interface ProjectProps {
   id: number;
   title: string;
@@ -18,4 +20,10 @@ id:number;
   project_type:string;
   project_status:"Completed" | "UpComing" | "Current"
   description:string
+}
+export interface About_Project {
+  year: number;
+  title: string;
+  description: string;
+  icon: LucideIcon; 
 }
