@@ -11,7 +11,7 @@ const TestimonialSlider = () => {
   return (
 
 
-  <section className="p-10 my-16 relative overflow-x-hidden ">
+  <section className="px-10 relative overflow-x-hidden ">
   <div className="mx-auto">
     <h2 className="text-lg md:text-5xl text-gray-900">
       Hear from our <br /> <span className="text-[#905c87]">Customers</span>

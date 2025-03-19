@@ -30,7 +30,7 @@ const SwiperSliderImage: React.FC = () => {
   }, []);
 
   return (
-    <div className="my-16 relative">
+    <div className=" relative">
       <Swiper
         spaceBetween={0}
         slidesPerView={1}

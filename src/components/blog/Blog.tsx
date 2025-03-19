@@ -16,60 +16,8 @@ type NewsSectionProps = {
   
 const Blog = ({news}:NewsSectionProps) => {
   return (
-    // <section className="px-10 mx-auto p-6">
-    //   <h2 className="text-3xl font-semibold text-gray-800 mb-6">
-    //     Our Latest <span className="text-[#905c87]">News</span>
-    //   </h2>
-    //   <div className="grid md:grid-cols-2 gap-6">
-      
-    //     <div className="md:col-span-1">
-    //       <div className="relative">
-    //         <img
-    //           src={news[0].image}
-    //           alt={news[0].title}
-           
-    //           className=" object-cover w-[640px] h-[400px]"
-    //         />
-            
-    //       </div>
-    //       <div className="w-4/5 space-y-4 pt-4">
-    //       <p className="text-sm">{news[0].time}</p>
-    //       <h3 className="text-xl md:text-3xl  mt-4 text-wrap">{news[0].title}</h3>
-    //       <p className="text-black mt-2">{news[0].description}</p>
-    //       <a href={news[0].link} className=" underline mt-2 inline-block  md:text-lg :text-sm">
-    //         Read more →
-    //       </a>
-    //       </div>
-         
-    //     </div>
-
-      
-    //     <div className="space-y-6">
-    //       {news.slice(1).map((item, index) => (
-    //         <div key={index} className="flex gap-4">
-    //           <img
-    //             src={item.image}
-    //             alt={item.title}
-          
-    //             className=" object-cover w-[250px] h-[250px] "
-    //           />
-    //           <div className="space-y-4">
-    //           <p className="text-sm">{item.time}</p>
-    //           <div className="text-xl md:text-3xl">
-
-    //             <h4 className=" ">{item.title}</h4>
-    //             <p className="text-gray-600 text-sm">{item.description}</p>
-    //           </div>
-    //             <Link to={item.link} className=" underline mt-2 inline-block  md:text-lg :text-sm">
-    //               Read more →
-    //             </Link>
-    //           </div>
-    //         </div>
-    //       ))}
-    //     </div>
-    //   </div>
-    // </section>
-    <section className="px-6 md:px-10 mx-auto py-8">
+  
+    <section className="px-6 md:px-10 mx-auto ">
   <h2 className="text-3xl font-semibold text-gray-800 mb-8 text-center md:text-left">
     Our Latest <span className="text-[#905c87]">News</span>
   </h2>

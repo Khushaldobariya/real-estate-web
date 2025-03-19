@@ -1,17 +1,18 @@
 import React from "react";
 import { FooterData } from "../utils/consents.ts";
+import { RightArrow } from "../utils/icons.tsx";
 
 const Footer = () => {
   return (
     
     <footer
-    className="relative bg-cover bg-center bg-no-repeat text-white pt-12"
+    className="relative bg-cover bg-center bg-no-repeat text-white mt-12 pt-12 h-[500px]"
     style={{ backgroundImage: "url('/assets/images/footer.png')" }}
   >
     <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
-        <h2 className="text-3xl font-semibold">Join Our Parivaar</h2>
-        <p className="mt-4 text-gray-200 max-w-lg">
+        <h2 className="text-3xl md:text-5xl">Join Our Parivaar</h2>
+        <p className="mt-4 text-base md:text-lg text-gray-200 max-w-lg">
           Established in 1998, Ghar Ho Aisa is the first real estate company
           to have a registered brand. The company is currently developing
           landmark projects in the western Belt of Mumbai with a Paid-up Land
@@ -19,20 +20,24 @@ const Footer = () => {
           innovation and going beyond the need.
         </p>
       </div>
-      <div>
-        <h2 className="text-3xl font-semibold">Subscribe</h2>
+      <div className="ml-auto">
+        <h2 className="text-3xl md:text-5xl tracking-normal ">Subscribe</h2>
         <div className="mt-4 flex flex-col sm:flex-row gap-5">
+          <div className="relative w-80  ">
+
           <input
             type="email"
             placeholder="Enter your email"
             className="p-3 w-full  text-gray-800 mb-2 sm:mb-0 "
           />
-          <button className="bg-yellow-500 px-6 py-3 border-2   font-semibold">
+          <div className="absolute top-1/2 -translate-y-1/2 right-4"><RightArrow /></div>
+          </div>
+          <button className="bg-[#C69E58] px-6 py-3 border-2   font-semibold">
             SUBSCRIBE
           </button>
         </div>
-        <p className="mt-2 text-gray-200 text-md">
-          By subscribing you agree to our{' '}
+        <p className="mt-2 text-white text-lg w-80 text-wrap">
+        By subscribing you agree to with our{" "}
           <a href="#" className="underline">
             Privacy Policy
           </a>

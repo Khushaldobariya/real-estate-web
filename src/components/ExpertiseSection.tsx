@@ -3,7 +3,7 @@ import React from 'react'
 const ExpertiseSection = () => {
   return (
     
-<div className="bg-pink-100 p-8 flex flex-col items-center px-10">
+<div className="bg-pink-100  flex flex-col items-center p-10">
       <div className=" w-full flex justify-center  flex-col md:flex-row  items-center">
         <div className="w-4/5">
 

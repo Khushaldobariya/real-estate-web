@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 const Partner = () => {
   return (
-    <div className="bg-[#ffe9fe] my-16 py-16 space-y-10 ">
+    <div className="bg-[#ffe9fe] py-14 space-y-11 ">
 
 
       <h2 className="text-center  text-xl md:text-5xl uppercase">OUR BANKING <span className="text-[#905c87]">Partners</span></h2> 

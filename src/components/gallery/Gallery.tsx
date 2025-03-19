@@ -46,13 +46,13 @@ const Gallery = () => {
             <img
               src={`/assets/images/gallery/gallery${num}.webp`}
               alt={`Gallery ${num}`}
-              className="rounded-xl w-full h-full object-cover md:h-96  "
+              className="rounded-xl w-full h-full object-cover md:h-[400px] md:w-[800px]  "
             />
           </SwiperSlide>
         ))}
       </Swiper>
 
-      {/* Custom Navigation Buttons */}
+
       <div className="relative flex justify-between items-center mt-4">
         <button className="swiper-button-prev p-2 bg-gray-100 rounded-full shadow-md">
           <MoveLeft size={24} />

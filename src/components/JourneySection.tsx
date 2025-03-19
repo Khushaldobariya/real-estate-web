@@ -3,7 +3,7 @@ import { StatsData } from '../utils/consents.ts'
 
 const JourneySection = () => {
   return (
-    <div className=" mt-28 my-16 px-10 relative flex flex-col md:flex-row justify-between items-center">
+    <div className=" mt-28  px-10 relative flex flex-col md:flex-row justify-between items-center">
     <div className="max-w-3xl md:max-w-5xl  ">
       <h2 className="text-3xl md:text-6xl font-semibold mb-4">
         Our Journey Towards{" "}

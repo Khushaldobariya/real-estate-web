@@ -4,7 +4,7 @@ import { ServiceData } from '../utils/consents.ts'
 
 const InnovationsSection = () => {
   return (
-    <div className="py-16 px-16 flex flex-col md:flex-row items-center">
+    <div className=" px-16 flex flex-col md:flex-row items-center">
 
     <div className="w-full md:w-1/2">
         <img 

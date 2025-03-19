@@ -15,6 +15,7 @@ import { News_Blog } from '../utils/consents.ts'
 const Home = () => {
   return (
     <>
+    <div className="space-y-16">
      <Banner />
  <JourneySection />
  <ExpertiseSection />
@@ -24,7 +25,9 @@ const Home = () => {
  <TestimonialSlider />
  <Gallery />
  <Partner />  
- <Blog news={News_Blog}  /></>
+ <Blog news={News_Blog}  />
+    </div>
+ </>
   )
 }
 
