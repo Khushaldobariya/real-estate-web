@@ -4,9 +4,10 @@ import { motion } from "motion/react";
 
 const Partner = () => {
   return (
-    <div className="bg-pink-100 my-16 py-16 space-y-10 ">
-      <h2 className="uppercase text-center text-4xl ">Partners</h2>
-   
+    <div className="bg-[#ffe9fe] my-16 py-16 space-y-10 ">
+
+
+      <h2 className="text-center  text-xl md:text-5xl uppercase">OUR BANKING <span className="text-[#905c87]">Partners</span></h2> 
 
 
 <div className="w-full overflow-hidden flex items-center">
@@ -14,10 +15,10 @@ const Partner = () => {
     initial={{ x: 0 }}
     animate={{ x: "-50%" }}
     transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
-    className="flex gap-7 md:gap-10 shrink-0"
+    className="flex gap-7 md:gap-28 shrink-0"
   >
     {[...Partners_Bank, ...Partners_Bank ,...Partners_Bank].map((item, index) => (
-      <img src={item} key={index}  alt={`Partner ${index}`} />
+      <img src={item} key={index}  className="w-[100px] h-[100px] md:h-[200px] md:w-[200px] object-contain" alt={`Partner ${index}`} />
     ))}
   </motion.div>
 </div>

@@ -23,7 +23,7 @@ const Home = () => {
  <LocationExplorer />
  <TestimonialSlider />
  <Gallery />
- <Partner />
+ <Partner />  
  <Blog news={News_Blog}  /></>
   )
 }

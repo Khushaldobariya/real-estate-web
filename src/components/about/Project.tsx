@@ -21,7 +21,7 @@ const Project = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <ProjectCard description={item.description} title={item.title} year={item.year} icon={item.icon}   />
+            <ProjectCard index={index} description={item.description} title={item.title} year={item.year} icon={item.icon}   />
           </div>
         ))}
         </motion.div>

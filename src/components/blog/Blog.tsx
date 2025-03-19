@@ -8,6 +8,7 @@ type NewsItem = {
     description: string;
     link: string;
     label?: string;
+    time:string;
   };
 type NewsSectionProps = {
     news: NewsItem[];
@@ -15,51 +16,108 @@ type NewsSectionProps = {
   
 const Blog = ({news}:NewsSectionProps) => {
   return (
-    <section className="px-10 mx-auto p-6">
-      <h2 className="text-3xl font-semibold text-gray-800 mb-6">
-        Our Latest <span className="text-[#905c87]">News</span>
-      </h2>
-      <div className="grid md:grid-cols-2 gap-6">
+    // <section className="px-10 mx-auto p-6">
+    //   <h2 className="text-3xl font-semibold text-gray-800 mb-6">
+    //     Our Latest <span className="text-[#905c87]">News</span>
+    //   </h2>
+    //   <div className="grid md:grid-cols-2 gap-6">
       
-        <div className="md:col-span-1">
-          <div className="relative">
-            <img
-              src={news[0].image}
-              alt={news[0].title}
+    //     <div className="md:col-span-1">
+    //       <div className="relative">
+    //         <img
+    //           src={news[0].image}
+    //           alt={news[0].title}
            
-              className="rounded-lg object-cover w-full h-96"
-            />
+    //           className=" object-cover w-[640px] h-[400px]"
+    //         />
             
-          </div>
-          <h3 className="text-xl font-semibold mt-4">{news[0].title}</h3>
-          <p className="text-gray-600 mt-2">{news[0].description}</p>
-          <a href={news[0].link} className=" hover:underline mt-2 inline-block">
-            Read more →
-          </a>
-        </div>
+    //       </div>
+    //       <div className="w-4/5 space-y-4 pt-4">
+    //       <p className="text-sm">{news[0].time}</p>
+    //       <h3 className="text-xl md:text-3xl  mt-4 text-wrap">{news[0].title}</h3>
+    //       <p className="text-black mt-2">{news[0].description}</p>
+    //       <a href={news[0].link} className=" underline mt-2 inline-block  md:text-lg :text-sm">
+    //         Read more →
+    //       </a>
+    //       </div>
+         
+    //     </div>
 
       
-        <div className="space-y-6">
-          {news.slice(1).map((item, index) => (
-            <div key={index} className="flex gap-4">
-              <img
-                src={item.image}
-                alt={item.title}
+    //     <div className="space-y-6">
+    //       {news.slice(1).map((item, index) => (
+    //         <div key={index} className="flex gap-4">
+    //           <img
+    //             src={item.image}
+    //             alt={item.title}
           
-                className="rounded-lg object-contain w-28 h-28"
-              />
-              <div>
-                <h4 className="text-lg font-semibold">{item.title}</h4>
-                <p className="text-gray-600 text-sm">{item.description}</p>
-                <Link to={item.link} className=" hover:underline text-sm mt-1 inline-block">
-                  Read more →
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div>
+    //             className=" object-cover w-[250px] h-[250px] "
+    //           />
+    //           <div className="space-y-4">
+    //           <p className="text-sm">{item.time}</p>
+    //           <div className="text-xl md:text-3xl">
+
+    //             <h4 className=" ">{item.title}</h4>
+    //             <p className="text-gray-600 text-sm">{item.description}</p>
+    //           </div>
+    //             <Link to={item.link} className=" underline mt-2 inline-block  md:text-lg :text-sm">
+    //               Read more →
+    //             </Link>
+    //           </div>
+    //         </div>
+    //       ))}
+    //     </div>
+    //   </div>
+    // </section>
+    <section className="px-6 md:px-10 mx-auto py-8">
+  <h2 className="text-3xl font-semibold text-gray-800 mb-8 text-center md:text-left">
+    Our Latest <span className="text-[#905c87]">News</span>
+  </h2>
+  <div className="grid lg:grid-cols-2 gap-8">
+    
+    {/* Main News Item */}
+    <div className="lg:col-span-1">
+      <div className="relative">
+        <img
+          src={news[0].image}
+          alt={news[0].title}
+          className="w-full h-[300px] md:h-[400px] object-cover "
+        />
       </div>
-    </section>
+      <div className="w-full md:w-4/5 space-y-3 pt-4">
+        <p className="text-sm text-gray-500">{news[0].time}</p>
+        <h3 className="text-xl md:text-3xl font-semibold text-wrap">{news[0].title}</h3>
+        <p className="text-gray-700">{news[0].description}</p>
+        <a href={news[0].link} className="text-[#905c87] underline font-medium text-sm md:text-lg">
+          Read more →
+        </a>
+      </div>
+    </div>
+
+    {/* Additional News Items */}
+    <div className="space-y-6">
+      {news.slice(1).map((item, index) => (
+        <div key={index} className="flex flex-col sm:flex-row gap-4">
+          <img
+            src={item.image}
+            alt={item.title}
+            className="w-full sm:w-[200px] md:w-[250px] h-[200px] md:h-[250px] object-cover "
+          />
+          <div className="space-y-3">
+            <p className="text-sm text-gray-500">{item.time}</p>
+            <h4 className="text-lg md:text-2xl font-semibold">{item.title}</h4>
+            <p className="text-gray-600 text-sm">{item.description}</p>
+            <a href={item.link} className="text-[#905c87] underline font-medium text-sm md:text-lg">
+              Read more →
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
+
   )
 }
 

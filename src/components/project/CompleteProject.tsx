@@ -23,12 +23,12 @@ const CompleteProject = () => {
     </div>
     <div className="space-y-3">
       <h3 className="text-xl font-bold text-center">Malad Project</h3>
-      <MapLine lat={19.1861} lng={72.8484} mapArrayValue={MaladCompleteProject} />
+      <MapLine lat={19.3052} lng={72.8505} mapArrayValue={MaladCompleteProject} />
     </div>
 
     <div className="space-y-3">
       <h3 className="text-xl font-bold text-center">Bhayander Project</h3>
-      <MapLine lat={19.312} lng={72.851} mapArrayValue={BhayanderCompleteProject} />
+      <MapLine lat={19.3081} lng={72.8630} mapArrayValue={BhayanderCompleteProject} />
     </div>
   </div>
   )

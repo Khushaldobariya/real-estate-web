@@ -40,8 +40,8 @@ const Footer = () => {
       </div>
     </div>
 
-    <div className="bg-white text-gray-900 mt-12 py-12 px-6 md:px-12 rounded-t-3xl">
-      <div className="container mx-auto flex flex-col md:flex-row gap-8">
+    <div className="bg-white text-gray-900 mt-12 py-12  rounded-t-[50px] px-6 md:px-12">
+      <div className="container mx-auto flex flex-col md:flex-row gap-8 px-6 md:px-12">
         <div className="w-full md:w-1/2">
           <div>
             <img src="/assets/images/footerLogo.png" alt="Logo" className="w-32" />
@@ -80,6 +80,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <hr className="border-t border-black/90 mt-5" />
       <div className="mt-8 text-center text-sm text-gray-500">© 2023 All rights reserved.</div>
     </div>
   </footer>

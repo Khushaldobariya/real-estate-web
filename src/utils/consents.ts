@@ -113,25 +113,29 @@ export const Testimonials = [
 
 export const News_Blog = [
   {
+    time:"10 min read",
     image: "/assets/images/blog/blog1.webp",
-    title: "Rashmi Group's Visionary Move: Unveiling the Future",
+    title: "Rashmi Group's Visionary Move: Unveiling the Future Growth Hub in Mumbai's Naigaon, Vasai, and Virar",
     description: "Commitment to Growth and Innovation.",
     link: "#",
     label: "Featured",
   },
   {
+    time:"10 min read",
     image: "/assets/images/blog/blog4.webp",
     title: "Ghar Ho To Aisa’s Swapnapuri Ganesh Temple Inauguration",
     description: "Unites Tradition in Vasai.",
     link: "#",
   },
   {
+    time:"10 min read",
     image: "/assets/images/blog/blog3.webp",
     title: "Unleashing the Power of Strategic Investment",
     description: "Embracing Growth Partner Strategies.",
     link: "#",
   },
   {
+    time:"12 min read",
     image: "/assets/images/blog/blog2.webp",
     title: "Unleashing the Power of Strategic Investment",
     description: "Embracing Growth Partner Strategies.",
@@ -512,8 +516,8 @@ export const MaladCompleteProject: mapArrayValue[] = [
     description:
       "Inaugurated in 2010, Rashmi's Yug stood tall with its single wing, featuring G+7 storeys of 2BHK residences, each meticulously crafted with zero wastage flats.",
     year: 2010,
-    lat: 19.289566970360156,
-    lng: 72.85069049911198,
+    lat: 19.305299570118645,
+    lng: 72.85051845165682,
   },
 ];
 
@@ -613,18 +617,19 @@ export const BhayanderCompleteProject = [
     description:
       "Inaugurated in 2006, Rashmi's Laxmi Sadan boasted 8 buildings rising to G+4 storeys, presenting a range of thoughtfully crafted 1 and 2BHK residences, featuring zero wastage flats.",
     year: 2006,
-    lat: 19.41541694086544,
-    lng: 72.84374469333629,
+    lat: 19.312457695875736,
+    lng: 72.85448006642552,
   },
-
+ 
+   
   {
     name: "Rashmi Swastik Sadan",
     location: "Bhayander",
     description:
       "Inaugurated in 2014, Rashmi Swastik Sadan stood tall with its single wing structure spanning up to G+9 floors, offering residents meticulously designed 1 and 2BHK residences with zero wastage flats.",
     year: 2014,
-    lat: 19.3016,
-    lng: 72.851,
+    lat:  19.308179266392184,
+    lng: 72.86309738351184,
   },
 ];
 
@@ -838,4 +843,12 @@ export const Home_Images_SLider: string[] = [
   "/assets/images/home/rashmiAmara.webp",
   "/assets/images/home/rashmiHorizonComplex.webp",
   "/assets/images/home/view4.webp",
+];
+
+
+export const StatsData = [
+  { value: "25", label: "Years", size: "text-5xl" },
+  { value: "14K+", label: "Customers", size: "text-4xl" },
+  { value: "07", label: "Cities", size: "text-4xl" },
+  { value: "1CR", label: "Landbank", size: "text-4xl" }
 ];

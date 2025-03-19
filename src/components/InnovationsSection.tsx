@@ -4,11 +4,11 @@ import { ServiceData } from '../utils/consents.ts'
 
 const InnovationsSection = () => {
   return (
-    <div className="py-16 px-8 flex flex-col md:flex-row items-center">
+    <div className="py-16 px-16 flex flex-col md:flex-row items-center">
 
     <div className="w-full md:w-1/2">
         <img 
-            className="object-contain w-full h-[500px]  shadow-lg" 
+            className="object-cover w-[310px] h-[400px] md:w-[616px] md:h-[800px]  " 
             src="/assets/images/innovations.webp"  
             alt="Innovations"
             draggable="false" 
@@ -17,7 +17,7 @@ const InnovationsSection = () => {
 
    
     <div className="w-full md:w-1/2 flex flex-col gap-7 mt-8 md:mt-0 md:pl-10">
-        <h2 className="text-4xl">Our <span className="text-[#905c87]">Innovations</span></h2>
+        <h2 className="  text-xl md:text-5xl">Our <span className="text-[#905c87]">Innovations</span></h2>
         <p>
             We prioritize developing innovative solutions that directly address their needs. Our dedicated team is driven by a customer-centric approach, ensuring every product and service we create enhances customer experiences and delivers tangible results.
         </p>

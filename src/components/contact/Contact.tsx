@@ -13,6 +13,8 @@ const Contact = () => {
       <Navbar isHome={false} />
 
       <div className="my-40 px-10">
+        <div className="flex w-full justify-between flex-col md:flex-row">
+
         <SectionTitle align="left"
        
         breadcrumb={["home", "contact"]}
@@ -23,6 +25,7 @@ const Contact = () => {
 
         <div className="w-full md:w-1/2">
           <ContactForm />
+        </div>
         </div>
       </div>
       <div className="px-8 flex gap-7">
