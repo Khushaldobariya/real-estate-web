@@ -11,7 +11,7 @@ const Footer = () => {
   >
     <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
-        <h2 className="text-3xl md:text-5xl">Join Our Parivaar</h2>
+        <h2 className="text-3xl md:text-5xl font-medium">Join Our Parivaar</h2>
         <p className="mt-4 text-base md:text-lg text-gray-200 max-w-lg">
           Established in 1998, Ghar Ho Aisa is the first real estate company
           to have a registered brand. The company is currently developing
@@ -21,7 +21,7 @@ const Footer = () => {
         </p>
       </div>
       <div className="ml-auto">
-        <h2 className="text-3xl md:text-5xl tracking-normal ">Subscribe</h2>
+        <h2 className="text-3xl md:text-5xl tracking-normal font-medium">Subscribe</h2>
         <div className="mt-4 flex flex-col sm:flex-row gap-5">
           <div className="relative w-80  ">
 
@@ -32,7 +32,7 @@ const Footer = () => {
           />
           <div className="absolute top-1/2 -translate-y-1/2 right-4"><RightArrow /></div>
           </div>
-          <button className="bg-[#C69E58] px-6 py-3 border-2   font-semibold">
+          <button className="bg-[#C69E58] px-6 py-3 border-2   ">
             SUBSCRIBE
           </button>
         </div>
@@ -52,19 +52,19 @@ const Footer = () => {
             <img src="/assets/images/footerLogo.png" alt="Logo" className="w-32" />
           </div>
           <div>
-            <h3 className="text-xl font-semibold mt-6 text-[#ad3399]">Address:</h3>
-            <p className="mt-2 text-gray-700">{FooterData.address}</p>
+            <h3 className="  mt-6 text-[#ad3399] text-lg md:text-2xl font-medium">Address:</h3>
+            <p className="mt-2 text-gray-700 text-base md:text-xl font-medium">{FooterData.address}</p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold text-[#ad3399]">Contact:</h3>
-            <p className="mt-2 text-gray-700">📞 {FooterData.contact.phone}</p>
+            <h3 className="text-lg md:text-2xl font-medium  text-[#ad3399]">Contact:</h3>
+            <p className="mt-2 text-gray-700 text-base md:text-xl font-medium">📞 {FooterData.contact.phone}</p>
             <p>✉️ {FooterData.contact.email}</p>
           </div>
         </div>
 
         <div className="w-full md:w-1/2 flex flex-wrap gap-6 md:gap-10 justify-start md:justify-end">
           <div>
-            <h3 className="text-xl font-semibold text-[#ad3399]">Company</h3>
+            <h3 className="text-lg md:text-2xl  text-[#ad3399] ">Company</h3>
             <ul className="mt-2 space-y-2 text-gray-700">
               {FooterData.companyLinks.map((link, index) => (
                 <li key={index} className="hover:text-[#ad3399] cursor-pointer">
@@ -74,7 +74,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-semibold text-[#ad3399]">Social</h3>
+            <h3 className="  text-[#ad3399] text-lg md:text-2xl">Social</h3>
             <ul className="mt-2 space-y-2 text-gray-700">
               {FooterData.socialLinks.map((social, index) => (
                 <li key={index} className="hover:text-purple-500 cursor-pointer">

@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/pagination";
+// import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Testimonials } from "../utils/consents.ts";
 
@@ -11,14 +11,14 @@ const TestimonialSlider = () => {
   return (
 
 
-  <section className="px-10 relative overflow-x-hidden ">
+  <section className="px-8 md:px-10  relative overflow-x-hidden  ">
   <div className="mx-auto">
-    <h2 className="text-lg md:text-5xl text-gray-900">
+    <h2 className="text-lg md:text-5xl font-medium text-gray-900">
       Hear from our <br /> <span className="text-[#905c87]">Customers</span>
-    </h2>
+    </h2> 
   </div>
 
-  <div className="mt-6 ">
+  <div className="mt-6 mx-auto my-12 ">
     <Swiper
       modules={[Navigation, Pagination, Autoplay]}
       spaceBetween={20}
@@ -38,8 +38,8 @@ const TestimonialSlider = () => {
     >
       {Testimonials.map((item, index) => (
         <SwiperSlide key={index}>
-          <div className={`p-5 border-2 md:w-[430px] md:h-[330px] rounded-md ${index % 2 === 1 ? "bg-[#f5efe1] border-[#905c87]" : "bg-pink-100 border-[#905c87]"} relative`}>
-            <h3 className="text-lg font-semibold">{item.name}</h3>
+          <div className={`p-5 border-2  md:w-[460px] md:h-[330px] rounded-md ${index % 2 === 1 ? "bg-[#f5efe1] border-[#905c87]" : "bg-pink-100 border-[#905c87]"} relative`}>
+            <h3 className="text-lg ">{item.name}</h3>
             <p className="text-base">{item.role}</p>
             <p className="mt-8 text-lg">{item.review}</p>
             <p className="mt-2 text-sm text-gray-500">{item.date}</p>
@@ -52,13 +52,16 @@ const TestimonialSlider = () => {
             )}
           </div>
         </SwiperSlide>
+     
       ))}
     </Swiper>
 
-    {/* Custom Pagination Container */}
-    <div className="custom-pagination absolute right-4 bottom-4 flex flex-col items-end gap-2"></div>
+
+    <div className="pr-10  custom-pagination absolute right-4 bottom-4 flex flex-col items-end gap-2"></div>
   </div>
 </section>
+
+
   )
   
 }

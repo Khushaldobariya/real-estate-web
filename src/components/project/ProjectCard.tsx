@@ -31,7 +31,7 @@ const ProjectCard = ({projectInfo ,index}:Props) => {
 
   {/* Content Section */}
   <div className="w-full md:w-1/2 flex flex-col justify-center p-6 bg-white">
-    <h3 className="text-base md:text-xl font-semibold">{projectInfo.title}</h3>
+    <h3 className="text-base md:text-xl font-medium">{projectInfo.title}</h3>
 
     <div className="border-t-2 border-black w-48 mt-2">
       <div className="mt-2">

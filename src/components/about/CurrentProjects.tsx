@@ -12,7 +12,7 @@ const CurrentProjects = () => {
        
         <div className="md:w-1/4 space-y-6 text-center md:text-left flex  flex-col justify-center">
             <div className="space-y-4 ">
-                <h2 className="font-semibold text-lg md:text-xl">Current Projects</h2>
+                <h2 className="font-medium text-lg md:text-xl">Current Projects</h2>
                 <p className="text-sm md:text-base">
                     Explore our wide range of residential and commercial properties and discover your perfect home.
                 </p>
@@ -55,7 +55,7 @@ export default CurrentProjects
 {/* <section className="py-16">
     <div className="flex px-16 mx-auto  ">
         <div className="w-1/4 space-y-6">
-        <div className="space-y-6"><h2 className="font-semibold text-md md:text-xl ">Current Projects</h2>
+        <div className="space-y-6"><h2 className=" text-md md:text-xl ">Current Projects</h2>
         <p>Explore our wide range of residential and commercial properties and discover your perfect home.</p></div>
         <button className="w-56 h-12 bg-[#a1228b] text-white hover:border hover:border-[#a1228b] transition-all ease-in-out delay-150">View All Project</button>
         </div>

@@ -33,7 +33,7 @@ const Innovations = () => {
       videoSrc="/path-to-thumbnail.jpg"
     />
     <div className="text-center py-10">
-      <h2 className="text-2xl font-semibold">Get Social</h2>
+      <h2 className="text-2xl font-medium">Get Social</h2>
       <p className="text-gray-600">Join us on Instagram, Facebook & Youtube</p>
       <div className="flex flex-wrap justify-center gap-6 mt-6">
         {SocialMediaData.map((item, index) => (

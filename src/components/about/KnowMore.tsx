@@ -18,7 +18,7 @@ const KnowMore = () => {
       <div className="w-full md:w-1/2 p-4 md:p-6 lg:p-8 flex flex-col justify-between">
         <div className="space-y-2 md:space-y-4">
           <p className="text-sm md:text-base">5 mins</p>
-          <p className="text-lg md:text-xl font-semibold">Video Title</p>
+          <p className="text-lg md:text-xl font-medium">Video Title</p>
           <p className="text-sm md:text-base text-gray-700">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Suspendisse varius enim in eros.

@@ -33,7 +33,7 @@ const GrowthPartnerCard = ({
       
       {/* Content Section */}
       <div className="w-full md:w-1/2 p-6 text-center md:text-left">
-        <h3 className="text-sm text-[#c69f58] font-semibold">{subtitle}</h3>
+        <h3 className="text-sm text-[#c69f58] font-medium ">{subtitle}</h3>
         <h2 className="text-2xl font-bold text-gray-800 mt-1">{title}</h2>
         <p className="text-gray-600 mt-3">{description}</p>
         <ul className="mt-4 space-y-2 text-gray-700">

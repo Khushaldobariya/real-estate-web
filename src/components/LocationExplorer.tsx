@@ -6,7 +6,7 @@ const LocationExplorer = () => {
     <div className="bg-purple-100 py-10 text-center">
     <h2 className="text-2xl  text-gray-800 flex justify-center items-center">
       <span className="flex-1 border-t border-gray-500 mx-4"></span>
-      <p className=" text-lg md:text-5xl">
+      <p className=" text-lg md:text-5xl font-medium">
 
       Explore Projects in your desired locations
       </p>

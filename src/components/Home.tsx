@@ -17,6 +17,8 @@ const Home = () => {
     <>
     <div className="space-y-16">
      <Banner />
+     <div className="container  mx-auto space-y-16">
+
  <JourneySection />
  <ExpertiseSection />
  <SwiperSidlerImage />
@@ -26,6 +28,7 @@ const Home = () => {
  <Gallery />
  <Partner />  
  <Blog news={News_Blog}  />
+     </div>
     </div>
  </>
   )

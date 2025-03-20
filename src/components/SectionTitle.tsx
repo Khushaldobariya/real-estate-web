@@ -30,7 +30,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
           ))}
         </Breadcrumbs>
       )}
-      <h1 className="text-3xl font-semibold mt-2 space-x-3">
+      <h1 className="text-3xl font-medium mt-2 space-x-3">
         <span className="text-black">{title}</span>
         <span className="text-[#905c87] pr-4">{title1}</span>
       </h1>

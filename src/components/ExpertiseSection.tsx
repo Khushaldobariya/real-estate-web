@@ -3,14 +3,14 @@ import React from 'react'
 const ExpertiseSection = () => {
   return (
     
-<div className="bg-pink-100  flex flex-col items-center p-10">
+<div className="bg-pink-100  flex flex-col items-center p-8 md:p-10">
       <div className=" w-full flex justify-center  flex-col md:flex-row  items-center">
-        <div className="w-4/5">
+        <div className="w-full md:w-4/5 ">
 
-        <h2 className="  text-xl md:text-4xl font-semibold text-center text-gray-800 mb-4">Expertise</h2>
+        <h2 className="  text-xl md:text-4xl  text-center text-gray-800 mb-4 font-medium">Expertise</h2>
         </div>
         <div className='h-3/5 '>
-<div className="w-4/5 ml-auto">
+<div className=" md:w-4/5 ml-auto">
 
         <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
           Established in 1998, Rashmi Group has built a Legacy of Excellence in the Real
