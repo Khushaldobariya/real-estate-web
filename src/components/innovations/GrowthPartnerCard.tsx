@@ -1,4 +1,5 @@
 import React from 'react'
+import { InnovationsIcon } from '../../utils/icons.tsx';
 
 
 type Props = {
@@ -16,7 +17,7 @@ const GrowthPartnerCard = ({
     videoSrc,
   }:Props) => {
   return (
-    <div className="flex flex-col md:flex-row items-center p-6 bg-white  rounded-2xl">
+    <div className="flex flex-col md:flex-row items-center  bg-white  rounded-2xl">
       {/* Video Section */}
       <div className="relative w-full md:w-1/2">
         <img
@@ -32,14 +33,14 @@ const GrowthPartnerCard = ({
       </div>
       
       {/* Content Section */}
-      <div className="w-full md:w-1/2 p-6 text-center md:text-left">
+      <div className="w-full md:w-1/2 p-6 flex flex-col items-end text-center md:text-left">
         <h3 className="text-sm text-[#c69f58] font-medium ">{subtitle}</h3>
-        <h2 className="text-2xl font-bold text-gray-800 mt-1">{title}</h2>
-        <p className="text-gray-600 mt-3">{description}</p>
+        <h2 className="text-2xl font-bold text-gray-800 mt-1 ">{title}</h2>
+        <p className="text-gray-600 mt-3 text-end">{description}</p>
         <ul className="mt-4 space-y-2 text-gray-700">
           {highlights.map((highlight, index) => (
-            <li key={index} className="flex items-center gap-2">
-              <span className="text-xl">⚫</span>
+            <li key={index} className="flex flex-row-reverse items-center gap-2">
+              <span className="text-xl"><InnovationsIcon /></span>
               {highlight}
             </li>
           ))}
