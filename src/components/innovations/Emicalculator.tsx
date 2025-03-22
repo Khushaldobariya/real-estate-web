@@ -16,7 +16,6 @@ const EmiCalculator: React.FC = () => {
   const [principalPercentage, setPrincipalPercentage] = useState<number>(0);
   const [interestPercentage, setInterestPercentage] = useState<number>(0);
 
-
   useEffect(() => {
     const loanAmount = flatCost - downPayment;
     const monthlyInterestRate = interestRate / 12 / 100;
@@ -55,7 +54,7 @@ const EmiCalculator: React.FC = () => {
     ],
   };
 
-  // Format currency to Indian format
+
   const formatCurrency = (amount: number) =>
     new Intl.NumberFormat("en-IN", {
       style: "currency",
@@ -63,28 +62,55 @@ const EmiCalculator: React.FC = () => {
       maximumFractionDigits: 0,
     }).format(amount);
 
+    const getSliderStyles = (Cost: number) => ({
+        "& .MuiSlider-thumb": {
+          backgroundColor: Cost ? "#ce89c4" : "#d9d9d9",
+          border: "#9a2787", 
+            
+          width: 16,
+          height: 16,
+          boxShadow: "none",
+   
+        },
+        "& .MuiSlider-track": {
+          backgroundColor: Cost ? "#9e2487" : "#d9d9d9",
+          border: "none",
+        },
+        "& .MuiSlider-rail": {
+          backgroundColor: "#d9d9d9",
+          border: "#9a2787",
+        },
+        height: "10px",
+      });
+
   return (
     <div className="px-6 mx-auto py-6 space-y-10">
-   <h3 className="text-center text-lg md:text-5xl font-medium">EMI Calculator</h3>
+      <h3 className="text-center text-lg md:text-5xl font-medium">
+        EMI Calculator
+      </h3>
 
-<div className="border-b border-black/40 flex">
-  <button
-    className={`text-base flex items-center justify-center rounded-l-md w-1/2 md:w-[140px] h-[48px] ${
-      activeButton === "home" ? "bg-[#C69E58] text-white" : "bg-white border-black/40 border"
-    }`}
-    onClick={() => setActiveButton("home")}
-  >
-    Home Loan
-  </button>
-  <button
-    className={`text-base flex items-center justify-center rounded-r-md w-1/2 md:w-[140px] h-[48px] ${
-      activeButton === "adp" ? "bg-[#C69E58] text-white" : "bg-white border-black/40 border"
-    }`}
-    onClick={() => setActiveButton("adp")}
-  >
-    ADP
-  </button>
-</div>
+      <div className="border-b border-black/40 flex">
+        <button
+          className={`text-base flex items-center justify-center rounded-l-md w-1/2 md:w-[140px] h-[48px] ${
+            activeButton === "home"
+              ? "bg-[#C69E58] text-white"
+              : "bg-white border-black/40 border"
+          }`}
+          onClick={() => setActiveButton("home")}
+        >
+          Home Loan
+        </button>
+        <button
+          className={`text-base flex items-center justify-center rounded-r-md w-1/2 md:w-[140px] h-[48px] ${
+            activeButton === "adp"
+              ? "bg-[#C69E58] text-white"
+              : "bg-white border-black/40 border"
+          }`}
+          onClick={() => setActiveButton("adp")}
+        >
+          ADP
+        </button>
+      </div>
 
       <div className="flex flex-col md:flex-row gap-24">
         <div className="w-full md:w-1/2 space-y-6">
@@ -104,9 +130,7 @@ const EmiCalculator: React.FC = () => {
               onChange={(e, value) => setFlatCost(value as number)}
               min={100000}
               max={10000000}
-              sx={{
-                color: "#9e2487",
-              }}
+              sx={getSliderStyles(flatCost)}
               valueLabelDisplay="auto"
             />
             <div className="flex justify-between text-black/40">
@@ -130,9 +154,7 @@ const EmiCalculator: React.FC = () => {
               value={downPayment}
               onChange={(e, value) => setDownPayment(value as number)}
               min={100000}
-              sx={{
-                color: "#9e2487",
-              }}
+              sx={getSliderStyles(flatCost)}
               max={flatCost}
               valueLabelDisplay="auto"
             />
@@ -161,9 +183,7 @@ const EmiCalculator: React.FC = () => {
                   min={0.5}
                   max={15}
                   step={0.1}
-                  sx={{
-                    color: "#9e2487",
-                  }}
+                  sx={getSliderStyles(interestRate)}
                   valueLabelDisplay="auto"
                 />
                 <div className="flex justify-between text-black/40">
@@ -188,9 +208,7 @@ const EmiCalculator: React.FC = () => {
                   value={tenure}
                   onChange={(e, value) => setTenure(value as number)}
                   min={1}
-                  sx={{
-                    color: "#9e2487",
-                  }}
+                  sx={getSliderStyles(tenure)}
                   max={30}
                   valueLabelDisplay="auto"
                 />
@@ -203,33 +221,39 @@ const EmiCalculator: React.FC = () => {
           </div>
         </div>
 
-        {/* Output Section */}
-        <div className="w-full md:w-1/2 flex flex-col md:flex-row justify-between  items-center  gap-6">
-          {/* EMI Details */}
-          <div className="text-center space-y-10">
+        <div className="w-full md:w-1/2 flex flex-col md:flex-row justify-around  items-center  gap-6">
+       
+          <div className="text-center space-y-16">
             <div>
-              <h3 className="text-sm font-medium ">Loan EMI</h3>
-              <p className="text-2xl font-bold">{formatCurrency(emi)}</p>
+              <h3 className="text-sm md:text-base font-medium  text-black/40">
+                Loan EMI
+              </h3>
+              <p className="text-xl font-medium md:text-2xl">
+                {formatCurrency(emi)}
+              </p>
             </div>
             <div>
-              <h3 className="text-sm font-medium">Total Payment</h3>
-              <p className="text-2xl font-bold">
+              <h3 className="text-sm md:text-base font-medium text-black/40">
+                Total Payment
+                <br />
+                (Principal + Interest)
+              </h3>
+              <p className="text-xl font-medium md:text-2xl">
                 {formatCurrency(totalPayment)}
               </p>
             </div>
             <div>
-              <h3 className="text-sm font-medium">Interest Given</h3>
-              <p className="text-2xl font-bold">
+              <h3 className="text-sm md:text-base font-medium text-black/40">
+                Interest Given
+              </h3>
+              <p className="text-xl font-medium md:text-2xl">
                 {formatCurrency(totalInterest)}
               </p>
             </div>
           </div>
           <div>
-          <Pie data={pieData} />
-            
+            <Pie data={pieData} />
           </div>
-
-
         </div>
       </div>
     </div>
