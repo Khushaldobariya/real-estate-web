@@ -5,7 +5,8 @@ import InnovationCard from "./InnovationCard.tsx";
 import { InnovationsData, SocialMediaData } from "../../utils/consents.ts";
 import GrowthPartnerCard from "./GrowthPartnerCard.tsx";
 import SocialMediaCard from "./SocialMediaCard.tsx";
-import Emicalculator from "./Emicalculator.tsx";
+
+import Calculator from "./Calculator.tsx";
 
 const Innovations = () => {
   return (
@@ -27,7 +28,7 @@ const Innovations = () => {
           </div>
         </div>
           <div>
-            <Emicalculator />
+            <Calculator />
           </div>
 
           <GrowthPartnerCard

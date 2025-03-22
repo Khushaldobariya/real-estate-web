@@ -8,7 +8,7 @@ const EmiCalculator: React.FC = () => {
   const [downPayment, setDownPayment] = useState<number>(500000);
   const [interestRate, setInterestRate] = useState<number>(8.75);
   const [tenure, setTenure] = useState<number>(12);
-  const [activeButton, setActiveButton] = useState<string>("home");
+
 
   const [emi, setEmi] = useState<number>(0);
   const [totalPayment, setTotalPayment] = useState<number>(0);
@@ -84,33 +84,8 @@ const EmiCalculator: React.FC = () => {
       });
 
   return (
-    <div className="px-6 mx-auto py-6 space-y-10">
-      <h3 className="text-center text-lg md:text-5xl font-medium">
-        EMI Calculator
-      </h3>
-
-      <div className="border-b border-black/40 flex">
-        <button
-          className={`text-base flex items-center justify-center rounded-l-md w-1/2 md:w-[140px] h-[48px] ${
-            activeButton === "home"
-              ? "bg-[#C69E58] text-white"
-              : "bg-white border-black/40 border"
-          }`}
-          onClick={() => setActiveButton("home")}
-        >
-          Home Loan
-        </button>
-        <button
-          className={`text-base flex items-center justify-center rounded-r-md w-1/2 md:w-[140px] h-[48px] ${
-            activeButton === "adp"
-              ? "bg-[#C69E58] text-white"
-              : "bg-white border-black/40 border"
-          }`}
-          onClick={() => setActiveButton("adp")}
-        >
-          ADP
-        </button>
-      </div>
+  
+     
 
       <div className="flex flex-col md:flex-row gap-24">
         <div className="w-full md:w-1/2 space-y-6">
@@ -256,7 +231,7 @@ const EmiCalculator: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 };
 
