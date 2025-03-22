@@ -45,7 +45,7 @@ const SwiperSliderImage: React.FC = () => {
       >
         {Home_Images_SLider.map((src, index) => (
           <SwiperSlide key={index}>
-            <img src={src} alt={`Slide ${index + 1}`} className="w-full h-[900px] object-cover" />
+            <img src={src} alt={`Slide ${index + 1}`} className="w-full h-[650px] object-cover" />
           </SwiperSlide>
         ))}
       </Swiper>

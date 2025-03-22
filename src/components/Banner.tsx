@@ -12,13 +12,13 @@ import MobileSearchBar from "./searchBar/MobileSearchBar.tsx";
 
 const Banner = () => {
   return (
-    <div className="relative w-full">
-      {/* Navbar */}
+    <div className="relative w-full h-[797px]">
+
       <div className="absolute top-0 left-0 w-full z-50">
         <Navbar isHome={true} />
       </div>
 
-      {/* Swiper Slider */}
+
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
@@ -31,7 +31,7 @@ const Banner = () => {
         className="w-full h-screen"
       >
         {/* YouTube Video Slide */}
-        <SwiperSlide className="relative w-full h-screen">
+        <SwiperSlide className="relative w-full h-full ">
           <div className="w-full h-full relative">
             <iframe
               className="absolute top-0 left-0 w-full h-full"
@@ -45,7 +45,7 @@ const Banner = () => {
           </div>
         </SwiperSlide>
 
-        {/* MP4 Video Slide */}
+    
         <SwiperSlide className="relative w-full h-screen">
           <video
             playsInline
@@ -57,7 +57,7 @@ const Banner = () => {
           />
         </SwiperSlide>
 
-        {/* Image Slide */}
+
         <SwiperSlide className="relative w-full h-screen">
           <img
             src="/assets/images/img1.jpg"
@@ -67,10 +67,10 @@ const Banner = () => {
         </SwiperSlide>
       </Swiper>
 
-      {/* Search Bar */}
+    
       <div
         className="absolute w-full p-4 z-10 
-                top-24 left-1/2 -translate-x-1/2 
+                top-28 left-1/2 -translate-x-1/2 
                 md:left-auto md:-bottom-16 md:top-auto md:translate-x-0"
       >
         <MobileSearchBar />

@@ -13,9 +13,9 @@ const TestimonialSlider = () => {
 
   <section className="px-8 md:px-10  relative overflow-x-hidden  ">
   <div className="mx-auto">
-    <h2 className="text-lg md:text-5xl font-medium text-gray-900">
-      Hear from our <br /> <span className="text-[#905c87]">Customers</span>
-    </h2> 
+  <h2 className="text-lg md:text-5xl font-medium text-gray-900 leading-loose md:leading-snug">
+  Hear from our <br /> <span className="text-[#905c87]">Customers</span>
+</h2>
   </div>
 
   <div className="mt-6 mx-auto my-12 ">
@@ -38,7 +38,7 @@ const TestimonialSlider = () => {
     >
       {Testimonials.map((item, index) => (
         <SwiperSlide key={index}>
-          <div className={`p-5 border-2  md:w-[460px] md:h-[330px] rounded-md ${index % 2 === 1 ? "bg-[#f5efe1] border-[#905c87]" : "bg-pink-100 border-[#905c87]"} relative`}>
+          <div className={`p-5 border-2 sm:h-[290px] md:w-[460px] md:h-[330px] rounded-md ${index % 2 === 1 ? "bg-[#f5efe1] border-[#905c87]" : "bg-pink-100 border-[#905c87]"} relative`}>
             <h3 className="text-lg ">{item.name}</h3>
             <p className="text-base">{item.role}</p>
             <p className="mt-8 text-lg">{item.review}</p>

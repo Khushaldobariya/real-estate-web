@@ -17,7 +17,7 @@ const GrowthPartnerCard = ({
     videoSrc,
   }:Props) => {
   return (
-    <div className="flex flex-col md:flex-row items-center  bg-white  rounded-2xl">
+    <div className="flex flex-col md:flex-row items-center  bg-white  rounded-2xl px-6">
       {/* Video Section */}
       <div className="relative w-full md:w-1/2">
         <img

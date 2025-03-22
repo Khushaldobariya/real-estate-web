@@ -3,7 +3,7 @@ import { StatsData } from '../utils/consents.ts'
 
 const JourneySection = () => {
   return (
-    <div className=" mt-24 md:mt-28 px-8 md:px-10 relative flex flex-col md:flex-row justify-between items-center">
+    <div className="container mt-24 md:mt-28 px-8 md:px-10 relative flex flex-col md:flex-row justify-between items-center">
     <div className="max-w-3xl md:max-w-5xl  ">
       <h2 className="text-3xl md:text-6xl font-medium mb-4">
         Our Journey Towards{" "}
@@ -25,7 +25,7 @@ const JourneySection = () => {
     {/* House Shape Image */}
     <div className="relative hidden md:block">
       <div className="w-48 h-48 md:w-80 mx-auto md:h-[450px] bg-cover bg-center">
-        <img src="/assets/images/home.gif" className="h-full w-full object-cover " />
+        <img src="/assets/images/gallery/home.gif" className="h-full w-full object-cover " />
       </div>
     </div>
   </div>

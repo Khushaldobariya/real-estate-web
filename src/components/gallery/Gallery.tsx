@@ -14,7 +14,7 @@ import { MoveLeft, MoveRight } from "lucide-react";
 const Gallery = () => {
   return (
    
-    <div className="px-10 mx-auto text-center" id="gallery">
+    <div className=" md:px-5 mx-auto text-center" id="gallery">
     <h2 className="text-3xl  mb-5 font-medium">Gallery</h2>
 
     <Swiper
@@ -34,7 +34,7 @@ const Gallery = () => {
       pagination={{ clickable: true }}
       modules={[EffectCoverflow, Pagination]}
       breakpoints={{
-        640: { slidesPerView: 1 },
+        640: { slidesPerView: 2 },
         768: { slidesPerView: 3 },
         1024: { slidesPerView: 3 },
         1280: { slidesPerView: 3 },
