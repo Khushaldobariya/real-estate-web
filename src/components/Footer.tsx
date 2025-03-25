@@ -119,7 +119,7 @@ const Footer = () => {
   // >
   //   <div className="container mx-auto px-4 md:px-8 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-8">
   //     <div>
-  //       <h2 className="text-2xl sm:text-3xl md:text-4xl  font-medium">
+  //       <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl   font-medium">
   //         Join Our Parivaar
   //       </h2>
   //       <p className="mt-4 text-sm md:text-base lg:text-lg text-gray-200 max-w-lg">
@@ -132,7 +132,7 @@ const Footer = () => {
   //     </div>
       
   //     <div className="md:ml-auto">
-  //       <h2 className="text-2xl sm:text-3xl md:text-4xl  tracking-normal font-medium">
+  //       <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl   tracking-normal font-medium">
   //         Subscribe
   //       </h2>
   //       <div className="mt-4 flex flex-col sm:flex-row gap-4">
@@ -217,7 +217,7 @@ const Footer = () => {
   className="relative bg-cover bg-center bg-no-repeat text-white mt-12 pt-12"
   style={{ backgroundImage: "url('/assets/images/footer.png')" }}
 >
-  <div className="container mx-auto px-4 md:px-8 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div className="container mx-auto px-4 md:px-8 lg:px-10 grid grid-cols-1 md:grid-cols-2 gap-8">
     <div>
       <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium">
         Join Our Parivaar
@@ -250,7 +250,7 @@ const Footer = () => {
           SUBSCRIBE
         </button>
       </div>
-      <p className="mt-2 text-xs sm:text-sm md:text-base text-white max-w-xs">
+      <p className="mt-2 text-xs sm:text-sm md:text-base font-medium text-white max-w-xs tracking-wider">
         By subscribing you agree to our{" "}
         <a href="#" className="underline">
           Privacy Policy
@@ -290,7 +290,7 @@ const Footer = () => {
           <h3 className="text-base sm:text-lg md:text-xl text-[#ad3399]">
             Company
           </h3>
-          <ul className="mt-2 space-y-2 text-gray-700 text-xs sm:text-sm md:text-base">
+          <ul className="mt-2 space-y-2 text-gray-700 text-xs sm:text-sm md:text-base lg:text-lg">
             {FooterData.companyLinks.map((link, index) => (
               <li
                 key={index}
@@ -305,7 +305,7 @@ const Footer = () => {
           <h3 className="text-base sm:text-lg md:text-xl text-[#ad3399]">
             Social
           </h3>
-          <ul className="mt-2 space-y-2 text-gray-700 text-xs sm:text-sm md:text-base">
+          <ul className="mt-2 space-y-2 text-gray-700 text-xs sm:text-sm md:text-base lg:text-lg">
             {FooterData.socialLinks.map((social, index) => (
               <li
                 key={index}
@@ -320,7 +320,7 @@ const Footer = () => {
     </div>
 
     <hr className="border-t border-black/90 mt-5" />
-    <div className="mt-8 text-center text-xs sm:text-sm md:text-base text-gray-500">
+    <div className="mt-8 text-center text-xs sm:text-sm md:text-base text-black/60 tracking-wider">
       © 2023 All rights reserved.
     </div>
   </div>

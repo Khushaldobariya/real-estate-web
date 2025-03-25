@@ -61,12 +61,12 @@ const Gallery = () => {
   //     </button>
   //   </div>
   // </section>
-<section className="container px-4 md:px-6 lg:px-8 mx-auto text-center" id="gallery">
-  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wide mb-6 lg:mb-8">
+<section className="container  px-4 md:px-6 lg:px-8 mx-auto text-center" id="gallery">
+  <h2 className="text-2xl sm:text-3xl md:text-4xl  lg:text-5xl tracking-wide mb-6 lg:mb-8">
     Gallery
   </h2>
 
-  <div className="relative">
+  <div className="relative border border-black py-7">
     <Swiper
       effect="coverflow"
       grabCursor={true}
@@ -82,7 +82,7 @@ const Gallery = () => {
         slideShadows: false,
       }}
       pagination={{
-        clickable: true, // Enables pagination dots
+        clickable: true, 
       }}
       navigation={{
         nextEl: ".swiper-button-next",
@@ -108,8 +108,8 @@ const Gallery = () => {
       ))}
     </Swiper>
 
-    {/* Pagination Dots */}
-    <div className="swiper-pagination mt-6"></div>
+    <div className="pr-10 custom-pagination absolute right-4 bottom-4 flex flex-col items-end gap-2"></div>
+
 
     {/* Navigation Buttons */}
     <div className="flex justify-center items-center gap-6 mt-4">

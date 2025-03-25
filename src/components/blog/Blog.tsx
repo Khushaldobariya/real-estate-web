@@ -65,30 +65,31 @@ const Blog = ({news}:NewsSectionProps) => {
 
 //   </div>
 // </section>
+
 <section className="px-4 md:px-8 lg:px-16 xl:px-20 container mx-auto">
-  <h2 className="text-2xl sm:text-3xl md:text-4xl   text-gray-800 mb-6 sm:mb-8 text-center md:text-left">
+  <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-800 mb-8 sm:mb-10 text-center md:text-left">
     Our Latest <span className="text-[#905c87]">News</span>
   </h2>
 
-  <div className="grid lg:grid-cols-2 gap-6 lg:gap-10">
+  <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
     {/* Main News Item */}
-    <div className="lg:col-span-1">
-    <div className="relative overflow-hidden">
-  <img
-    src={news[0].image}
-    alt={news[0].title}
-    className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] object-cover transition-transform duration-500 ease-out hover:scale-110"
-  />
-</div>
-      <div className="w-full md:w-4/5 space-y-2 sm:space-y-3 pt-4">
-        <p className="text-xs sm:text-sm text-gray-500">{news[0].time}</p>
-        <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-wrap">
+    <div className="lg:col-span-1 space-y-5">
+      <div className="relative overflow-hidden ">
+        <img
+          src={news[0].image}
+          alt={news[0].title}
+          className="w-full h-[250px] sm:h-[320px] md:h-[380px] lg:h-[450px] object-cover transition-transform duration-500 ease-out hover:scale-105"
+        />
+      </div>
+      <div className="w-full md:w-4/5 space-y-3 sm:space-y-4">
+        <p className="text-sm text-gray-500">{news[0].time}</p>
+        <h3 className="text-xl sm:text-2xl md:text-3xl  text-wrap">
           {news[0].title}
         </h3>
-        <p className="text-gray-700 text-sm sm:text-base">{news[0].description}</p>
+        <p className="text-gray-700 text-base sm:text-lg">{news[0].description}</p>
         <a
           href={news[0].link}
-          className="text-[#905c87] underline font-medium text-xs sm:text-sm md:text-base"
+          className="text-[#905c87] underline font-medium text-sm sm:text-base"
         >
           Read more →
         </a>
@@ -96,23 +97,23 @@ const Blog = ({news}:NewsSectionProps) => {
     </div>
 
     {/* Additional News Items */}
-    <div className="space-y-4 sm:space-y-6">
+    <div className="space-y-6 sm:space-y-8">
       {news.slice(1).map((item, index) => (
-        <div key={index} className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+        <div key={index} className="flex flex-col sm:flex-row gap-4 sm:gap-6">
           <img
             src={item.image}
             alt={item.title}
-            className="w-full sm:w-[160px] md:w-[200px] lg:w-[250px] h-[160px] md:h-[200px] lg:h-[250px] object-cover "
+            className="w-full sm:w-[180px] md:w-[220px] lg:w-[260px] h-[160px] md:h-[200px] lg:h-[240px] object-cover "
           />
-          <div className="space-y-2 sm:space-y-3">
-            <p className="text-xs sm:text-sm text-gray-500">{item.time}</p>
-            <h4 className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium">
+          <div className="space-y-3">
+            <p className="text-sm text-gray-500">{item.time}</p>
+            <h4 className="text-lg sm:text-xl md:text-2xl font-medium">
               {item.title}
             </h4>
-            <p className="text-gray-600 text-xs sm:text-sm">{item.description}</p>
+            <p className="text-gray-600 text-sm sm:text-base">{item.description}</p>
             <a
               href={item.link}
-              className="text-[#905c87]  font-medium text-xs sm:text-sm md:text-base"
+              className="text-[#905c87] font-medium text-sm sm:text-base"
             >
               Read more →
             </a>
@@ -124,7 +125,7 @@ const Blog = ({news}:NewsSectionProps) => {
 </section>
 
 
-  )
-}
 
+)
+}
 export default Blog

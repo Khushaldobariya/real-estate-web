@@ -63,7 +63,7 @@ const InnovationsSection = () => {
     //   </div>
 
     //   <div className="w-full md:w-1/2 flex flex-col justify-center gap-6 sm:gap-8 md:gap-10 mt-6 sm:mt-8 md:mt-0">
-    //     <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
+    //     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  font-semibold">
     //       Our <span className="text-[#aa1d88]">Innovations</span>
     //     </h2>
 
@@ -115,7 +115,7 @@ const InnovationsSection = () => {
 
   {/* Right Side - Content */}
   <div className="w-full md:w-1/2 flex flex-col justify-center gap-4  h-full">
-    <h2 className="text-2xl sm:text-3xl md:text-4xl tracking-wide  ">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  tracking-wide  ">
       Our <span className="text-[#a2218f]">Innovations</span>
     </h2>
 

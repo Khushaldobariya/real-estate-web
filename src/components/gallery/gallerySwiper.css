@@ -4,14 +4,7 @@
 }
 
 
-.slider-controler {
-  /* position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between; */
-  /* transform: translateY(-50%); */
-}
+
 
 .slider-arrow, .swiper-button-prev, .swiper-button-next {
   display: none !important;
@@ -34,12 +27,7 @@
 }
 
 
-  /* .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 0 !important;
-    left: 50% ;
-    width: 11% !important;
-    transform: translateX(-50%) !important
-  } */
+
 
 
 

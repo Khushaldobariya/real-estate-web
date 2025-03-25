@@ -13,7 +13,7 @@ const TestimonialSlider = () => {
     <section className="px-4 md:px-8 lg:px-12 relative overflow-x-hidden">
   <div className="container mx-auto">
     {/* Title */}
-    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium  tracking-wide text-gray-900 leading-loose md:leading-snug ">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl   font-medium  tracking-wide text-gray-900 leading-loose md:leading-snug ">
       Hear from our <br /> 
       <span className="text-[#905c87]">Customers</span>
     </h2>
@@ -40,10 +40,10 @@ const TestimonialSlider = () => {
         {Testimonials.map((item, index) => (
           <SwiperSlide key={index}>
             <div className={`p-5 border-2 sm:h-[290px] lg:w-[460px] lg:h-[330px] rounded-md ${index % 2 === 1 ? "bg-[#f5efe1] border-[#905c87]" : "bg-pink-100 border-[#905c87]"} relative`}>
-              <h3 className="text-lg sm:text-xl">{item.name}</h3>
-              <p className="text-base ">{item.role}</p>
+              <h3 className="text-lg sm:text-xl md:text-2xl">{item.name}</h3>
+              <p className="text-base text-black/60">{item.role}</p>
               <p className="mt-6 text-sm sm:text-base lg:text-lg">{item.review}</p>
-              <p className="mt-2 text-xs sm:text-sm text-gray-500">{item.date}</p>
+              <p className="mt-2 text-xs sm:text-base text-black/60">{item.date}</p>
               {item.rating && (
                 <div className="absolute top-3 right-4">
                   {"★".repeat(item.rating)}
