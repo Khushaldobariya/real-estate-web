@@ -66,20 +66,20 @@ const Blog = ({news}:NewsSectionProps) => {
 //   </div>
 // </section>
 <section className="px-4 md:px-8 lg:px-16 xl:px-20 container mx-auto">
-  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 mb-6 sm:mb-8 text-center md:text-left">
+  <h2 className="text-2xl sm:text-3xl md:text-4xl   text-gray-800 mb-6 sm:mb-8 text-center md:text-left">
     Our Latest <span className="text-[#905c87]">News</span>
   </h2>
 
   <div className="grid lg:grid-cols-2 gap-6 lg:gap-10">
     {/* Main News Item */}
     <div className="lg:col-span-1">
-      <div className="relative">
-        <img
-          src={news[0].image}
-          alt={news[0].title}
-          className="w-full h-[250px] hover:scale-125  sm:h-[300px] md:h-[350px] lg:h-[400px] object-cover "
-        />
-      </div>
+    <div className="relative overflow-hidden">
+  <img
+    src={news[0].image}
+    alt={news[0].title}
+    className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] object-cover transition-transform duration-500 ease-out hover:scale-110"
+  />
+</div>
       <div className="w-full md:w-4/5 space-y-2 sm:space-y-3 pt-4">
         <p className="text-xs sm:text-sm text-gray-500">{news[0].time}</p>
         <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-wrap">

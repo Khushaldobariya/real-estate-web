@@ -7,7 +7,7 @@ const JourneySection = () => {
     //   <div className="max-w-xl md:max-w-3xl lg:max-w-5xl  ">
     //     <h2 className="text-2xl md:text-3xl lg:text-6xl font-medium mb-4">
     //       Our Journey Towards{" "}
-    //       <span className="text-[#905c87]">Excellence!</span>
+    //       <span className="text-[#9e238d]">Excellence!</span>
     //     </h2>
     //     <p className="text-black mt-4 text-lg md:text-2xl  ">
     //       {" "}
@@ -44,12 +44,12 @@ const JourneySection = () => {
     //     </div>
     //   </div>
     // </section>
-    <section className="container mt-16 md:mt-24 lg:mt-28 px-6 md:px-8 lg:px-10 relative flex flex-col md:flex-row justify-between items-center">
+    <section className=" max-w-7xl lg:container mt-16 md:mt-24 lg:mt-28 px-6 md:px-8 lg:px-10 relative flex flex-col md:flex-row justify-between items-center">
   <div className="max-w-xl md:max-w-3xl lg:max-w-5xl">
-    <h2 className="text-2xl md:text-3xl lg:text-6xl font-medium mb-4">
-      Our Journey Towards <span className="text-[#905c87]">Excellence!</span>
+    <h2 className="text-2xl sm:text-3xl md:text-4xl  tracking-wide  mb-4">
+      Our Journey Towards <span className="text-[#9e238d]">Excellence!</span>
     </h2>
-    <p className="text-black mt-4 text-lg md:text-xl lg:text-2xl">
+    <p className="text-black mt-4 text-base md:text-lg lg:text-xl">
       Immensely grateful for the journey we've undertaken together,
       reaching this far with your unwavering support. Our story
       wouldn’t be complete without you. We consider ourselves blessed
@@ -58,10 +58,10 @@ const JourneySection = () => {
     </p>
 
     {/* Stats Section */}
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8 text-[#905c87] font-medium">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8 text-[#9e238d] font-medium">
       {StatsData.map((stat, index) => (
         <div key={index} className="flex flex-col items-center">
-          <span className={`text-[#905c87] font-medium text-2xl sm:text-3xl md:text-4xl lg:text-5xl`}>
+          <span className={`text-[#9e238d] font-medium text-2xl sm:text-3xl md:text-4xl`}>
             {stat.value}
           </span>
           <p className="text-black text-base md:text-lg lg:text-xl capitalize">

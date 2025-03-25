@@ -27,7 +27,7 @@ const Partner = () => {
 <section className="bg-[#ffe9fe] py-10 md:py-14">
   <div className="container mx-auto px-4 md:px-8 lg:px-16 space-y-8 md:space-y-11">
     {/* Title */}
-    <h2 className="text-center text-lg sm:text-2xl md:text-3xl lg:text-5xl uppercase font-medium">
+    <h2 className="text-center text-2xl sm:text-3xl md:text-4xl  uppercase font-medium">
       OUR BANKING <span className="text-[#905c87]">Partners</span>
     </h2>
 
@@ -44,7 +44,7 @@ const Partner = () => {
             draggable={false}
             src={item}
             key={index}
-            className="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] md:w-[120px] md:h-[120px] lg:w-[200px] lg:h-[200px] object-contain"
+            className="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] md:w-[120px] md:h-[120px] lg:w-[150px] lg:h-[150px] object-contain"
             alt={`Partner ${index}`}
           />
         ))}

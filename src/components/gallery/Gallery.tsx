@@ -62,7 +62,7 @@ const Gallery = () => {
   //   </div>
   // </section>
 <section className="container px-4 md:px-6 lg:px-8 mx-auto text-center" id="gallery">
-  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 lg:mb-8">
+  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wide mb-6 lg:mb-8">
     Gallery
   </h2>
 

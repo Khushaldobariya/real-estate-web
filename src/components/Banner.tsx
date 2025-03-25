@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import SearchBar from "./searchBar/SearchBar.tsx";
 import Navbar from "./Navbar.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,6 +10,9 @@ import "swiper/css/pagination";
 import MobileSearchBar from "./searchBar/MobileSearchBar.tsx";
 
 const Banner = () => {
+
+
+
   return (
     <section className="relative    w-full h-[450] lg:h-[797px]">
       <div className="absolute top-0 left-0 w-full z-50">
@@ -21,7 +24,7 @@ const Banner = () => {
           spaceBetween={0}
           slidesPerView={1}
           loop={true}
-          autoplay={{ delay: 22000, disableOnInteraction: false }}
+          autoplay={{ delay: 220000, disableOnInteraction: false }}
           effect="fade"
           pagination={{ clickable: true }}
           navigation={true}
@@ -29,17 +32,18 @@ const Banner = () => {
           className="w-full h-screen"
         >
           <SwiperSlide className="relative w-full h-full ">
-            <div className="w-full h-full relative">
-              <iframe
-                className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/0sDRF-hErHI?si=IqWMHiaubaK5SS1G&autoplay=1&controls=0&showinfo=0&modestbranding=1&rel=0&mute=1"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
-            </div>
+          <div className="absolute top-0 left-0 w-full h-full">
+          <iframe 
+    id="youtube-player"
+    className="absolute top-0 left-0 w-full h-full" 
+    src="https://www.youtube.com/embed/0sDRF-hErHI?si=IqWMHiaubaK5SS1G&autoplay=1&controls=0&showinfo=0&modestbranding=1&rel=0&mute=1&fs=1&playsinline=0" 
+    title="YouTube video player" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" 
+    referrerPolicy="strict-origin-when-cross-origin" 
+    allowFullScreen
+  ></iframe>
+    </div>
           </SwiperSlide>
 
           <SwiperSlide className="relative w-full h-screen">

@@ -26,7 +26,7 @@ const LocationExplorer = () => {
     {/* Heading with dividers */}
     <h2 className="text-gray-800 flex items-center justify-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold">
       <span className="hidden sm:block flex-1 border-t border-gray-500 mx-4"></span>
-      <p className="text-lg sm:text-2xl md:text-4xl lg:text-5xl font-medium">
+      <p className="text-2xl sm:text-3xl md:text-4xl font-medium">
         Explore Projects in Your Desired Locations
       </p>
       <span className="hidden sm:block flex-1 border-t border-gray-500 mx-4"></span>

@@ -37,7 +37,7 @@ const ExpertiseSection = () => {
     <div className="flex flex-col md:flex-row items-center">
       {/* Left Section */}
       <div className="w-full md:w-1/2 text-center md:text-left">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800 mb-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl tracking-wider text-gray-800 mb-4">
           Expertise
         </h2>
       </div>
