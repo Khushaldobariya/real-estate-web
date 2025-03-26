@@ -26,11 +26,11 @@ const Blog = ({news}:NewsSectionProps) => {
     
 
     <div className="lg:col-span-1">
-      <div className="relative">
+      <div className="relative overflow-hidden">
         <img
           src={news[0].image}
           alt={news[0].title}
-          className="w-full h-[300px] md:h-[400px] object-cover "
+          className="w-full h-[300px] md:h-[400px] object-cover hover:scale-125 transition-transform delay-200 "
         />
       </div>
       <div className="w-full  space-y-5 pt-4">
@@ -46,16 +46,20 @@ const Blog = ({news}:NewsSectionProps) => {
    
     <div className="space-y-6">
       {news.slice(1).map((item, index) => (
-        <div key={index} className="flex flex-col sm:flex-row gap-4">
+        <div key={index} className="flex flex-col sm:flex-row gap-8 pr-6">
+          
           <img
             src={item.image}
             alt={item.title}
-            className="w-full sm:w-[200px] md:w-[250px] h-[200px] md:h-[250px] object-cover "
+            className="w-full sm:w-[200px] md:w-[225px] h-[200px] md:h-[225px] object-cover "
           />
-          <div className="space-y-3">
+          <div className="space-y-4">
             <p className="text-sm ">{item.time}</p>
-            <h4 className="text-lg md:text-2xl ">{item.title}</h4>
+            <div>
+
+            <h4 className="text-lg md:text-2xl leading-10  ">{item.title}</h4>
             <p className=" text-sm md:text-base">{item.description}</p>
+            </div>
             <a href={news[0].link} className="flex items-center gap-4 underline font-medium text-sm md:text-base">
           Read more  <ChevronRight size={16} />
         </a>

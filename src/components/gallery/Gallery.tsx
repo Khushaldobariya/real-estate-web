@@ -66,7 +66,7 @@ const Gallery = () => {
     Gallery
   </h2>
 
-  <div className="relative border border-black py-7">
+  <div className="relative py-7">
     <Swiper
       effect="coverflow"
       grabCursor={true}

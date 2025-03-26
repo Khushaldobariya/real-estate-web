@@ -11,17 +11,17 @@ type FilterSelectProps = {
   
 const FilterSelect = ({ label, options, value, onChange ,isMobile }: FilterSelectProps) => {
   return (
-    <div className= {`flex flex-col ${isMobile ? "border  rounded-md" : "border-r"} border-transparent  px-2 md:px-6`}>
+    <div className= {`flex flex-col ${isMobile ? "border  rounded-md" : "border-r"} border-r border-black  px-2 md:px-6`}>
 
       
     <label className="text-sm font-medium text-gray-600">{label.toUpperCase()}</label>
     <select
-      className={ `  p-2 ${isMobile ? 'w-full' :"w-40"}`}
+      className={ ` text-base md:text-xl p-2 ${isMobile ? 'w-full' :"w-40"}`}
       value={value}
       onChange={(e) => onChange(e.target.value)}
     >
       {options.map((option, index) => (
-        <option key={index} value={option}>
+        <option key={index} value={option} >
           {option}
         </option>
       ))}

@@ -29,7 +29,7 @@ const SearchBar = () => {
 
     <div className="container mx-auto px-4">
   <div className="bg-transparent hidden md:block">
-    <div className="flex flex-wrap items-center justify-center gap-4 p-4 md:p-6 lg:p-8 bg-white  border border-black/40 ">
+    <div className="flex flex-wrap items-center justify-around gap-4 h-[120px] bg-white  border border-black/40 ">
       <FilterSelect
         label="Project Type"
         options={["Any", ...ProjectTypes]}
@@ -58,7 +58,7 @@ const SearchBar = () => {
         onChange={(value) => handleChange("location", value)}
         isMobile={false}
       />
-      <button className="px-4 md:px-6 py-2 text-sm md:text-base border border-black transition duration-300 hover:bg-black hover:text-white rounded">
+      <button className="px-4 md:px-6 py-5 text-sm md:text-base border border-black transition duration-300 hover:bg-black hover:text-white ">
         SEARCH PROJECTS
       </button>
     </div>
