@@ -4,34 +4,45 @@ import { motion } from "motion/react";
 
 const Partner = () => {
   return (
-//     <section className="bg-[#ffe9fe] py-14 space-y-11 ">
+    <section className="bg-[#ffe9fe] py-14 space-y-11 md:space-y-14 ">
 
 
-//       <h2 className="text-center  text-xl lg:text-5xl uppercase  font-medium">OUR BANKING <span className="text-[#905c87]">Partners</span></h2> 
+<div>
+      <h2 className="text-center  text-xl sm:text-2xl md:text-3xl  lg:text-5xl uppercase  font-medium">OUR BANKING <span className="text-[#9f238a]">Partners</span></h2> 
+
+</div>
 
 
-// <div className="w-full overflow-hidden flex items-center">
-//   <motion.div
-//     initial={{ x: 0 }}
-//     animate={{ x: "-50%" }}
-//     transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
-//     className="flex gap-7 md:gap-28 shrink-0"
-//   >
-//     {[...Partners_Bank, ...Partners_Bank ,...Partners_Bank].map((item, index) => (
-//       <img draggable={false} src={item} key={index}  className="w-[100px] h-[100px]  lg:h-[200px] lg:w-[200px] object-contain" alt={`Partner ${index}`} />
-//     ))}
-//   </motion.div>
-// </div>
+<div className="w-full overflow-hidden flex items-center">
+  <motion.div
+    initial={{ x: 0 }}
+    animate={{ x: "-50%" }}
+    transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+    className="flex gap-7 md:gap-28 shrink-0"
+  >
+    {[...Partners_Bank, ...Partners_Bank ,...Partners_Bank].map((item, index) => (
+      <img draggable={false} src={item} key={index}  className="w-[100px] h-[100px]  lg:h-[150px] lg:w-[150px] object-contain" alt={`Partner ${index}`} />
+    ))}
+  </motion.div>
+</div>
 
-//     </section>
-<section className="bg-[#ffe9fe] py-10 md:py-14">
+    </section>
+
+
+
+  );
+};
+
+export default Partner;
+
+{/* <section className="bg-[#ffe9fe] py-10 md:py-14">
   <div className="container mx-auto px-4 md:px-8 lg:px-16 space-y-8 md:space-y-11">
-    {/* Title */}
+   
     <h2 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl   uppercase font-medium">
       OUR BANKING <span className="text-[#905c87]">Partners</span>
     </h2>
 
-    {/* Scrolling Logos Container */}
+  
     <div className="w-full overflow-hidden flex items-center py-5 md:py-8 lg:py-10">
       <motion.div
         initial={{ x: 0 }}
@@ -51,10 +62,4 @@ const Partner = () => {
       </motion.div>
     </div>
   </div>
-</section>
-
-
-  );
-};
-
-export default Partner;
+</section> */}

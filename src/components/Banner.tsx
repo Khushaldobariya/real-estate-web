@@ -15,9 +15,9 @@ const Banner = () => {
 
   return (
     <section className="relative    w-full h-[450] lg:h-[797px]">
-      <div className="absolute top-0 left-0 w-full z-50">
+      {/* <div className="absolute top-0 left-0 w-full z-50">
         <Navbar isHome={true} />
-      </div>
+      </div> */}
 
       <div>
         <Swiper
