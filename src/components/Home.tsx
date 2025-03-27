@@ -14,7 +14,7 @@ import { News_Blog } from "../utils/consents.ts";
 const Home = () => {
   return (
     <>
-      <div className="space-y-24">
+      <div className="space-y-12 md:space-y-24">
         <Banner />
         <JourneySection />
         <ExpertiseSection />

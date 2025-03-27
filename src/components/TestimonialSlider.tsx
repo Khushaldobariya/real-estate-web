@@ -10,9 +10,9 @@ import { Testimonials } from "../utils/consents.ts";
 const TestimonialSlider = () => {
   return (
 
-    <section className="px-8 md:px-10  relative overflow-x-hidden  ">
+    <section className="px-4 md:px-10  relative overflow-x-hidden  ">
     <div className="mx-auto">
-    <h2 className="text-lg md:text-3xl lg:text-5xl font-medium text-gray-900 leading-[1.4] md:leading-[1.6] lg:leading-[74px]">
+    <h2 className="text-2xl sm:text-4xl md:text-3xl lg:text-5xl font-medium text-gray-900 leading-[1.4] md:leading-[1.6] lg:leading-[74px]">
   Hear from our <span className="block text-[#9f238a]">Customers</span>
 </h2>
     </div>

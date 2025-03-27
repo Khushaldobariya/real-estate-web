@@ -50,22 +50,23 @@ const SwiperSliderImage: React.FC = () => {
         ))}
       </Swiper>
 
-      <div className="justify-end mt-10 flex gap-4 z-10">
-        <button
-          ref={prevRef}
-          className="border rounded-full border-[#905c87] p-3 bg-white shadow-md"
-          onClick={() => swiperRef.current?.slidePrev()}
-        >
-          <MoveLeft className="text-[#905c87]" />
-        </button>
-        <button
-          ref={nextRef}
-          className="border rounded-full border-[#905c87] p-3 bg-white shadow-md"
-          onClick={() => swiperRef.current?.slideNext()}
-        >
-          <MoveRight className="text-[#905c87]" />
-        </button>
-      </div>
+      <div className="flex justify-end mt-6 md:mt-10 gap-3 md:gap-4 z-10">
+  <button
+    ref={prevRef}
+    className="border rounded-full border-[#905c87] p-2 md:p-3 lg:p-4 bg-white shadow-md hover:bg-[#f5e6f0] transition"
+    onClick={() => swiperRef.current?.slidePrev()}
+  >
+    <MoveLeft className="text-[#905c87] w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+  </button>
+  <button
+    ref={nextRef}
+    className="border rounded-full border-[#905c87] p-2 md:p-3 lg:p-4 bg-white shadow-md hover:bg-[#f5e6f0] transition"
+    onClick={() => swiperRef.current?.slideNext()}
+  >
+    <MoveRight className="text-[#905c87] w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+  </button>
+</div>
+
     </div>
   );
 };

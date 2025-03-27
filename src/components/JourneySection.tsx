@@ -47,9 +47,9 @@ const JourneySection = () => {
 
 
 
-    <section className="container mt-16 md:mt-24 lg:mt-28 px-6 md:px-8 lg:px-10 relative flex flex-col md:flex-row justify-between items-center gap-12 lg:gap-16">
+    <section className="container mt-16 md:mt-24 lg:mt-28 px-4 md:px-8 lg:px-10 relative flex flex-col md:flex-row justify-between items-center gap-12 lg:gap-16">
   <div className="max-w-xl md:max-w-3xl lg:max-w-5xl">
-    <h2 className="text-2xl md:text-3xl lg:text-6xl font-medium mb-8">
+    <h2 className="text-3xl sm:text-4xl text-center md:text-start md:text-5xl lg:text-6xl font-medium mb-8">
       Our Journey Towards{" "}
       <span className="text-[#9e238d]">Excellence!</span>
     </h2>
@@ -65,7 +65,7 @@ const JourneySection = () => {
   {StatsData.map((stat, index) => (
     <div className="flex flex-col items-center space-y-10" key={index}>
       <span
-        className={`${stat.size} text-[#9e238d] text-center font-medium sm:text-lg md:text-xl lg:text-[55px]`}
+        className={`text-3xl  lg:text-6xl text-[#9e238d] text-center font-medium sm:text-lg md:text-xl lg:text-[55px]`}
       >
         {stat.value}
       </span>
