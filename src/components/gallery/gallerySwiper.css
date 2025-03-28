@@ -29,6 +29,10 @@
 
 
 
+.swiper-slide-gallery img {
+  width: 800px !important;
+  height: 400px !important;
+  object-fit: cover; }
 
 
 @media (max-width: 990px) {

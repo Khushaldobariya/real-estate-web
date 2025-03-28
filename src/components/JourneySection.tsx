@@ -47,7 +47,7 @@ const JourneySection = () => {
 
 
 
-    <section className="container mt-16 md:mt-24 lg:mt-28 px-4 md:px-8 lg:px-10 relative flex flex-col md:flex-row justify-between items-center gap-12 lg:gap-16">
+    <section className="container mx-auto mt-16 md:mt-24 lg:mt-28 px-4 md:px-8 lg:px-10 relative flex flex-col md:flex-row justify-between items-center gap-6 md:gap-12 lg:gap-16">
   <div className="max-w-xl md:max-w-3xl lg:max-w-5xl">
     <h2 className="text-3xl sm:text-4xl text-center md:text-start md:text-5xl lg:text-6xl font-medium mb-8">
       Our Journey Towards{" "}
@@ -78,8 +78,8 @@ const JourneySection = () => {
   </div>
 
   {/* House Shape Image */}
-  <div className="relative hidden md:block">
-    <div className="w-48 h-48 md:w-60 lg:w-80 mx-auto md:h-[350px] lg:h-[450px] bg-cover bg-center">
+  <div className="relative">
+    <div className="w-56 h-64 md:w-60 lg:w-80 mx-auto md:h-[350px] lg:h-[450px] bg-cover bg-center">
       <img
         src="/assets/images/gallery/home.gif"
         className="h-full w-full object-cover"

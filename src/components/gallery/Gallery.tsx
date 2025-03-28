@@ -73,37 +73,134 @@ const Gallery = () => {
       centeredSlides={true}
       loop={true}
       slidesPerView={1}
-      spaceBetween={20}
-      coverflowEffect={{
-        rotate: 0,
-        stretch: 50,
-        depth: 100,
-        modifier: 1.5,
-        slideShadows: false,
-      }}
-      pagination={{
-        clickable: true, 
-      }}
-      navigation={{
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      }}
+      spaceBetween={-1245}       // Adjust to control peek amount
+    
+      // coverflowEffect={{
+      //   rotate: 0,            // No tilt (keep images flat)
+      //   stretch: -40,         // Negative = overlap slides (key for peek effect)
+      //   depth: 200,           // Depth of hidden slides (lower = subtler peek)
+      //   modifier: 2,          // Intensity (higher = more overlap)
+      //   slideShadows: false,  // Disable shadows for clean look
+      // }}
+      // breakpoints={{
+      //   320: { // Mobile
+      //     slidesPerView:1.5,
+      //     spaceBetween: -80,
+      //     coverflowEffect: { rotate: 0, depth: 50 }
+      //   },
+      //   425:{
+      //     slidesPerView:2.1,
+      //     spaceBetween: -100,
+      //     coverflowEffect: { rotate: 0, depth: 50 }
+      //   },
+      //   768: { 
+      //     slidesPerView:2.3,
+      //     spaceBetween: -380,
+      //     coverflowEffect: { rotate: 5, depth: 300 }
+      //   },
+      //   1024: { // Desktop
+      //     coverflowEffect: { rotate: 10, depth: 400 }
+      //   }
+      // }}
+
+      
+// spaceBetween={-300}  // Base value for large screens (matches your -1245 effect)
+
+coverflowEffect={{
+  rotate: 0,
+  stretch: -40,
+  depth: 200,
+  modifier: 2,
+  slideShadows: false,
+}}
+
+breakpoints={{
+  // Small mobile (under 400px)
+  320: {
+    slidesPerView:1.3,
+    spaceBetween: -80,
+    coverflowEffect: {
+      stretch: -20,
+      depth: 50,
+      modifier: 1
+    }
+  },
+  
+  // Larger mobile (400-640px)
+  400: {
+    spaceBetween: -120,
+    coverflowEffect: {
+      stretch: -25,
+      depth: 75,
+      modifier: 1.2
+    }
+  },
+  
+  // Small tablets (640-768px)
+  640: {
+    spaceBetween: -160,
+    coverflowEffect: {
+      stretch: -30,
+      depth: 100,
+      modifier: 1.5
+    }
+  },
+  
+  // Tablets (768-1024px)
+  768: {
+    spaceBetween: -200,
+    coverflowEffect: {
+      stretch: -35,
+      depth: 150,
+      modifier: 1.8
+    }
+  },
+  
+  // Small laptops (1024-1280px)
+  1024: {
+    spaceBetween: -950,
+    coverflowEffect: {
+      stretch: -38,
+      depth: 180,
+      modifier: 2
+    }
+  },
+  
+  // Large laptops/desktops (1280px+)
+  1280: {
+    
+    spaceBetween: -1245,
+    coverflowEffect: {
+      rotate: 0,            // No tilt (keep images flat)
+        stretch: 0,         // Negative = overlap slides (key for peek effect)
+        depth: 200,           // Depth of hidden slides (lower = subtler peek)
+        modifier: 2, 
+    }
+  },
+  
+  // Extra large screens (if needed)
+  1600: {
+    spaceBetween: -350,
+    coverflowEffect: {
+      rotate: 0,            // No tilt (keep images flat)
+        stretch: -40,         // Negative = overlap slides (key for peek effect)
+        depth: 200,           // Depth of hidden slides (lower = subtler peek)
+        modifier: 2, 
+    }
+  }
+}}
       modules={[EffectCoverflow, Pagination, Navigation]}
-      breakpoints={{
-        640: { slidesPerView: 2 },
-        768: { slidesPerView: 3 },
-        1024: { slidesPerView: 3 },
-        1280: { slidesPerView: 3 },
-      }}
-      className="swiper-container"
+    
+      
+      className=""
     >
       {[1, 2, 3, 4, 2, 3, 1].map((num, index) => (
-        <SwiperSlide key={index} className="relative">
-          <img
-            src={`/assets/images/gallery/gallery${num}.webp`}
-            alt={`Gallery ${num}`}
-            className="rounded-xl object-cover w-full max-w-[800px] h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px] mx-auto"
-          />
+        <SwiperSlide key={index} className="relative swiper-slide-gallery">
+         <img
+  src={`/assets/images/gallery/gallery${num}.webp`}
+  alt={`Gallery ${num}`}
+  className="rounded-xl object-cover w-[800px] h-[400px] mx-auto"
+/>
         </SwiperSlide>
       ))}
     </Swiper>

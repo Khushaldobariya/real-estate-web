@@ -6,10 +6,10 @@ const Footer = () => {
   return (
  
     <footer
-    className="relative bg-cover bg-center bg-no-repeat text-white mt-12 h-auto"
+    className=" relative bg-cover bg-center bg-no-repeat text-white mt-12 h-auto"
     style={{ backgroundImage: "url('/assets/images/footer.png')" }}
   >
-    <div className="container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-8 py-10 md:py-14 lg:py-20">
+    <div className=" px-4 sm:px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-8 py-10 md:py-14 lg:py-20">
       <div>
         <h2 className="text-3xl sm:text-3xl text-center md:text-start  lg:text-5xl font-medium mb-6 sm:mb-8">
           Join Our Parivaar
@@ -51,10 +51,12 @@ const Footer = () => {
     </div>
 
     <div className="bg-white text-gray-900 py-10 sm:py-12 rounded-t-[25px] md:rounded-t-[50px] px-4 sm:px-8 lg:px-12">
+      <div className="container mx-auto ">
+
       <div className="flex justify-center sm:justify-start">
         <img src="/assets/images/footerLogo.png" alt="Logo" className="w-40 sm:w-48" />
       </div>
-      <div className="container mx-auto flex flex-col md:flex-row gap-8 py-6 md:py-10">
+      <div className="flex flex-col md:flex-row gap-8 py-6 md:py-10">
         <div className="w-full md:w-1/2 space-y-6">
           <div>
             <h3 className="text-[#ad3399] text-xl sm:text-2xl font-medium">Address:</h3>
@@ -77,7 +79,7 @@ const Footer = () => {
             <h3 className="text-[#ad3399] text-xl sm:text-2xl font-medium">Company</h3>
             <ul className="mt-2 space-y-3 text-gray-700 text-sm sm:text-xl ">
               {FooterData.companyLinks.map((link, index) => (
-                <li key={index} className="hover:text-[#ad3399] cursor-pointer text-lg sm:text-xl  md:text-3xl">
+                <li key={index} className="hover:text-[#ad3399] cursor-pointer text-lg sm:text-xl ">
                   {link}
                 </li>
               ))}
@@ -87,7 +89,7 @@ const Footer = () => {
             <h3 className="text-[#ad3399] text-xl sm:text-2xl font-medium">Social</h3>
             <ul className="mt-2 space-y-3 text-gray-700 text-sm sm:text-xl">
               {FooterData.socialLinks.map((social, index) => (
-                <li key={index} className="hover:text-[#ad3399] cursor-pointer text-lg  sm:text-xl  md:text-3xl">
+                <li key={index} className="hover:text-[#ad3399] cursor-pointer text-lg  sm:text-xl  ">
                   <a href={social.url}>{social.name}</a>
                 </li>
               ))}
@@ -96,7 +98,8 @@ const Footer = () => {
         </div>
       </div>
       <hr className="border-t border-black/90 mt-5" />
-      <div className="mt-4 text-center text-sm sm:text-xl">© 2023 All rights reserved.</div>
+      <div className="mt-4  text-sm sm:text-xl">© 2023 All rights reserved.</div>
+      </div>
     </div>
   </footer>
 

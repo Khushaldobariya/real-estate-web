@@ -5,10 +5,10 @@ import { ChevronRight } from "lucide-react";
 
 const InnovationsSection = () => {
   return (
-    <section className="container   md:pr-14  flex flex-col gap-x-6  md:flex-row items-center">
+    <section className="container mx-auto  lg:pr-14  flex flex-col gap-x-6  md:flex-row items-center">
       <div className="w-full md:w-1/2 flex justify-center md:justify-end overflow-hidden ">
         <img
-          className="object-cover w-full h-[400px] lg:w-[616px] lg:h-[800px] "
+          className="object-cover w-full h-[400px] md:h-[550px] lg:w-[616px] lg:h-[800px] "
           src="/assets/images/innovations.webp"
           alt="Innovations"
           draggable="false"
@@ -16,7 +16,7 @@ const InnovationsSection = () => {
       </div>
 
       <div className="w-full px-4 md:px-0 md:pr-16 md:w-1/2 flex   justify-start flex-col gap-7 mt-10 md:mt-0">
-        <h2 className="text-3xl sm:text-4xl  md:text-5xl font-medium">
+        <h2 className="text-3xl sm:text-4xl  lg:text-5xl font-medium">
           Our <span className="text-[#aa1d88]">Innovations</span>
         </h2>
         <p className="text-base md:text-lg text-center  mx-auto text-wrap">
@@ -34,7 +34,7 @@ const InnovationsSection = () => {
               </div>
               <div className="space-y-5">
                 <div className="space-y-4">
-                  <h2 className="text-xl md:text-2xl text-gray-900">
+                  <h2 className="text-xl lg:text-2xl text-gray-900">
                     {service.title}
                   </h2>
                   <hr className="border border-black w-[125px]" />

@@ -18,7 +18,7 @@ type NewsSectionProps = {
 const Blog = ({news}:NewsSectionProps) => {
   return (
   
-    <section className="px-4 md:px-10 lg:px-16 mx-auto ">
+    <section className=" px-4 md:px-10 lg:px-12 mx-auto container">
   <h2 className=" text-3xl sm:text-4xl  lg:text-5xl font-medium text-gray-800 mb-8 text-center md:text-left md:font-medium">
     Our Latest <span className="text-[#9f238a]">News</span>
   </h2>
@@ -49,7 +49,7 @@ const Blog = ({news}:NewsSectionProps) => {
   {news.slice(1).map((item, index) => (
     <div
       key={index}
-      className="flex flex-col md:flex-row gap-6 md:gap-8 items-start"
+      className="flex flex-col md:flex-row gap-6 md:gap-8 items-start lg:items-center"
     >
       <img
         src={item.image}

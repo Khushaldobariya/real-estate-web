@@ -10,11 +10,8 @@ import "swiper/css/navigation";
 import MobileSearchBar from "./searchBar/MobileSearchBar.tsx";
 
 const Banner = () => {
-
-
-
   return (
-    <section className="relative    w-full h-[450] lg:h-[797px]">
+    <section className="relative w-full h-[450] lg:h-[797px]">
       <div className="absolute top-0 left-0 w-full z-50">
         <Navbar isHome={true} />
       </div>
@@ -32,18 +29,16 @@ const Banner = () => {
           className="w-full h-screen"
         >
           <SwiperSlide className="relative w-full h-full ">
-     <div className="fixed top-0 left-0 w-screen h-screen">
-  <iframe 
-    id="youtube-player"
-    className="absolute top-0 left-0 w-full h-full" 
-    src="https://www.youtube.com/embed/0sDRF-hErHI?autoplay=1&controls=0&showinfo=0&modestbranding=1&rel=0&mute=1&fs=1&playsinline=1" 
-    title="YouTube video player" 
-    frameBorder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" 
-    referrerPolicy="strict-origin-when-cross-origin" 
+           
+            <div className="relative w-full pb-[56.25%] h-0">
+  <iframe
+    className="absolute top-0 left-0 w-full h-full"
+    src="https://www.youtube.com/embed/0sDRF-hErHI?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0"
+    frameBorder="0"
+    allow="autoplay; encrypted-media"
     allowFullScreen
   ></iframe>
-</div>
+ </div>
           </SwiperSlide>
 
           <SwiperSlide className="relative w-full h-screen">
@@ -76,12 +71,12 @@ const Banner = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-            <div className="pr-10 custom-pagination absolute right-4 bottom-4 flex flex-col items-end gap-2"></div>
+        <div className="pr-10 custom-pagination absolute right-4 bottom-4 flex flex-col items-end gap-2"></div>
 
         <div
           className="absolute w-full p-4 z-10 
                 top-28 left-1/2 -translate-x-1/2 
-                md:left-auto md:-bottom-16 lg:-bottom-16D md:top-auto md:translate-x-0"
+                md:left-auto md:-bottom-20 lg:bottom-[1rem] xl:-bottom-20  md:top-auto md:translate-x-0"
         >
           <MobileSearchBar />
           <SearchBar />

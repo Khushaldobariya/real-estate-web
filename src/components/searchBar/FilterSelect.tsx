@@ -11,7 +11,7 @@ type FilterSelectProps = {
   
 const FilterSelect = ({ label, options, value, onChange ,isMobile }: FilterSelectProps) => {
   return (
-    <div className= {`flex flex-col ${isMobile ? "border  rounded-md" : "border-r"} border-r border-black  px-0 md:px-6`}>
+    <div className= {`flex flex-col ${isMobile ? "border  rounded-md" : "border-r"} border-r border-black  px-0 md:px-3 lg:px-6`}>
 
       
     <label className="text-sm font-medium text-gray-600">{label.toUpperCase()}</label>
