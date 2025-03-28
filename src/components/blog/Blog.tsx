@@ -44,29 +44,7 @@ const Blog = ({news}:NewsSectionProps) => {
     </div>
 
    
-    {/* <div className="space-y-6">
-      {news.slice(1).map((item, index) => (
-        <div key={index} className="flex flex-col sm:flex-row gap-8 pr-0 md:pr-6">
-          
-          <img
-            src={item.image}
-            alt={item.title}
-            className="w-full sm:w-[200px] md:w-[225px] h-[200px] md:h-[225px] object-cover "
-          />
-          <div className="space-y-4">
-            <p className="text-sm ">{item.time}</p>
-            <div>
-
-            <h4 className="text-2xl  md:text-2xl md:leading-10  leading-8 ">{item.title}</h4>
-            <p className=" text-sm md:text-base">{item.description}</p>
-            </div>
-            <a href={news[0].link} className="flex items-center gap-4 underline font-medium text-sm md:text-base">
-          Read more  <ChevronRight size={16} />
-        </a>
-          </div>
-        </div>
-      ))}
-    </div> */}
+ 
     <div className="space-y-6 px-4 md:px-6 lg:px-8">
   {news.slice(1).map((item, index) => (
     <div
@@ -81,10 +59,10 @@ const Blog = ({news}:NewsSectionProps) => {
       <div className="space-y-3">
         <p className="text-xs sm:text-sm text-gray-500">{item.time}</p>
         <div>
-          <h4 className="text-lg sm:text-xl md:text-2xl  leading-snug md:leading-tight">
+          <h4 className="text-xl sm:text-2xl md:text-2xl  leading-snug md:leading-tight">
             {item.title}
           </h4>
-          <p className="text-sm sm:text-base text-gray-700 mt-2">
+          <p className="text-base  sm:text-lg text-gray-700 mt-2">
             {item.description}
           </p>
         </div>

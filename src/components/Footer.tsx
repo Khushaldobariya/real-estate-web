@@ -11,7 +11,7 @@ const Footer = () => {
   >
     <div className="container mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-8 py-10 md:py-14 lg:py-20">
       <div>
-        <h2 className="text-2xl text-center md:text-start sm:text-3xl lg:text-5xl font-medium mb-6 sm:mb-8">
+        <h2 className="text-3xl sm:text-3xl text-center md:text-start  lg:text-5xl font-medium mb-6 sm:mb-8">
           Join Our Parivaar
         </h2>
         <p className="text-sm sm:text-base lg:text-lg text-gray-200 max-w-lg">
@@ -23,7 +23,7 @@ const Footer = () => {
         </p>
       </div>
       <div className="ml-auto w-full">
-        <h2 className="text-2xl text-center md:text-start sm:text-3xl lg:text-5xl font-medium mb-6 sm:mb-8">
+        <h2 className="text-3xl text-center md:text-start sm:text-3xl lg:text-5xl font-medium mb-6 sm:mb-8">
           Subscribe
         </h2>
         <div className="flex flex-col sm:flex-row gap-4">
@@ -50,44 +50,44 @@ const Footer = () => {
       </div>
     </div>
 
-    <div className="bg-white text-gray-900 py-10 sm:py-12 rounded-t-[25px] md:rounded-t-[50px] px-4 sm:px-6 lg:px-12">
+    <div className="bg-white text-gray-900 py-10 sm:py-12 rounded-t-[25px] md:rounded-t-[50px] px-4 sm:px-8 lg:px-12">
       <div className="flex justify-center sm:justify-start">
-        <img src="/assets/images/footerLogo.png" alt="Logo" className="w-32 sm:w-48" />
+        <img src="/assets/images/footerLogo.png" alt="Logo" className="w-40 sm:w-48" />
       </div>
       <div className="container mx-auto flex flex-col md:flex-row gap-8 py-6 md:py-10">
         <div className="w-full md:w-1/2 space-y-6">
           <div>
-            <h3 className="text-[#ad3399] text-lg sm:text-2xl font-medium">Address:</h3>
-            <p className="text-gray-700 text-sm sm:text-xl font-medium">
+            <h3 className="text-[#ad3399] text-xl sm:text-2xl font-medium">Address:</h3>
+            <p className="text-gray-700 text-base sm:text-xl font-medium">
               {FooterData.address}
             </p>
           </div>
           <div>
-            <h3 className="text-[#ad3399] text-lg sm:text-2xl font-medium">Contact:</h3>
-            <p className="text-black text-sm sm:text-xl font-medium">
+            <h3 className="text-[#ad3399] text-xl sm:text-2xl font-medium">Contact:</h3>
+            <p className="text-black text-base sm:text-xl font-medium">
               📞 <span className="underline">{FooterData.contact.phone}</span>
             </p>
-            <p className="text-black text-sm sm:text-xl font-medium">
+            <p className="text-black text-base sm:text-xl font-medium">
               ✉️ <span className="underline">{FooterData.contact.email}</span>
             </p>
           </div>
         </div>
         <div className="w-full md:w-1/2 flex flex-wrap gap-6 justify-start md:justify-end">
           <div>
-            <h3 className="text-[#ad3399] text-lg sm:text-2xl font-medium">Company</h3>
-            <ul className="mt-2 space-y-3 text-gray-700 text-sm sm:text-xl">
+            <h3 className="text-[#ad3399] text-xl sm:text-2xl font-medium">Company</h3>
+            <ul className="mt-2 space-y-3 text-gray-700 text-sm sm:text-xl ">
               {FooterData.companyLinks.map((link, index) => (
-                <li key={index} className="hover:text-[#ad3399] cursor-pointer">
+                <li key={index} className="hover:text-[#ad3399] cursor-pointer text-lg sm:text-xl  md:text-3xl">
                   {link}
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <h3 className="text-[#ad3399] text-lg sm:text-2xl font-medium">Social</h3>
+            <h3 className="text-[#ad3399] text-xl sm:text-2xl font-medium">Social</h3>
             <ul className="mt-2 space-y-3 text-gray-700 text-sm sm:text-xl">
               {FooterData.socialLinks.map((social, index) => (
-                <li key={index} className="hover:text-[#ad3399] cursor-pointer">
+                <li key={index} className="hover:text-[#ad3399] cursor-pointer text-lg  sm:text-xl  md:text-3xl">
                   <a href={social.url}>{social.name}</a>
                 </li>
               ))}

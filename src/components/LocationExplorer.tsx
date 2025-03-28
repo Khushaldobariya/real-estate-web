@@ -7,7 +7,7 @@ const LocationExplorer = () => {
       <div className="px-0 md:px-6 lg:px-10">
         <h2 className="text-2xl  text-gray-800 flex justify-center items-center">
           <span className="flex-1 border-t border-gray-500 mx-4"></span>
-          <p className="text-xl sm:text-4xl md:text-5xl font-medium">
+          <p className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl  font-medium">
             Explore Projects in your desired locations
           </p>
           <span className="flex-1 border-t border-gray-500 mx-4"></span>
@@ -21,7 +21,7 @@ const LocationExplorer = () => {
         {LocationsArea.map((location, index) => (
           <span
             key={index}
-            className="text-lg  md:text-2xl lg:text-4xl font-medium text-gray-700"
+            className="text-lg sm:text-xl  md:text-2xl lg:text-4xl font-medium text-gray-700"
           >
             {location}
           </span>

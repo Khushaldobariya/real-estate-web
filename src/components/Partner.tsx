@@ -6,7 +6,7 @@ const Partner = () => {
   return (
     <section className="bg-[#ffe9fe] py-14 space-y-11 md:space-y-14 ">
       <div>
-        <h2 className="text-center  text-2xl sm:text-4xl   lg:text-5xl uppercase  font-medium">
+        <h2 className="text-center  text-2xl sm:text-[26px] sm:text-4xl   lg:text-5xl uppercase  font-medium">
           OUR BANKING <span className="text-[#9f238a]">Partners</span>
         </h2>
       </div>

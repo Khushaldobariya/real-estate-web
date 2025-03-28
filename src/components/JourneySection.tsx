@@ -61,11 +61,11 @@ const JourneySection = () => {
       journey.
     </p>
 
-    <div className="flex flex-col  md:flex-row flex-wrap justify-start gap-4 md:gap-16  lg:gap-24 mt-12 text-[#9e238d] font-medium">
+    <div className="flex  flex-wrap gap-x-20 md:gap-x-0  md:flex-row justify-center md:justify-start gap-4 md:gap-16  lg:gap-24 mt-12 text-[#9e238d] font-medium">
   {StatsData.map((stat, index) => (
-    <div className="flex flex-col items-center space-y-10" key={index}>
+    <div className="flex flex-col items-center space-y-5 md:space-y-10" key={index}>
       <span
-        className={`text-3xl  lg:text-6xl text-[#9e238d] text-center font-medium sm:text-lg md:text-xl lg:text-[55px]`}
+        className={`text-4xl  text-[#9e238d] text-center font-medium  md:text-xl lg:text-[55px]`}
       >
         {stat.value}
       </span>

@@ -40,7 +40,7 @@ const TestimonialSlider = () => {
             <div className={`p-5 border-2 sm:h-[290px] lg:w-[460px] lg:h-[330px] rounded-md ${index % 2 === 1 ? "bg-[#C69E58]/50 border-[#C69E58]" : "bg-[#FEE9FE7D]/50 border-[#9F238B] "} relative`}>
               <h3 className="text-lg ">{item.name}</h3>
               <p className="text-base">{item.role}</p>
-              <p className="mt-8 text-lg">{item.review}</p>
+              <p className="mt-8 text-lg ">{item.review}</p>
               <p className="mt-2 text-sm text-gray-500">{item.date}</p>
               {item.rating && (
                 <div className="absolute top-3 right-4">
