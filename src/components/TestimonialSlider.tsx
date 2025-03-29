@@ -23,7 +23,7 @@ const TestimonialSlider = () => {
         spaceBetween={20}
         slidesPerView={1}
         loop={true}
-        // autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 3000 }}
         pagination={{ 
           clickable: true,
           el: '.custom-pagination', 

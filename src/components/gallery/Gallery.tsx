@@ -122,11 +122,21 @@ const Gallery = () => {
                 modifier: 2,
               },
             },
+            1500: {
+              slidesPerView: 2.8,
+              spaceBetween: -860,
+              coverflowEffect: {
+                rotate: 10, // No tilt (keep images flat)
+                stretch: 0, // Negative = overlap slides (key for peek effect)
+                depth: 328, // Depth of hidden slides (lower = subtler peek)
+                modifier: 1.5,
+              },
+            },
 
             // Extra large screens (if needed)
             1600: {
-              slidesPerView: 1.8,
-              spaceBetween: -350,
+              slidesPerView: 1.2,
+              spaceBetween: -1172,
               coverflowEffect: {
                 rotate: 0, // No tilt (keep images flat)
                 stretch: 0, // Negative = overlap slides (key for peek effect)

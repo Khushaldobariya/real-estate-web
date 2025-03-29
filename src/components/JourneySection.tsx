@@ -47,7 +47,7 @@ const JourneySection = () => {
 
 
 
-    <section className="container mx-auto  relative flex flex-col md:flex-row justify-between items-center gap-6 md:gap-12 lg:gap-16">
+    <section className="container mx-auto px-12  relative flex flex-col md:flex-row justify-between items-center gap-6 md:gap-12 lg:gap-16">
   <div className="max-w-xl md:max-w-3xl lg:max-w-5xl">
     <h2 className="text-3xl sm:text-4xl text-center md:text-start md:text-5xl lg:text-6xl font-medium mb-8">
       Our Journey Towards{" "}
@@ -63,9 +63,9 @@ const JourneySection = () => {
 
     <div className="flex  flex-wrap gap-x-20 md:gap-x-0  md:flex-row justify-center md:justify-start gap-4 md:gap-16  lg:gap-24 mt-12 text-[#9e238d] font-medium">
   {StatsData.map((stat, index) => (
-    <div className="flex flex-col items-center space-y-5 md:space-y-10" key={index}>
+    <div className="flex flex-col items-center space-y-5  md:space-y-10" key={index}>
       <span
-        className={`text-4xl  text-[#9e238d] text-center font-medium  md:text-xl lg:text-[55px]`}
+        className={`text-4xl  text-[#9e238d] text-center font-medium  md:text-2xl lg:text-[55px]`}
       >
         {stat.value}
       </span>
