@@ -76,7 +76,7 @@ const Banner = () => {
         <div
           className="absolute w-full p-4 z-10 
                 top-28 left-1/2 -translate-x-1/2 
-                md:left-auto md:-bottom-20 lg:bottom-[9rem]  xl:bottom-1 2xl:-bottom-20 md:top-auto md:translate-x-0"
+                md:left-auto md:-bottom-20 lg:bottom-[9rem]  xl:bottom-[6rem] 2xl:bottom-2 md:top-auto md:translate-x-0"
         >
           <MobileSearchBar />
           <SearchBar />

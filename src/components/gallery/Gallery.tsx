@@ -29,10 +29,10 @@ const Gallery = () => {
           loop={true}
           slidesPerView={1}
           spaceBetween={-250} 
-          autoplay={{
-            delay: 3000, 
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 3000, 
+          //   disableOnInteraction: false,
+          // }}
 
           coverflowEffect={{
             rotate: 0, 
@@ -101,14 +101,24 @@ const Gallery = () => {
               },
             },
 
-            // Large laptops/desktops (1280px+)
+           
             1280: {
-              slidesPerView: 1.3,
-              spaceBetween: -1105,
+              slidesPerView: 1.2,
+              spaceBetween: -1005,
               coverflowEffect: {
                 rotate: 10, // No tilt (keep images flat)
                 stretch: 0, // Negative = overlap slides (key for peek effect)
-                depth: 508, // Depth of hidden slides (lower = subtler peek)
+                depth: 408, // Depth of hidden slides (lower = subtler peek)
+                modifier: 2,
+              },
+            },
+            1360: {
+              slidesPerView: 1.2,
+              spaceBetween: -1072,
+              coverflowEffect: {
+                rotate: 10, // No tilt (keep images flat)
+                stretch: 0, // Negative = overlap slides (key for peek effect)
+                depth: 218, // Depth of hidden slides (lower = subtler peek)
                 modifier: 2,
               },
             },

@@ -47,7 +47,7 @@ const JourneySection = () => {
 
 
 
-    <section className="container mx-auto mt-16 md:mt-24 lg:mt-28 px-4 md:px-8 lg:px-10 relative flex flex-col md:flex-row justify-between items-center gap-6 md:gap-12 lg:gap-16">
+    <section className="container mx-auto  relative flex flex-col md:flex-row justify-between items-center gap-6 md:gap-12 lg:gap-16">
   <div className="max-w-xl md:max-w-3xl lg:max-w-5xl">
     <h2 className="text-3xl sm:text-4xl text-center md:text-start md:text-5xl lg:text-6xl font-medium mb-8">
       Our Journey Towards{" "}

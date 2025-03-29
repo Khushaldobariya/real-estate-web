@@ -14,9 +14,11 @@ import { News_Blog } from "../utils/consents.ts";
 const Home = () => {
   return (
     <>
-      <div className="space-y-12 md:space-y-24">
+    <div>
+
         <Banner />
         <JourneySection />
+      <div className="space-y-12 md:space-y-24 lg:sapce-y-12">
         <ExpertiseSection />
         <SwiperSidlerImage />
         <Innovations />
@@ -25,6 +27,7 @@ const Home = () => {
         <Gallery />
         <Partner />
         <Blog news={News_Blog} />
+      </div>
       </div>
     </>
   );
