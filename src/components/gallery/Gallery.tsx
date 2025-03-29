@@ -14,10 +14,10 @@ import { MoveLeft, MoveRight } from "lucide-react";
 const Gallery = () => {
   return (
     <section
-      className="container  px-4 md:px-6 lg:px-8 mx-auto text-center"
+      className="container px-4 md:px-6 lg:px-8 mx-auto text-center"
       id="gallery"
     >
-      <h2 className="text-2xl sm:text-3xl md:text-4xl  lg:text-5xl tracking-wide mb-6 lg:mb-8">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wide mb-6 lg:mb-8">
         Gallery
       </h2>
 
@@ -28,33 +28,31 @@ const Gallery = () => {
           centeredSlides={true}
           loop={true}
           slidesPerView={1}
-          spaceBetween={-250} 
-          // autoplay={{
-          //   delay: 3000, 
-          //   disableOnInteraction: false,
-          // }}
-
+          spaceBetween={-250}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true
+          }}
           coverflowEffect={{
-            rotate: 0, 
-            stretch: 0, 
-            depth: 300, 
-            modifier: 0,
-            slideShadows: true,
+            rotate: 0,
+            stretch: 0,
+            depth: 300,
+            modifier: 1,
+            slideShadows: false
           }}
           breakpoints={{
-          
             320: {
               slidesPerView: 1.5,
               spaceBetween: -130,
               coverflowEffect: {
-                rotate: 0, 
-                stretch: 0, 
+                rotate: 0,
+                stretch: 0,
                 depth: 300,
                 modifier: 3,
+                slideShadows: false
               },
             },
-
-            // Larger mobile (375-640px)
             375: {
               slidesPerView: 1.3,
               spaceBetween: -70,
@@ -62,106 +60,103 @@ const Gallery = () => {
                 stretch: -25,
                 depth: 75,
                 modifier: 1.2,
+                slideShadows: false
               },
             },
-
-            // Small tablets (640-768px)
             640: {
               slidesPerView: 1.4,
               spaceBetween: -290,
               coverflowEffect: {
-                rotate: 0, // No tilt (keep images flat)
-                stretch: 0, // Negative = overlap slides (key for peek effect)
-                depth: 325, // Depth of hidden slides (lower = subtler peek)
+                rotate: 0,
+                stretch: 0,
+                depth: 325,
                 modifier: 1.5,
+                slideShadows: false
               },
             },
-
-            // Tablets (768-1024px)
             768: {
               slidesPerView: 1.3,
               spaceBetween: -500,
               coverflowEffect: {
-                rotate: 0, // No tilt (keep images flat)
-                stretch: 0, // Negative = overlap slides (key for peek effect)
-                depth: 550, // Depth of hidden slides (lower = subtler peek)
+                rotate: 0,
+                stretch: 0,
+                depth: 550,
                 modifier: 1.6,
+                slideShadows: false
               },
             },
-
-            // Small laptops (1024-1280px)
             1024: {
               slidesPerView: 1.2,
               spaceBetween: -360,
               coverflowEffect: {
-                rotate: 0, // No tilt (keep images flat)
-                stretch: 0, // Negative = overlap slides (key for peek effect)
-                depth: 395, // Depth of hidden slides (lower = subtler peek)
+                rotate: 0,
+                stretch: 0,
+                depth: 395,
                 modifier: 1.8,
+                slideShadows: false
               },
             },
-
-           
             1280: {
               slidesPerView: 1.2,
               spaceBetween: -1005,
               coverflowEffect: {
-                rotate: 10, // No tilt (keep images flat)
-                stretch: 0, // Negative = overlap slides (key for peek effect)
-                depth: 408, // Depth of hidden slides (lower = subtler peek)
+                rotate: 10,
+                stretch: 0,
+                depth: 408,
                 modifier: 2,
+                slideShadows: false
               },
             },
             1360: {
               slidesPerView: 1.2,
               spaceBetween: -1072,
               coverflowEffect: {
-                rotate: 10, // No tilt (keep images flat)
-                stretch: 0, // Negative = overlap slides (key for peek effect)
-                depth: 218, // Depth of hidden slides (lower = subtler peek)
+                rotate: 10,
+                stretch: 0,
+                depth: 218,
                 modifier: 2,
+                slideShadows: false
               },
             },
             1500: {
               slidesPerView: 2.8,
               spaceBetween: -860,
               coverflowEffect: {
-                rotate: 10, // No tilt (keep images flat)
-                stretch: 0, // Negative = overlap slides (key for peek effect)
-                depth: 328, // Depth of hidden slides (lower = subtler peek)
+                rotate: 10,
+                stretch: 0,
+                depth: 328,
                 modifier: 1.5,
+                slideShadows: false
               },
             },
-
-            // Extra large screens (if needed)
             1600: {
               slidesPerView: 1.2,
               spaceBetween: -1172,
               coverflowEffect: {
-                rotate: 0, // No tilt (keep images flat)
-                stretch: 0, // Negative = overlap slides (key for peek effect)
-                depth: 200, // Depth of hidden slides (lower = subtler peek)
+                rotate: 0,
+                stretch: 0,
+                depth: 200,
                 modifier: 1.8,
+                slideShadows: false
               },
             },
           }}
-          modules={[EffectCoverflow, Pagination, Navigation ,Autoplay ]}
+          modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
           className="bg-transparent"
         >
-                {[1, 2, 3, 4, 2, 3, 1,2].map((num, index) => (
-         <SwiperSlide key={index} className="relative ">
-           <img
-             src={`/assets/images/gallery/gallery${num}.webp`}
-             alt={`Gallery ${num}`}
-             className="rounded-xl object-cover w-[800px] h-[400px] mx-auto"
-           />
-         </SwiperSlide>
-       ))}
+          {[1, 2, 3, 4, 2, 3, 1, 2].map((num, index) => (
+            <SwiperSlide key={index} className="relative">
+              <img
+                src={`/assets/images/gallery/gallery${num}.webp`}
+                alt={`Gallery ${num}`}
+                className="rounded-xl object-cover w-[800px] h-[400px] mx-auto shadow-lg"
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
 
         <div className="pr-10 custom-pagination absolute right-4 bottom-4 flex flex-col items-end gap-2"></div>
 
-        {/* Navigation Buttons */}
         <div className="flex justify-center items-center gap-6 mt-4">
           <button className="swiper-button-prev p-2 bg-gray-200 hover:bg-gray-300 rounded-full shadow-md transition">
             <MoveLeft size={24} />
