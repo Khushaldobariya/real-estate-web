@@ -3,7 +3,35 @@
 @tailwind utilities;
 
 
-  
+:root {
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 32px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; /* Enhances readability */
+}
+
+/* section {
+  padding: var(--spacing-large) 5%;
+} */
+
+/* .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-medium);
+} */
+
+@media (max-width: 768px) {
+  :root {
+    --spacing-medium: 12px;
+    --spacing-large: 24px;
+  }
+}
+
 
 html {
     scroll-behavior: smooth;
