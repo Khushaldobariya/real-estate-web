@@ -16,12 +16,9 @@ const Home = () => {
   return (
     <>
     <div>
-<div className=" space-y-12 md:space-y-24 lg:space-y-10 xl:space-y-16">
+      <div className="space-y-12 md:space-y-16 lg:space-y-20 xl:space-y-24">
         <Banner />
         <JourneySection />
-
-</div>
-      <div className="space-y-12 md:space-y-24 lg:space-y-12">
         <ExpertiseSection />
         <SwiperSidlerImage />
         <Innovations />
@@ -31,7 +28,7 @@ const Home = () => {
         <Partner />
         <Blog news={News_Blog} />
       </div>
-      </div>
+    </div>
     </>
   );
 };

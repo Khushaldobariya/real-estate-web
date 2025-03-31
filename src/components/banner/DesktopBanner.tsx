@@ -5,7 +5,7 @@ import SearchBar from "../searchBar/SearchBar.tsx";
 
 const DesktopBanner = () => {
   return (
-    <div>
+    <div className="">
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
@@ -68,7 +68,7 @@ const DesktopBanner = () => {
       <div
         className="absolute w-full p-4 z-10 
           bottom-0 left-1/2 -translate-x-1/2 
-          md:bottom-20 lg:bottom-[9rem] xl:bottom-20"
+          md:bottom-20 lg:bottom-[9rem] xl:-bottom-20"
       >
         <SearchBar />
       </div>
