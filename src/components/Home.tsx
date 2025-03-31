@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "./Banner.tsx";
+
 import JourneySection from "./JourneySection.tsx";
 import ExpertiseSection from "./ExpertiseSection.tsx";
 import SwiperSidlerImage from "./SwiperSidlerImage.tsx";
@@ -10,13 +10,17 @@ import Partner from "./Partner.tsx";
 import Gallery from "./gallery/Gallery.tsx";
 import Blog from "./blog/Blog.tsx";
 import { News_Blog } from "../utils/consents.ts";
+import Banner from "./banner/Banner.tsx";
 
 const Home = () => {
   return (
     <>
-      <div className="space-y-12 md:space-y-24">
+    <div>
+      <div className="">
         <Banner />
         <JourneySection />
+        <div className="space-y-12 md:space-y-16 lg:space-y-20 xl:space-y-24">
+
         <ExpertiseSection />
         <SwiperSidlerImage />
         <Innovations />
@@ -25,7 +29,9 @@ const Home = () => {
         <Gallery />
         <Partner />
         <Blog news={News_Blog} />
+        </div>
       </div>
+    </div>
     </>
   );
 };
