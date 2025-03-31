@@ -16,9 +16,11 @@ const Home = () => {
   return (
     <>
     <div>
-      <div className="space-y-12 md:space-y-16 lg:space-y-20 xl:space-y-24">
+      <div className="">
         <Banner />
         <JourneySection />
+        <div className="space-y-12 md:space-y-16 lg:space-y-20 xl:space-y-24">
+
         <ExpertiseSection />
         <SwiperSidlerImage />
         <Innovations />
@@ -27,6 +29,7 @@ const Home = () => {
         <Gallery />
         <Partner />
         <Blog news={News_Blog} />
+        </div>
       </div>
     </div>
     </>

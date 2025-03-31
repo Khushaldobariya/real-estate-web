@@ -2,7 +2,7 @@ import React from "react";
 
 const ExpertiseSection = () => {
   return (
-    <section className="bg-[#ffe9fe]  flex flex-col items-center px-4 py-10 md:px-10  md:py-16 lg:py-20 ">
+    <section className="bg-[#ffe9fe] mt-12 md:mt-14 lg:mt-18 xl:mt-20 flex flex-col items-center px-4 py-10 md:px-10  md:py-16 lg:py-20 ">
       <div className=" max-w-7xl space-y-14 md:space-y-16 lg:space-y-24  lg:container mx-auto">
         <div className="  w-full flex justify-center  flex-col md:flex-row  items-center">
           <div className="w-full md:w-4/5 ">
