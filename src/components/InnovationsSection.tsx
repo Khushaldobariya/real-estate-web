@@ -15,7 +15,7 @@ const InnovationsSection = () => {
         />
       </div>
 
-      <div className="w-full px-4 md:px-0 md:pr-16 md:w-1/2 flex   justify-start flex-col gap-7 mt-10 md:mt-0">
+      <div className="w-full px-4 md:px-0 md:pr-8 2xl:pr-16 md:w-1/2 flex   justify-start flex-col gap-4 mt-10 md:mt-0">
         <h2 className="text-3xl sm:text-4xl  lg:text-5xl font-medium">
           Our <span className="text-[#aa1d88]">Innovations</span>
         </h2>
