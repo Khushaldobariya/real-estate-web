@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.111c3d33.css",
+    "main.js": "/static/js/main.edb7f87d.js",
+    "static/js/453.f1bbb837.chunk.js": "/static/js/453.f1bbb837.chunk.js",
+    "static/media/OptimaLTPro-Roman.otf": "/static/media/OptimaLTPro-Roman.01f2ca7a562b667ced34.otf",
+    "index.html": "/index.html",
+    "main.111c3d33.css.map": "/static/css/main.111c3d33.css.map",
+    "main.edb7f87d.js.map": "/static/js/main.edb7f87d.js.map",
+    "453.f1bbb837.chunk.js.map": "/static/js/453.f1bbb837.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.111c3d33.css",
+    "static/js/main.edb7f87d.js"
+  ]
+}
