@@ -37,7 +37,7 @@ const TestimonialSlider = () => {
       >
         {Testimonials.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className={`p-5 border-2 sm:h-[290px]  md:h-[310px] lg:w-[410px]  2xl:w-[460px] lg:h-[330px] rounded-md ${index % 2 === 1 ? "bg-[#C69E58]/50 border-[#C69E58]" : "bg-[#FEE9FE7D]/50 border-[#9F238B] "} relative`}>
+            <div className={`p-5 border-2 sm:h-[290px]  md:h-[310px] lg:w-[420px]  2xl:w-[460px] lg:h-[330px] rounded-md ${index % 2 === 1 ? "bg-[#C69E58]/50 border-[#C69E58]" : "bg-[#FEE9FE7D]/50 border-[#9F238B] "} relative`}>
               <h3 className="text-lg ">{item.name}</h3>
               <p className="text-base">{item.role}</p>
               <p className="mt-8 text-lg ">{item.review}</p>
