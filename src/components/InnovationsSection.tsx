@@ -19,7 +19,7 @@ const InnovationsSection = () => {
         <h2 className="text-3xl sm:text-4xl  lg:text-5xl font-medium">
           Our <span className="text-[#aa1d88]">Innovations</span>
         </h2>
-        <p className="text-base md:text-lg text-center  mx-auto text-wrap">
+        <p className="text-base md:text-xl text-center  mx-auto text-wrap">
           We prioritize developing innovative solutions that directly address
           their needs. Our dedicated team is driven by a customer-centric
           approach, ensuring every product and service we create enhances
@@ -39,7 +39,7 @@ const InnovationsSection = () => {
                   </h2>
                   <hr className="border border-black w-[125px]" />
                 </div>
-                <p className="text-base">{service.description}</p>
+                <p className="text-base md:text-xl" >{service.description}</p>
 
                 <a
                   href={service.link}
