@@ -40,7 +40,7 @@ const JourneySection = () => {
       <div className="relative">
         <div className="w-56 h-64 md:w-60 lg:w-80 mx-auto md:h-[350px] lg:h-[450px] bg-cover bg-center">
           <img
-            src="/assets/images/gallery/home.gif"
+            src="/assets/images/gallery/home.webp"
             draggable="false"
             alt="Home Journey"
             className="h-full w-full object-cover"
