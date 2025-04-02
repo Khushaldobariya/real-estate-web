@@ -5,11 +5,11 @@ const JourneySection = () => {
   return (
     <section className="container mx-auto px-12 pt-0 2xl:pt-16 relative flex flex-col md:flex-row justify-between items-center gap-6 md:gap-12 lg:gap-16 2xl:mt-44">
       <div className="max-w-xl md:max-w-3xl lg:max-w-5xl">
-        <h2 className="text-3xl sm:text-4xl text-center md:text-start md:text-xl lg:text-5xl font-medium mb-8">
+        <h2 className="text-3xl sm:text-4xl text-center md:text-start md:text-5xl lg:text-5xl font-medium mb-8">
           Our Journey Towards{" "}
           <span className="text-[#9e238d]">Excellence!</span>
         </h2>
-        <p className="text-black mt-4 text-lg md:text-2xl">
+        <p className="text-black mt-4 text-lg md:text-xl">
           Immensely grateful for the journey we&apos;ve undertaken together,
           reaching this far with your unwavering support. Our story
           wouldn&apos;t be complete without you. We consider ourselves blessed
