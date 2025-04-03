@@ -68,7 +68,7 @@ const DesktopBanner = () => {
       <div
         className="absolute w-full p-4 z-10 
           bottom-0 left-1/2 -translate-x-1/2 
-          md:bottom-20 lg:bottom-[9rem] xl:bottom-[2rem] 2xl:-bottom-56"
+          md:bottom-20 lg:bottom-[9rem] xl:bottom-[2rem]  2xl:-bottom-16 3xl:-bottom-56"
       >
         <SearchBar />
       </div>
