@@ -3,7 +3,7 @@ import { StatsData } from "../utils/consents.ts";
 
 const JourneySection = () => {
   return (
-    <section className="container mx-auto px-12 pt-0 2xl:pt-16 relative flex flex-col md:flex-row justify-between items-center gap-6 md:gap-12 lg:gap-16 2xl:mt-44">
+    <section className="container mx-auto px-12 pt-32 2xl:pt-16 relative flex flex-col md:flex-row justify-between items-center gap-6 md:gap-12 lg:gap-16 2xl:mt-12">
       <div className="max-w-xl md:max-w-3xl lg:max-w-5xl">
         <h2 className="text-3xl sm:text-4xl text-center md:text-start md:text-5xl lg:text-5xl font-medium mb-8">
           Our Journey Towards{" "}

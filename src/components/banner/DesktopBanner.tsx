@@ -5,7 +5,7 @@ import SearchBar from "../searchBar/SearchBar.tsx";
 
 const DesktopBanner = () => {
   return (
-    <div className="">
+    <div className="relative">
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
@@ -20,10 +20,10 @@ const DesktopBanner = () => {
         modules={[Autoplay, EffectFade, Navigation, Pagination]}
         className="w-full h-screen"
       >
-        <SwiperSlide className="relative w-full h-full ">
-          <div className="relative w-full pb-[56.25%] h-0">
+        <SwiperSlide className="relative w-full min-h-screen">
+          <div className="relative w-full min-h-full pb-[56.25%]">
             <iframe
-              className="absolute top-0 left-0 w-full h-full"
+              className="absolute top-0 left-0 w-full h-full object-cover scale-[1.5]"
               src="https://www.youtube.com/embed/0sDRF-hErHI?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&playlist=0sDRF-hErHI&loop=1"
               frameBorder="0"
               allow="autoplay; encrypted-media"
@@ -32,7 +32,7 @@ const DesktopBanner = () => {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className="relative w-full h-screen">
+        <SwiperSlide className="w-full min-h-screen">
           <video
             playsInline
             loop
@@ -44,7 +44,7 @@ const DesktopBanner = () => {
           />
         </SwiperSlide>
 
-        <SwiperSlide className="relative w-full h-screen">
+        <SwiperSlide className="relative w-full min-h-screen">
           <img
             src="/assets/images/img1.jpg"
             alt="banner"
@@ -68,7 +68,7 @@ const DesktopBanner = () => {
       <div
         className="absolute w-full p-4 z-10 
           bottom-0 left-1/2 -translate-x-1/2 
-          md:bottom-20 lg:bottom-[9rem] xl:bottom-[2rem]  2xl:-bottom-16 3xl:-bottom-56"
+          md:-bottom-20 lg:-bottom-20 xl:-bottom-[4.5rem] 2xl:-bottom-16 3xl:-bottom-56"
       >
         <SearchBar />
       </div>

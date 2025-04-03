@@ -36,7 +36,7 @@ const Navbar = ({ isHome }: Props) => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
       className={`fixed w-full top-0 px-5 py-3 transition-all duration-300 z-10 ${
-        header ? "bg-black/60 shadow-lg" : "bg-transparent"
+        header ? "bg-black shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between">
