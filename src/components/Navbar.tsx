@@ -121,7 +121,7 @@ const Navbar = ({ isHome }: Props) => {
         </ul>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden text-black focus:outline-none" onClick={() => setIsOpen(!isOpen)}>
+        <button className="md:hidden text-white focus:outline-none" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
