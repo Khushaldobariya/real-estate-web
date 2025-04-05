@@ -7,17 +7,17 @@ const CurrentProjects = () => {
 
 
 
-<section className="py-16 px-4 md:px-16">
+<section className=" px-4 md:px-16">
     <div className="flex flex-col md:flex-row mx-auto gap-8">
        
         <div className="md:w-1/4 space-y-6 text-center md:text-left flex  flex-col justify-center">
             <div className="space-y-4 ">
-                <h2 className="font-medium text-lg md:text-xl">Current Projects</h2>
-                <p className="text-sm md:text-base">
+                <h2 className="font-medium text-3xl sm:text-4xl md:text-4xl lg:text-5xl   ">Current Projects </h2>
+                <p className="text-base sm:text-lg md:text-xl">
                     Explore our wide range of residential and commercial properties and discover your perfect home.
                 </p>
             </div>
-            <button className="w-48 md:w-56 h-12 bg-[#a1228b] text-white hover:border hover:border-[#a1228b] transition-all ease-in-out delay-150">
+            <button className="w-48 md:w-48  h-12 bg-[#a1228b] text-white hover:border hover:border-white transition-all ease-in-out delay-150">
                 View All Projects
             </button>
         </div>

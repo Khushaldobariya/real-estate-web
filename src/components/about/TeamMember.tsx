@@ -22,8 +22,8 @@ const TeamMember = () => {
 
          
             <div className="w-80 text-center absolute -bottom-6 py-3 bg-gradient-to-b from-[#9d2390] to-white rounded-md ">
-              <h3 className="text-lg font-bold text-black">{member.name}</h3>
-              <p className="text-sm text-black">{member.title}</p>
+              <h3 className="text-base sm:text-lg md:text-2xl text-black">{member.name}</h3>
+              <p className="text-base md:text-lg text-black">{member.title}</p>
             </div>
           </div>
         ))}

@@ -20,7 +20,7 @@ const InnovationCard = ({
   return (
     <div className={`flex flex-col md:flex-row gap-8 p-6 md:p-12 items-center ${  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
     <div className="flex flex-col justify-center flex-1">
-      <h3 className="text-sm text-[#c69f58] font-medium">{number} Innovation</h3>
+      <h3 className="text-sm md:text-base lg:text-lg text-[#c69f58] font-medium">{number} Innovation</h3>
       <h2 className="text-2xl  md:text-5xl font-bold  mt-2 ">{title}</h2>
       <p className=" text-sm md:text-lg  mt-4">{description}</p>
       <ul className="mt-4 space-y-2">

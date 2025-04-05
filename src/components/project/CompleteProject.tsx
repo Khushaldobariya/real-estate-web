@@ -6,7 +6,7 @@ const CompleteProject = () => {
   return (
     <div className="max-w-7xl mx-auto space-y-12">
     <div className="space-y-3">
-      <h3 className="text-xl font-bold text-center">Vasai Project</h3>
+      <h3 className=" sm:text-base md:text-lg lg:text-3xl   text-center">Vasai Project</h3>
       <MapLine
         lat={19.3667}
         lng={72.8}
@@ -14,7 +14,7 @@ const CompleteProject = () => {
       />
     </div>
     <div className="space-y-3">
-      <h3 className="text-xl font-bold text-center">Mira Road Project</h3>
+      <h3 className=" sm:text-base md:text-lg lg:text-3xl   text-center">Mira Road Project</h3>
       <MapLine
         lat={19.2952}
         lng={72.8544}
@@ -22,12 +22,12 @@ const CompleteProject = () => {
       />
     </div>
     <div className="space-y-3">
-      <h3 className="text-xl font-bold text-center">Malad Project</h3>
+      <h3 className=" sm:text-base md:text-lg lg:text-3xl   text-center">Malad Project</h3>
       <MapLine lat={19.3052} lng={72.8505} mapArrayValue={MaladCompleteProject} />
     </div>
 
     <div className="space-y-3">
-      <h3 className="text-xl font-bold text-center">Bhayander Project</h3>
+      <h3 className=" sm:text-base md:text-lg lg:text-3xl   text-center">Bhayander Project</h3>
       <MapLine lat={19.3081} lng={72.8630} mapArrayValue={BhayanderCompleteProject} />
     </div>
   </div>

@@ -102,7 +102,7 @@ const Navbar = ({ isHome }: Props) => {
                         <motion.li key={subIndex} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                           <Link
                             to={sub.path}
-                            className={`block px-4 py-2 rounded-md ${
+                            className={`block capitalize px-4 py-2 rounded-md ${
                               location.pathname === sub.path
                                 ? "text-[#a22084] font-semibold"
                                 : "text-black hover:text-[#a22084] hover:bg-gray-100"
@@ -166,7 +166,7 @@ const Navbar = ({ isHome }: Props) => {
                         <motion.li key={subIndex} whileHover={{ scale: 1.05 }}>
                           <Link
                             to={sub.path}
-                            className={`block px-4 py-2 rounded-md ${
+                            className={`block capitalize px-4 py-2 rounded-md ${
                               location.pathname === sub.path
                                 ? "text-[#a22084] font-semibold"
                                 : "text-black hover:text-[#a22084] hover:bg-gray-200"

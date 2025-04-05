@@ -7,7 +7,7 @@ const UpComingProject = () => {
   return (
     <div className="max-w-7xl mx-auto space-y-12">
          <div className="space-y-3">
-        <h3 className="text-xl font-bold text-center">Vasai Coming Project</h3>
+        <h3 className=" sm:text-base md:text-lg lg:text-3xl  font-bold text-center">Vasai Coming Project</h3>
         <MapLine
        lat={19.3667}
        lng={72.978}
@@ -15,7 +15,7 @@ const UpComingProject = () => {
         />
       </div>
       <div className="space-y-3">
-        <h3 className="text-xl font-bold text-center">Thane Project</h3>
+        <h3 className=" sm:text-base md:text-lg lg:text-3xl  font-bold text-center">Thane Project</h3>
         <MapLine
           lat={ 19.2183}
           lng={72.8}
@@ -23,7 +23,7 @@ const UpComingProject = () => {
         />
       </div>
       <div className="space-y-3">
-        <h3 className="text-xl font-bold text-center">MiraRoad Coming Project</h3>
+        <h3 className=" sm:text-base md:text-lg lg:text-3xl  font-bold text-center">MiraRoad Coming Project</h3>
         <MapLine
                lat={19.2853}
                lng={72.8688}
@@ -31,7 +31,7 @@ const UpComingProject = () => {
         />
       </div>
       <div className="space-y-3">
-        <h3 className="text-xl font-bold text-center">Naigaon Coming Project</h3>
+        <h3 className=" sm:text-base md:text-lg lg:text-3xl  font-bold text-center">Naigaon Coming Project</h3>
         <MapLine
                lat={19.3906}
                lng={ 72.8485}
@@ -39,7 +39,7 @@ const UpComingProject = () => {
         />
       </div>
       <div className="space-y-3">
-        <h3 className="text-xl font-bold text-center">Bhayander Coming Project</h3>
+        <h3 className=" sm:text-base md:text-lg lg:text-3xl  font-bold text-center">Bhayander Coming Project</h3>
         <MapLine
                lat={19.3062}
                lng={72.8511}
@@ -47,7 +47,7 @@ const UpComingProject = () => {
         />
       </div>
       <div className="space-y-3">
-        <h3 className="text-xl font-bold text-center">Ghatkopar Coming Project</h3>
+        <h3 className=" sm:text-base md:text-lg lg:text-3xl  font-bold text-center">Ghatkopar Coming Project</h3>
         <MapLine
                lat={19.0866}
                lng={72.9083}

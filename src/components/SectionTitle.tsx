@@ -22,7 +22,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
   return (
     <div className={twMerge("py-8 flex flex-col", align === "center" ? "text-center items-center " : align === "left" ? "text-left items-start" : "text-right items-end", className)}>
       {breadcrumb && breadcrumb.length > 0 && (
-        <Breadcrumbs separator=">" className="text-gray-500">
+        <Breadcrumbs separator=">" className="text-gray-500 text-sm md:text-base lg:text-lg">
           {breadcrumb.map((item, index) => (
             <Typography key={index} color={index === breadcrumb.length - 1 ? "textPrimary" : "inherit"}>
               {item}
@@ -30,11 +30,11 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
           ))}
         </Breadcrumbs>
       )}
-      <h1 className="text-3xl md:text-4xl font-medium mt-2 space-x-3">
+      <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl  mt-2 space-x-3">
         <span className="text-black">{title}</span>
         <span className="text-[#905c87] pr-4">{title1}</span>
       </h1>
-      {subtitle && <p className={` text-base   mt-3 ${align =="center" && "max-w-md mx-auto"}` }>{subtitle}</p>}
+      {subtitle && <p className={` text-base sm:text-lg md:text-xl mt-3 ${align =="center" && "max-w-lg mx-auto"}` }>{subtitle}</p>}
     </div>
   );
 };

@@ -43,8 +43,8 @@ const Innovations = () => {
             videoSrc="/path-to-thumbnail.jpg"
           />
           <div className="text-center py-10">
-            <h2 className="text-2xl font-medium">Get Social</h2>
-            <p className="text-gray-600">
+            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-medium">Get Social</h2>
+            <p className="text-gray-600 text-base sm:text-lg md:text-xl">
               Join us on Instagram, Facebook & Youtube
             </p>
             <div className="flex flex-wrap  justify-center gap-16 mt-6">

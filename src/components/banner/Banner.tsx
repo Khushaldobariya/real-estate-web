@@ -11,7 +11,7 @@ import useMediaQuery from "../../hooks/useMediaQuery.ts";
 
 const Banner = () => {
   const isDesktop = useMediaQuery('(min-width: 768px)');
-  console.log('isDesktop', isDesktop)
+
 
   return (
     <section className="relative w-full h-screen ">

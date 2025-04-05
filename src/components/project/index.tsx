@@ -32,8 +32,8 @@ const Project = () => {
       <div className="space-y-4 mt-28 px-5 md:px-20">
         <div className="flex justify-between items-center">
           <div className="mt-10">
-            <p>Home {">"} Project</p>
-            <h1 className="text-xl md:text-5xl lg:text-9xl">
+            <p className=" text-sm md:text-base lg:text-lg">Home {">"} Project</p>
+            <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl ">
               Our <span className="text-[#a0238a]">Project</span>
             </h1>
           </div>
@@ -48,18 +48,18 @@ const Project = () => {
         </div>
 
         <div className="border-b border-black">
-          <p className="capitalize tracking-widest text-lg md:text-xl">
+          <p className="capitalize tracking-wider  text-base sm:text-lg md:text-xl">
             Our specialized team excels in understanding and developing areas,
             strategically placing our projects at the heart of each location.
           </p>
         </div>
       </div>
 
-      <div className="w-full flex justify-around gap-10 py-10">
+      <div className="w-full flex justify-around gap-10 p-t10">
         {["Completed", "Current", "Upcoming"].map((s) => (
           <button
             key={s}
-            className={`p-2  delay-150 ease-in-out   border-b-2 text-lg md:text-xl font-medium transition-all duration-300 hover:bg-black/10 ${
+            className={`p-2  delay-150 ease-in-out  text-base md:text-lg lg:text-xl  border-b-2  font-medium transition-all duration-300 hover:bg-black/10 ${
               status === s
                 ? "border-[#a0238a] text-[#a0238a]"
                 : "border-black text-black"

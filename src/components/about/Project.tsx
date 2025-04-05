@@ -8,7 +8,7 @@ import { About_Project } from "../../utils/type.ts";
 const Project = () => {
     const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="py-16 px-4 gap-6 md:px-16 w-full  overflow-hidden flex items-center  mx-auto projectGradient">
+    <div className=" px-4 gap-6 md:px-16 w-full  overflow-hidden flex items-center  mx-auto ">
         <motion.div
     initial={{ x: 0 }}
     animate={isHovered ? { x: 0 } : { x: "-50%" }}

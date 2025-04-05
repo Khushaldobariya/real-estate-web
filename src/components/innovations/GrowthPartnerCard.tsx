@@ -39,14 +39,14 @@ const GrowthPartnerCard = ({
 
       {/* Content Section */}
       <div className="w-full md:w-1/2 p-6 flex flex-col items-end text-center md:text-left">
-        <h3 className="text-sm text-[#c69f58] font-medium ">{subtitle}</h3>
-        <h2 className="text-2xl font-bold text-gray-800 mt-1 ">{title}</h2>
-        <p className="text-gray-600 mt-3 text-end">{description}</p>
+        <h3 className=" text-[#c69f58] font-medium text-sm md:text-base lg:text-lg ">{subtitle}</h3>
+        <h2 className="text-2xl  md:text-5xl font-bold text-gray-800 mt-1 ">{title}</h2>
+        <p className="text-gray-600 mt-3 text-end text-sm md:text-lg ">{description}</p>
         <ul className="mt-4 space-y-2 text-gray-700">
           {highlights.map((highlight, index) => (
             <li
               key={index}
-              className="flex flex-row-reverse items-center gap-2"
+              className="flex flex-row-reverse text-sm md:text-lg  items-center gap-2"
             >
               <span className="text-xl">
                 <InnovationsIcon />
