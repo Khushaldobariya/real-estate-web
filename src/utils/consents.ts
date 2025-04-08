@@ -74,6 +74,7 @@ export const LocationsArea = [
   "Nalasopara",
   "Thane",
   "Naigaon",
+  "Hyderabad"
 ];
 
 export const Testimonials = [

@@ -20,8 +20,8 @@ const TestimonialSlider = () => {
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={20}
           slidesPerView={1}
-          // loop={true}
-          // autoplay={{ delay: 3000 }}
+          loop={true}
+          autoplay={{ delay: 3000 }}
           pagination={{
             clickable: true,
             el: ".custom-pagination",
@@ -45,14 +45,19 @@ const TestimonialSlider = () => {
                 <h3 className="text-lg xl:text-xl">{item.name}</h3>
                 <p className="text-base">{item.role}</p>
                 <p className="mt-8 text-lg xl:text-xl pe-16">{item.review}</p>
-                <p className="mt-2 text-sm text-gray-500 absolute bottom-4">{item.date}</p>
-                {item.rating && (
+                {/* <p className="mt-2 text-sm text-gray-500 absolute bottom-4">{item.date}</p> */}
+                {/* {item.rating && ( */}
                   <div className="absolute top-3 right-4">
-                    {"★".repeat(item.rating)}
-                    {"☆".repeat(5 - item.rating)}
+{item.rating && (
+  <>
+    {"★".repeat(item.rating)}
+    {"☆".repeat(5 - item.rating)}
+  </>
+)}
+                   
                     <p className="mt-2 text-sm">{item.date}</p>
                   </div>
-                )}
+                {/* )} */}
               </div>
             </SwiperSlide>
           ))}
