@@ -611,6 +611,7 @@ export const MiraRoadComingProject: mapArrayValue[] = [
     description: "Under Construction",
   },
 ];
+
 export const BhayanderCompleteProject = [
   {
     name: "Rashmi's Laxmi Sadan",
