@@ -1,11 +1,7 @@
-
-
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-
 import L from 'leaflet';
-
 
 const DefaultIcon = new L.Icon({
   iconUrl: "/assets/images/location-pin.png",
@@ -18,45 +14,45 @@ const DefaultIcon = new L.Icon({
 
 L.Marker.prototype.options.icon = DefaultIcon;
 
-
-interface mapArrayValue  {
+interface MapArrayValue {
   name: string;
   location: string;
   description: string;
-  lat:number;
-  lng:number;
+  lat: number;
+  lng: number;
   year: number | null;
 }
+
 interface Props {
-lat: number;
-lng: number;
-mapArrayValue:mapArrayValue[]
+  lat: number;
+  lng: number;
+  mapArray?: MapArrayValue[];
 }
 
-const MapLine = ({lat , lng , mapArrayValue}:Props) => {
-  const center: [number, number] =[lat, lng];
+const MapLine: React.FC<Props> = ({ lat, lng, mapArray = [] }) => {
+  const center: [number, number] = [lat, lng];
 
+  console.log('lat', lat)
   return (
     <MapContainer
-
       center={center}
       zoom={12}
       scrollWheelZoom={false}
-      doubleClickZoom={true} 
-      style={{ height: '500px', width: '100%'  }}
+      doubleClickZoom={true}
+      style={{ height: '500px', width: '100%' }}
     >
-     <TileLayer
+      <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
 
-      {mapArrayValue.map((store, index) => (
+      {mapArray.map((store, index) => (
         <Marker
           key={index}
           position={[store.lat, store.lng]}
           eventHandlers={{
             mouseover: (e) => e.target.openPopup(),
-            mouseout: (e) => e.target.closePopup(), 
+            mouseout: (e) => e.target.closePopup(),
             dblclick: (e) => e.originalEvent.stopPropagation(),
           }}
         >
