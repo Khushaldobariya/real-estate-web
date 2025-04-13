@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "../Navbar.tsx";
 
-import { Home } from "lucide-react";
+
 import CurrentProjects from "./CurrentProjects.tsx";
 import Vision from "./Vision.tsx";
 import TeamMember from "./TeamMember.tsx";
 import KnowMore from "./KnowMore.tsx";
-import MapLine from "./MapLine.tsx";
+
 import Project from "./Project.tsx";
 import { AboutHome } from "../../utils/icons.tsx";
 

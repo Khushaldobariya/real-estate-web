@@ -7,13 +7,15 @@ import {
 } from "lucide-react";
 import React from "react";
 import Navbar from "../Navbar.tsx";
+import {  useNavigate } from "react-router-dom";
 
 const BlogDetail = () => {
+const navigate = useNavigate();
   return (
     <>
       <Navbar isHome={false} />
       <section className="mt-[187px] px-4 sm:px-6 lg:px-20 w-full">
-        <button className="bg-transparent flex items-center gap-2">
+        <button className="bg-transparent flex items-center gap-2" onClick={() =>navigate(-1)}>
           <ChevronLeft />
           <span className="pt-1">All Posts</span>
         </button>
@@ -33,7 +35,7 @@ const BlogDetail = () => {
           </div>
           <div className="mt-20">
             <img
-              src={`/assets/images/latestBlogs/image-0.png`}
+              src={`/assets/images/latestBlogs/Image-0.webp`}
               alt={"insdjsbnf"}
               className={`w-full h-[700px] object-cover`}
             />
@@ -217,7 +219,7 @@ const BlogDetail = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-[80px]">
                 <div className="border border-black overflow-hidden">
                   <img
-                    src="/assets/images/latestBlogs/Image-6.png"
+                    src="/assets/images/latestBlogs/Image-6.webp"
                     alt="Target"
                     className="w-full h-80 object-cover"
                   />
@@ -245,7 +247,7 @@ const BlogDetail = () => {
                 </div>
                 <div className="border border-black overflow-hidden">
                   <img
-                    src="/assets/images/latestBlogs/Image-5.png"
+                    src="/assets/images/latestBlogs/Image-5.webp"
                     alt="Target"
                     className="w-full h-80 object-cover"
                   />
@@ -271,7 +273,7 @@ const BlogDetail = () => {
                 </div>
                 <div className="border border-black overflow-hidden">
                   <img
-                    src="/assets/images/latestBlogs/Image-7.png"
+                    src="/assets/images/latestBlogs/Image-7.webp"
                     alt="Target"
                     className="w-full h-80 object-cover"
                   />

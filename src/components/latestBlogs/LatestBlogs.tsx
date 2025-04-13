@@ -2,7 +2,7 @@ import { ChevronRight, Search } from "lucide-react";
 import React, { useState } from "react";
 import { Breadcrumbs, Typography } from "@mui/material";
 import { blogData } from "../../utils/consents.ts";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar.tsx";
 import CircularText from "./CircularText.tsx";
 
@@ -25,12 +25,11 @@ const LatestBlogs = () => {
   return (
     <>
       <Navbar isHome={false} />
-
-      <section className="px-4 sm:px-6 lg:px-20 w-full mt-36 flex justify-between">
+      <section className="px-4 sm:px-6 lg:px-20 w-full mt-24 md:mt-36 flex flex-col md:flex-row justify-between">
         <div>
           <Breadcrumbs
             separator=">"
-            className="text-gray-500 text-sm md:text-base lg:text-lg"
+            className="text-gray-500 text-base md:text-lg lg:text-xl"
           >
             {breadcrumb.map((item, index) => (
               <Typography
@@ -43,39 +42,35 @@ const LatestBlogs = () => {
               </Typography>
             ))}
           </Breadcrumbs>
-          <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-[56px] font-semibold mt-6">
+          <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl  mt-8">
             <span className="text-black">Our </span>
             <span className="text-[#905c87] pr-4">Latest Blogs</span>
           </h1>
-          <div className="mt-[76px] px-6 py-3 bg-[#D9D9D9] rounded-[2px] max-w-sm flex items-center">
-            <Search />
+          <div className="mt-12 px-6 py-4 bg-[#D9D9D9] max-w-sm flex items-center">
+            <Search className="w-6 h-6" />
             <input
               type="text"
               name=""
               id=""
               placeholder="Search..."
-              className="bg-transparent outline-none text-xl font-normal ml-3 pt-1 placeholder:text-black"
+              className="bg-transparent outline-none text-lg md:text-xl font-normal ml-3 w-full placeholder:text-black"
             />
           </div>
         </div>
-        <div>
-          {/* <img
-            src={"/assets/images/latestBlog.png"}
-            alt="Logo"
-            className="w-auto h-auto"
-            loading="eager"
-          /> */}
+        <div className="mt-8 md:mt-0 hidden md:block">
           <CircularText />
         </div>
       </section>
-      <section className="px-4 sm:px-6 lg:px-20 py-10">
-        <div className="flex flex-col lg:flex-row gap-16">
+      <section className="px-4 sm:px-6 lg:px-20 py-16">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
           <div className="w-full lg:w-1/4">
-            <h2 className="text-xl font-semibold mb-4">Blog categories</h2>
+            <h2 className="text-2xl md:text-3xl font-semibold mb-6">
+              Blog categories
+            </h2>
             {categories.map((category, index) => (
               <button
                 key={index}
-                className={`w-full text-left py-2 px-4 mb-2 hover:bg-[#F4F4F4] rounded transition-colors ${
+                className={`w-full text-left py-3 px-4 mb-3 hover:bg-[#F4F4F4] transition-colors text-lg ${
                   selectedCategory === category
                     ? "bg-[#F4F4F4]"
                     : "bg-transparent"
@@ -88,43 +83,48 @@ const LatestBlogs = () => {
           </div>
 
           <div className="w-full lg:w-3/4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {blogData.map((blog, index) => (
                 <div
                   key={blog.id}
-                  className={`${index === 0 ? "md:  col-span-2" : ""}`}
+                  className={`${index === 0 ? "md:col-span-2" : ""}`}
                 >
                   <img
-                    src={`/assets/images/latestBlogs/image-${index}.png`}
+                    src={`/assets/images/latestBlogs/Image-${index}.webp`}
                     alt={blog.title}
                     className={`w-full ${
-                      index === 0 ? "h-[550px]" : "h-[350px]"
+                      index === 0 ? "h-[600px]" : "h-[400px]"
                     } object-cover`}
                   />
-                  <div className="p-4">
+                  <div className="py-6 space-y-6">
                     <div className="flex items-center gap-4">
-                      <p className="text-sm font-semibold bg-[#F4F4F4] w-max px-2 py-1  ">
+                      <p className="text-base md:text-lg font-semibold bg-[#F4F4F4] w-max px-3 py-2">
                         {blog.date}
                       </p>
-                      <p className="text-sm font-semibold">{blog.readTime}</p>
+                      <p className="text-base md:text-lg font-semibold">
+                        {blog.readTime}
+                      </p>
                     </div>
                     <h3
                       className={`${
-                        index === 0 ? "text-3xl" : "text-2xl"
-                      } font-semibold mt-4`}
+                        index === 0
+                          ? "text-xl md:text-4xl"
+                          : "text-lg md:text-2xl"
+                      } font-semibold tracking-wider`}
                     >
                       {blog.title}
                     </h3>
-                    <p className="text-base mt-2">
-                      {blog.description.substring(0, 100)}...
+                    <p className="text-base md:text-lg">
+                   
+                      {blog.description}
                     </p>
-                    <p
-                      className="text-base mt-4 flex items-center gap-3 cursor-pointer"
-                      onClick={() => handleReadMore(blog?.id)}
+                    <Link
+                      to={`/blog/blog-detail/${blog?.id}`}
+                      className="flex items-center w-fit gap-2 md:gap-4 text-lg relative after:bg-[#9b4992] after:absolute after:h-0.5 after:w-full after:bottom-0 after:left-0 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-[#9b4992] cursor-pointer"
                     >
                       Read more
-                      <ChevronRight className="text-base" />
-                    </p>
+                      <ChevronRight className="w-5 h-5" />
+                    </Link>
                   </div>
                 </div>
               ))}

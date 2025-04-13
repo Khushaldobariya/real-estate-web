@@ -2,6 +2,7 @@ import React from "react";
 import { VectorIcon } from "../utils/icons.tsx";
 import { ServiceData } from "../utils/consents.ts";
 import { ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const InnovationsSection = () => {
   return (
@@ -41,13 +42,13 @@ const InnovationsSection = () => {
                 </div>
                 <p className="text-base md:text-xl" >{service.description}</p>
 
-                <a
-                  href={service.link}
+                <Link
+                  to={service.link}
                   className="flex items-center w-fit gap-2 md:gap-4 text-lg relative after:bg-[#9b4992] after:absolute after:h-0.5 after:w-full // after:bottom-0 after:left-0 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 // hover:text-[#9b4992] cursor-pointer"
                 >
                   Learn more
                   <ChevronRight size={16} />
-                </a>
+                </Link>
               </div>
             </div>
           ))}

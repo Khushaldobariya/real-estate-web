@@ -1,42 +1,35 @@
 import React from "react";
-import styles from "./CircularText.module.css";
+import { AboutHome } from "../../utils/icons.tsx";
+
 const CircularText = () => {
-  const text = "OUR BLOG. GHAR HO TOH AISA.";
-  const radius = 100; 
-  const letterSpacing = 360 / text.length; 
-
-  const letters = text.split("").map((char, index) => {
-    const angle = (index * letterSpacing - 90) * (Math.PI / 180);
-    const x = radius * Math.cos(angle);
-    const y = radius * Math.sin(angle);
-
-    return (
-      <span
-        key={index}
-        className={styles.letter}
-        style={{
-          transform: `translate(${x}px, ${y}px) rotate(${
-            index * letterSpacing
-          }deg)`,
-          transformOrigin: `0 ${radius}px`,
-        }}
-      >
-        {char}
-      </span>
-    );
-  });
+  const text = "OH CHARLOTTE AISA. BLOG";
 
   return (
-    <div className={styles.container}>
-      <div className={styles.circle}>
-        {letters}
-        <div className={styles.center}>
-          <img
-            src="/assets/images/latestBlogs/home.svg"
-            alt="Logo"
-            className={styles.logo}
+    <div className="relative w-52 h-52 flex items-center justify-center">
+      {/* Added custom animation duration using animate-[spin_15s_linear_infinite] */}
+      <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full animate-[spin_15s_linear_infinite]">
+        <defs>
+          <path 
+            id="textPath" 
+            d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" 
+            fill="transparent" 
           />
-        </div>
+        </defs>
+        <text>
+          <textPath 
+            xlinkHref="#textPath" 
+            startOffset="0%" 
+            textAnchor="middle"
+            className="text-xs font-medium tracking-[0.2em] fill-current"
+          >
+            GHAR OH TO AISA • OUR BLOG • GHAR OH TO AISA • OUR BLOG •{" "}
+          </textPath>
+        </text>
+      </svg>
+
+      {/* Purple circle with house icon */}
+      <div className="relative w-20 h-20 md:w-24 md:h-24 bg-[#9e248b] rounded-[50%] flex items-center justify-center z-10 shadow-lg">
+        <AboutHome />
       </div>
     </div>
   );
