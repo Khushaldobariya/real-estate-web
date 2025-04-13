@@ -1,61 +1,72 @@
 import React, { useState } from "react";
-
-import {
-  BhayanderComingProject,
-  GhatkoparComingProject,
-  MiraRoadComingProject,
-  NaigaonComingProject,
-  ThaneComingProject,
-  VasaiComingProject,
-} from "../../utils/consents.ts";
+import { AllComingProjects } from "../../utils/consents.ts";
 import { Project } from "../../utils/type.ts";
 import ProjectLocationSection from "./ProjectLocationSection.tsx";
 
 const UpComingProject = () => {
   const [selectedProject, setSelectedProject] = useState<Project>(
-    VasaiComingProject[0]
+    AllComingProjects.find((project) => project.location.includes("Vasai")) ||
+      AllComingProjects[0]
   );
 
   const handleProjectClick = (project: Project): void => {
     setSelectedProject(project);
   };
+  
+  const vasaiProjects = AllComingProjects.filter((project) =>
+    project.location.includes("Vasai")
+  );
+  const miraRoadProjects = AllComingProjects.filter((project) =>
+    project.location.includes("Mira Road")
+  );
+  const naigaonProjects = AllComingProjects.filter((project) =>
+    project.location.includes("Naigaon")
+  );
+  const ghatkoparProjects = AllComingProjects.filter((project) =>
+    project.location.includes("Ghatkopar")
+  );
+  const thaneProjects = AllComingProjects.filter((project) =>
+    project.location.includes("Thane")
+  );
+  const bhayanderProjects = AllComingProjects.filter((project) =>
+    project.location.includes("Bhayander")
+  );
+
   return (
-    <div className="max-w-7xl mx-auto space-y-12">
+    <div className="mx-auto space-y-12">
       <ProjectLocationSection
         title="Vasai Projects"
-        projects={VasaiComingProject}
+        projects={vasaiProjects}
         selectedProject={selectedProject}
         onProjectClick={handleProjectClick}
       />
       <ProjectLocationSection
         title="Mira Road Projects"
-        projects={MiraRoadComingProject}
+        projects={miraRoadProjects}
         selectedProject={selectedProject}
         onProjectClick={handleProjectClick}
       />
       <ProjectLocationSection
         title="Naigaon Projects"
-        projects={NaigaonComingProject}
+        projects={naigaonProjects}
         selectedProject={selectedProject}
         onProjectClick={handleProjectClick}
       />
       <ProjectLocationSection
         title="Ghatkopar Projects"
-        projects={GhatkoparComingProject}
+        projects={ghatkoparProjects}
         selectedProject={selectedProject}
         onProjectClick={handleProjectClick}
       />
-
       <ProjectLocationSection
         title="Thane Projects"
-        projects={ThaneComingProject}
+        projects={thaneProjects}
         selectedProject={selectedProject}
         onProjectClick={handleProjectClick}
       />
-
       <ProjectLocationSection
         title="Bhayander Projects"
-        projects={BhayanderComingProject}
+        projects={bhayanderProjects}
         selectedProject={selectedProject}
         onProjectClick={handleProjectClick}
       />

@@ -30,10 +30,10 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
           ))}
         </Breadcrumbs>
       )}
-      <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl  mt-2 space-x-3">
-        <span className="text-black">{title}</span>
-        <span className="text-[#905c87] pr-4">{title1}</span>
-      </h1>
+        <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl  mt-2 space-x-3">
+          <span className="text-black">{title}</span>
+          <span className="text-[#905c87] pr-4">{title1}</span>
+        </h1>
       {subtitle && <p className={` text-base sm:text-lg md:text-xl mt-3 ${align =="center" && "max-w-lg mx-auto"}` }>{subtitle}</p>}
     </div>
   );

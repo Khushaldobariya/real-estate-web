@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+  width: 150px; 
+  height: 150px;
+  margin: 0 auto;
+}
+
+.circle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.letter {
+  position: absolute;
+  font-size: 16px; 
+  color: #000;
+  white-space: nowrap;
+  transform-origin: 0 20px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px; 
+  height: 80px;
+  background-color: #a33f9e; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 95px; 
+  height: 95px;
+}

@@ -1,96 +1,90 @@
-import { ChevronRight } from 'lucide-react';
-import React from 'react'
-import { Link } from 'react-router-dom';
-
+import { ChevronRight } from "lucide-react";
+import React from "react";
+import { Link } from "react-router-dom";
 
 type NewsItem = {
-    image: string;
-    title: string;
-    description: string;
-    link: string;
-    label?: string;
-    time:string;
-  };
+  image: string;
+  title: string;
+  description: string;
+  link: string;
+  label?: string;
+  time: string;
+};
 type NewsSectionProps = {
-    news: NewsItem[];
-  };
-  
-const Blog = ({news}:NewsSectionProps) => {
+  news: NewsItem[];
+};
+
+const Blog = ({ news }: NewsSectionProps) => {
   return (
-  
     <section className=" px-4 md:px-10 lg:px-12 mx-auto container">
-  <h2 className=" text-3xl sm:text-4xl  lg:text-5xl font-medium text-gray-800 mb-8 text-center md:text-left md:font-medium">
-    Our Latest <span className="text-[#9f238a]">News</span>
-  </h2>
-  <div className="grid lg:grid-cols-2 gap-8">
-    
-
-    <div className="lg:col-span-1">
-      <div className="relative overflow-hidden">
-        <img
-          src={news[0].image}
-          alt={news[0].title}
-          className="w-full h-[300px] md:h-[400px] object-cover hover:scale-125 transition-transform delay-200 "
-        />
-      </div>
-      <div className="w-full  space-y-5 pt-4">
-        <p className="text-sm">{news[0].time}</p>
-        <h3 className="text-2xl  md:text-3xl lg:text-[32px]  text-wrap">{news[0].title}</h3>
-        <p className="text-gray-700 text-sm md:text-base">{news[0].description}</p>
-        <a href={news[0].link} className="flex items-center gap-4 underline font-medium text-sm md:text-base">
-          Read more  <ChevronRight size={16} />
-        </a>
-      </div>
-    </div>
-
-   
- 
-    <div className="space-y-6 px-4 md:px-6 lg:px-8">
-  {news.slice(1).map((item, index) => (
-    <div
-      key={index}
-      className="flex flex-col md:flex-row gap-6 md:gap-8 items-start lg:items-center"
-    >
-      <img
-        src={item.image}
-        alt={item.title}
-        className="w-full sm:w-[250px] md:w-[275px] lg:w-[300px] h-[200px] md:h-[225px] lg:h-[250px] object-cover "
-      />
-      <div className="space-y-3">
-        <p className="text-xs sm:text-sm text-gray-500">{item.time}</p>
-        <div>
-          <h4 className="text-xl sm:text-2xl md:text-2xl  leading-snug md:leading-tight">
-            {item.title}
-          </h4>
-          <p className="text-base  sm:text-lg text-gray-700 mt-2">
-            {item.description}
-          </p>
+      <h2 className=" text-3xl sm:text-4xl  lg:text-5xl font-medium text-gray-800 mb-8 text-center md:text-left md:font-medium">
+        Our Latest <span className="text-[#9f238a]">News</span>
+      </h2>
+      <div className="grid lg:grid-cols-2 gap-8">
+        <div className="lg:col-span-1">
+          <div className="relative overflow-hidden">
+            <img
+              src={news[0].image}
+              alt={news[0].title}
+              className="w-full h-[300px] md:h-[400px] object-cover hover:scale-125 transition-transform delay-200 "
+            />
+          </div>
+          <div className="w-full  space-y-5 pt-4">
+            <p className="text-sm">{news[0].time}</p>
+            <h3 className="text-2xl  md:text-3xl lg:text-[32px]  text-wrap">
+              {news[0].title}
+            </h3>
+            <p className="text-gray-700 text-sm md:text-base">
+              {news[0].description}
+            </p>
+            <a
+              href={news[0].link}
+              className="flex items-center gap-4 underline font-medium text-sm md:text-base"
+            >
+              Read more <ChevronRight size={16} />
+            </a>
+          </div>
         </div>
-        <a
-          href={news[0].link}
-          className="inline-flex items-center gap-2  transition duration-300 text-sm sm:text-base font-medium"
-        >
-          Read more <ChevronRight size={18} />
-        </a>
+
+        <div className="space-y-6 px-4 md:px-6 lg:px-8">
+          {news.slice(1).map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col md:flex-row gap-6 md:gap-8 items-start lg:items-center"
+            >
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full sm:w-[250px] md:w-[275px] lg:w-[300px] h-[200px] md:h-[225px] lg:h-[250px] object-cover "
+              />
+              <div className="space-y-3">
+                <p className="text-xs sm:text-sm text-gray-500">{item.time}</p>
+                <div>
+                  <h4 className="text-xl sm:text-2xl md:text-2xl  leading-snug md:leading-tight">
+                    {item.title}
+                  </h4>
+                  <p className="text-base  sm:text-lg text-gray-700 mt-2">
+                    {item.description}
+                  </p>
+                </div>
+                <a
+                  href={news[0].link}
+                  className="inline-flex items-center gap-2  transition duration-300 text-sm sm:text-base font-medium"
+                >
+                  Read more <ChevronRight size={18} />
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
-  ))}
-</div>
+    </section>
+  );
+};
+export default Blog;
 
-
-  </div>
-</section>
-
-
-
-
-
-)
-}
-export default Blog
-
-
-{/* <section className="px-4 md:px-8 lg:px-16 xl:px-20 container mx-auto">
+{
+  /* <section className="px-4 md:px-8 lg:px-16 xl:px-20 container mx-auto">
   <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-800 mb-8 sm:mb-10 text-center md:text-left">
     Our Latest <span className="text-[#905c87]">News</span>
   </h2>
@@ -146,4 +140,5 @@ export default Blog
       ))}
     </div>
   </div>
-</section> */}
+</section> */
+}

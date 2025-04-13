@@ -507,7 +507,80 @@ export const AllCompleteProjects: Project[] = [
 ];
 
 
-
+export const AllComingProjects: Project[] = [
+  {
+    name: "Rashmi Star City Phase 5",
+    location: "Naigaon",
+    lat: 19.3906,
+    lng: 72.8485,
+    year: null,
+    description: "Under Construction",
+  },
+  {
+    name: "Rashmi Lata",
+    location: "Bhayander, Mumbai",
+    lat: 19.3062,
+    lng: 72.8511,
+    year: null,
+    description: "Under Construction",
+  },
+  {
+    name: "Rashmi Snehdeep",
+    location: "Ghatkopar, Mumbai",
+    lat: 19.0866,
+    lng: 72.9083,
+    year: null,
+    description: "Under Construction",
+  },
+  {
+    name: "Rashmi Star City Phase 3",
+    location: "Vasai, Mumbai",
+    lat: 19.3919,
+    lng: 72.8333,
+    year: null,
+    description: "Under Construction",
+  },
+  {
+    name: "Rashmi Star City Phase 2",
+    location: "Vasai, Mumbai",
+    lat: 19.3919,
+    lng: 72.8333,
+    year: null,
+    description: "Under Construction",
+  },
+  {
+    name: "Rashmi Amara",
+    location: "Vasai, Mumbai",
+    lat: 19.3919,
+    lng: 72.8333,
+    year: null,
+    description: "Under Construction",
+  },
+  {
+    name: "Horizon Heights",
+    location: "Vasai, Mumbai",
+    lat: 19.3919,
+    lng: 72.8333,
+    year: null,
+    description: "Under Construction",
+  },
+  {
+    name: "Rashmi Sarvesh",
+    location: "Thane, Mumbai",
+    lat: 19.2183,
+    lng: 72.9781,
+    year: null,
+    description: "Under Construction",
+  },
+  {
+    name: "Horizon Complex",
+    location: "Mira Road, Mumbai",
+    lat: 19.2853,
+    lng: 72.8688,
+    year: null,
+    description: "Under Construction",
+  },
+]
 
 
 export const NaigaonComingProject: Project[] = [
@@ -819,4 +892,79 @@ export const StatsData = [
   { value: "14K+", label: "Customers", size: "text-4xl" },
   { value: "07", label: "Cities", size: "text-4xl" },
   { value: "1CR", label: "Landbank", size: "text-4xl" }
+];
+
+export const blogData = [
+  {
+    id: 1,
+    date: "February 3, 2024",
+    readTime: "5 min read",
+    title: "Rashmi Group Revolutionizes Housing Landscape with 'Char Ho To Aisa and Apne Dam Par' Initiative - A Game Changer in Accessible Housing",
+    description:
+      "In the realm of housing, Rashmi Group has emerged as a pioneer with its groundbreaking initiative, “Ghar Ho To Aisa and Apne Dam Par.” This transformative approach not only redefines the landscape of housing but also empowers individuals to take.",
+  },
+  {
+    id: 2,
+    date: "October 12, 2023",
+    readTime: "5 min read",
+    title: "Mira Road Property: The Only Blog You Need To Read",
+    description:
+      "Mira Road, which is famous for its salt pans, is now famous for its properties. 10 years ago, properties here sold for 10 lacs are now sold for 1CR, and the price keeps increasing, but buying a property at Mira",
+  },
+  {
+    id: 3,
+    date: "November 23, 2023",
+    readTime: "5 min read",
+    title: "1BHK & 2BHK in Mira Road: Best Deal of the Year",
+    description:
+      "2023 is complex, but it is the best, like life. But, to make it more memorable for homebuyers, we as “Ghar Ho To Aisa – Rashmi Group” come up with our best offer, and that’s “1BHK Ki Price Mein 2BHK.”",
+  },
+  {
+    id: 4,
+    date: "September 12, 2023",
+    readTime: "5 min read",
+    title: "Why Buy a 2 BHK in Mira Road Right Now",
+    description:
+      "Introduction: Hey, Mumbaikar! Are you considering buying a 2 BHK home in Mira Road? Prepare to feel excited! In this blog, we have five great reasons that will make you want to grab those house keys as fast as you",
+  },
+  {
+    id: 5,
+    date: "August 29, 2023",
+    readTime: "10 min read",
+    title: "Finding Comfort & Style: The Allure of 2 Bedroom Flats in Mumbai Real Estate",
+    description:
+      "Introduction: Have you ever dreamed of living in the heart of the vibrant city of Mumbai? Well, the allure of 2 BHK flats might make that dream come true. These 2 BHK apartments have a combination of comfort and style.",
+  },
+  {
+    id: 6,
+    date: "August 17, 2023",
+    readTime: "5 min read",
+    title: "Growth Partner – Everything you need to know about",
+    description:
+      "Growth Partner is the latest innovation of Rashmi Group (Ghar Ho To Aisa). This plan is inspired by America’s real estate industry, where investors can only buy one floor. This allows investors to invest a smaller amount rather than a",
+  },
+  {
+    id: 7,
+    date: "August 8, 2023",
+    readTime: "10 min read",
+    title: "Is It Apne Dam Par Legit?",
+    description:
+      "When it looks too good, it’s a scam. It’s said that Apne Dam Par (ADP) can save you up to 40% of your home loan interest. If we put this word into numbers, it’s more than 15 lacs! So, is",
+  },
+  {
+    id: 8,
+    date: "July 7, 2023",
+    readTime: "5 min read",
+    title: "Buying a Home: 9 Factors for a Connected Living Experience",
+    description:
+      "“Home is not just a place, it’s a feeling of belonging where cherished memories are made and dreams take root.” Introduction Are you thinking of buying a home, because it looks good? It’s not only about the physical aspects. Social",
+  },
+  {
+    id: 9,
+    date: "July 16, 2023",
+    readTime: "10 min read",
+    title: "Apne Dam Par Payment Plan: Your Money Saver!",
+    description:
+      "“Every problem create an opportunity; just identify it.” Why Apne Dam Par Payment Plan Exist? What if I tell you, you’ve to pay almost 40% more for your home, and you don’t have any other option? Injustice? Right? This is",
+  },
 ];
