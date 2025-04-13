@@ -18,8 +18,8 @@ const LatestBlogs = () => {
     "Financing and mortgage advice",
   ];
 
-  const handleReadMore = (id: number) => {
-    navigate(`/blog/blog-detail/${id}`);
+  const handleReadMore = (blog) => {
+    navigate(`/blog/blog-detail/${blog.id}`, { state: { blog } });
   };
 
   return (
@@ -115,11 +115,11 @@ const LatestBlogs = () => {
                       {blog.title}
                     </h3>
                     <p className="text-base md:text-lg">
-                   
                       {blog.description}
                     </p>
                     <Link
-                      to={`/blog/blog-detail/${blog?.id}`}
+                      to={`/blog/blog-detail/${blog.id}`}
+                      state={{ blog }}
                       className="flex items-center w-fit gap-2 md:gap-4 text-lg relative after:bg-[#9b4992] after:absolute after:h-0.5 after:w-full after:bottom-0 after:left-0 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-[#9b4992] cursor-pointer"
                     >
                       Read more

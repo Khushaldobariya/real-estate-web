@@ -25,13 +25,13 @@ const ProjectLocationSection: React.FC<ProjectLocationSectionProps> = ({
 
   return (
     <>
-      <h3 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-medium leading-6 text-gray-900 text-center">{title}</h3>
-      <div className="flex gap-1 md:gap-8">
-        <div className="w-1/2 md:w-2/5 h-[calc(100vh-3rem)] overflow-y-auto space-y-8 hide-scrollbar">
+      {title && <h3 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-medium leading-6 text-gray-900 text-center mb-6">{title}</h3>}
+      <div className="flex flex-row gap-4 md:gap-6 lg:gap-8 px-2 md:px-4 lg:px-6">
+        <div className="w-1/2 md:w-2/5 h-[calc(100vh-3rem)] overflow-y-auto space-y-4 md:space-y-6 hide-scrollbar">
           {projects.map((project, index) => (
             <div 
               key={index} 
-              className={`overflow-hidden cursor-pointer ${selectedProject.name === project.name ? 'border border-[#a43694] ' : ''}`}
+              className={`overflow-hidden cursor-pointer  ${selectedProject.name === project.name ? 'border-2 border-[#a43694] ' : 'border border-gray-200'}`}
               onClick={() => onProjectClick(project)}
             >
               <div className="relative group">
@@ -52,7 +52,7 @@ const ProjectLocationSection: React.FC<ProjectLocationSectionProps> = ({
           ))}
         </div>
 
-        <div className="w-1/2 md:w-3/5 sticky top-6 px-2 md:px-10 mx-auto">
+        <div className="w-1/2 md:w-3/5 sticky top-6">
           <div className="h-[calc(100vh-3rem)] bg-gray-50 rounded-lg shadow-lg">
             {/* Use the key to force re-render when selectedProject changes */}
             <MapLine

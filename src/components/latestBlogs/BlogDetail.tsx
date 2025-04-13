@@ -5,17 +5,65 @@ import {
   ThumbsDown,
   ThumbsUp,
 } from "lucide-react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar.tsx";
-import {  useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { blogData } from "../../utils/consents.ts";
+
+// Define TypeScript interface for blog data
+interface BlogPost {
+  id: number;
+  date: string;
+  readTime: string;
+  title: string;
+  description: string;
+}
+
+// Define interface for route params
+
+
+// Define interface for location state
+interface LocationState {
+  blog?: BlogPost;
+}
 
 const BlogDetail = () => {
-const navigate = useNavigate();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { id } = useParams<{ id: string }>();
+  const [blog, setBlog] = useState<BlogPost | null>(null);
+  const [relatedPosts, setRelatedPosts] = useState<BlogPost[]>([]);
+
+  useEffect(() => {
+    // If blog data is passed through location state, use it
+    const state = location.state as LocationState;
+    if (state && state.blog) {
+      setBlog(state.blog);
+    } else if (id) {
+      // Otherwise fetch it based on the ID from the URL
+      const blogId = parseInt(id);
+      const foundBlog = blogData.find(blog => blog.id === blogId);
+      if (foundBlog) {
+        setBlog(foundBlog as BlogPost);
+      }
+    }
+
+    // Get 3 related posts (excluding current blog)
+    const filteredPosts = blogData
+      .filter(post => post.id !== parseInt(id || '0'))
+      .slice(0, 3);
+    setRelatedPosts(filteredPosts as BlogPost[]);
+  }, [id, location.state]);
+
+  if (!blog) {
+    return <div className="mt-[187px] px-4 sm:px-6 lg:px-20 w-full">Loading...</div>;
+  }
+
   return (
     <>
       <Navbar isHome={false} />
       <section className="mt-[187px] px-4 sm:px-6 lg:px-20 w-full">
-        <button className="bg-transparent flex items-center gap-2" onClick={() =>navigate(-1)}>
+        <button className="bg-transparent flex items-center gap-2" onClick={() => navigate(-1)}>
           <ChevronLeft />
           <span className="pt-1">All Posts</span>
         </button>
@@ -27,10 +75,11 @@ const navigate = useNavigate();
             <p className="text-sm font-semibold">5 min read</p>
           </div>
           <div className="mt-6">
-            <p className="text-2xl md:text-3xl lg:text-4xl font-bold  ">
-              Rashmi Group Revolutionizes Housing Landscape with “Ghar Ho To
+            <p className="text-2xl md:text-3xl lg:text-4xl font-bold  tracking-wider">
+              {/* Rashmi Group Revolutionizes Housing Landscape with “Ghar Ho To
               Aisa and Apne Dam Par” Initiative: A Game Changer in Accessible
-              Housing
+              Housing */}
+              {blog.title}
             </p>
           </div>
           <div className="mt-20">
@@ -83,40 +132,40 @@ const navigate = useNavigate();
                 </button>
               </div>
             </div>
-            <div className="mt-16">
-              <div className="flex flex-col lg:flex-row gap-8">
+            <div className="mt-20 md:mt-24 lg:mt-28">
+              <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 text-base md:text-lg">
                 <div className="lg:w-2/3">
-                  <h2 className="text-2xl font-bold mb-6">Introduction</h2>
-                  <p className="text-base mb-12">
+                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">Introduction</h2>
+                  <p className="text-base md:text-lg lg:text-xl  tracking-wider">
                     In the realm of housing, Rashmi Group has emerged as a
-                    pioneer with its groundbreaking initiative, “Ghar Ho To Aisa
-                    and Apne Dam Par.” This transformative approach not only
+                    pioneer with its groundbreaking initiative, "Ghar Ho To Aisa
+                    and Apne Dam Par." This transformative approach not only
                     redefines the landscape of housing but also empowers
                     individuals to take charge of their dream homes. The essence
                     of the initiative lies in its commitment to providing not
                     just houses but homes where families can thrive. Rashmi
-                    Group’s vision revolves around making homeownership a
+                    Group's vision revolves around making homeownership a
                     reality for everyone, irrespective of economic background.
-                    The slogan “Ghar Ho To Aisa” encapsulates the aspiration to
+                    The slogan "Ghar Ho To Aisa" encapsulates the aspiration to
                     create homes that go beyond brick and mortar, fostering a
                     sense of belonging and security among the homeowners.
                   </p>
-                  <div className="w-full h-64 bg-gray-300 flex items-center justify-center mb-4">
-                    <span className="text-gray-500">
+                  <div className="w-full h-64 md:h-80 lg:h-96 bg-gray-300 flex items-center justify-center mb-6">
+                    <span className="text-gray-500 text-lg">
                       Image caption goes here
                     </span>
                   </div>
-                  <p className="mb-12">| Image caption goes here</p>
-                  <p className="text-base mb-4">
+                  <p className="mb-12 text-sm md:text-base italic">| Image caption goes here</p>
+                  <p className="text-base md:text-lg lg:text-xl  tracking-wider">
                     At the core of this initiative is the belief in
-                    self-sufficiency, embodied by the phrase “Apne Dam Par.”
+                    self-sufficiency, embodied by the phrase "Apne Dam Par."
                     Rashmi Group recognizes the financial challenges that many
                     face when it comes to buying a house. Instead of relying
                     solely on traditional financing models, the initiative
                     encourages individuals to leverage their own strengths and
                     resources to fulfill this fundamental need.
                   </p>
-                  <p className="text-base mb-8">
+                  <p className="text-base md:text-lg lg:text-xl  tracking-wider">
                     One of the key features of the initiative is its innovative
                     financing options. Rashmi Group has introduced flexible
                     payment plans that accommodate not only various income
@@ -126,7 +175,7 @@ const navigate = useNavigate();
                     ownership and responsibility.
                   </p>
                   <h2 className="text-2xl font-bold mt-8 mb-5">Conclusion</h2>
-                  <p className="text-base">
+                  <p className="text-base md:text-lg lg:text-xl  tracking-wider">
                     In conclusion, Rashmi Group’s “Ghar Ho To Aisa and Apne Dam
                     Par” initiative stands as a game changer in the realm of
                     housing. By reimagining the traditional approach to
@@ -140,10 +189,10 @@ const navigate = useNavigate();
                 </div>
                 <div className="lg:w-1/3 p-6 ">
                   <div className="border border-black p-8">
-                    <h3 className="text-xl font-semibold mb-4">
+                    <h3 className="text-3xl sm:text-4xl  font-semibold mb-4">
                       Join Our Parivaar
                     </h3>
-                    <p className="text-sm mb-6">
+                    <p className="text-base md:text-lg lg:text-xl mb-6">
                       Subscribe to receive the latest blog posts to your inbox
                       every week.
                     </p>
@@ -155,7 +204,7 @@ const navigate = useNavigate();
                     <button className="w-full bg-[#9F238B] rounded-md text-white py-2">
                       Subscribe
                     </button>
-                    <p className="text-xs mt-4">
+                    <p className="text-xs md:text-sm lg:text-base mt-4">
                       By subscribing you agree to with our Privacy Policy
                     </p>
                   </div>

@@ -29,7 +29,7 @@ const Project = () => {
     <div className="space-y-20 my-10">
       <Navbar isHome={false} />
 
-      <div className="space-y-4 mt-28 px-5 md:px-20">
+      <div className="space-y-4 mt-28 px-5 container mx-auto md:px-20">
         <div className="flex justify-between items-center">
           <div className="mt-10">
             <p className=" text-sm md:text-base lg:text-lg">

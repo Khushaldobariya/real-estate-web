@@ -13,63 +13,17 @@ const UpComingProject = () => {
     setSelectedProject(project);
   };
   
-  const vasaiProjects = AllComingProjects.filter((project) =>
-    project.location.includes("Vasai")
-  );
-  const miraRoadProjects = AllComingProjects.filter((project) =>
-    project.location.includes("Mira Road")
-  );
-  const naigaonProjects = AllComingProjects.filter((project) =>
-    project.location.includes("Naigaon")
-  );
-  const ghatkoparProjects = AllComingProjects.filter((project) =>
-    project.location.includes("Ghatkopar")
-  );
-  const thaneProjects = AllComingProjects.filter((project) =>
-    project.location.includes("Thane")
-  );
-  const bhayanderProjects = AllComingProjects.filter((project) =>
-    project.location.includes("Bhayander")
-  );
+ 
 
   return (
-    <div className="mx-auto space-y-12">
+    <div className="flex flex-col gap-8 p-4 md:p-6 lg:p-8">
       <ProjectLocationSection
-        title="Vasai Projects"
-        projects={vasaiProjects}
+    
+        projects={AllComingProjects}
         selectedProject={selectedProject}
         onProjectClick={handleProjectClick}
       />
-      <ProjectLocationSection
-        title="Mira Road Projects"
-        projects={miraRoadProjects}
-        selectedProject={selectedProject}
-        onProjectClick={handleProjectClick}
-      />
-      <ProjectLocationSection
-        title="Naigaon Projects"
-        projects={naigaonProjects}
-        selectedProject={selectedProject}
-        onProjectClick={handleProjectClick}
-      />
-      <ProjectLocationSection
-        title="Ghatkopar Projects"
-        projects={ghatkoparProjects}
-        selectedProject={selectedProject}
-        onProjectClick={handleProjectClick}
-      />
-      <ProjectLocationSection
-        title="Thane Projects"
-        projects={thaneProjects}
-        selectedProject={selectedProject}
-        onProjectClick={handleProjectClick}
-      />
-      <ProjectLocationSection
-        title="Bhayander Projects"
-        projects={bhayanderProjects}
-        selectedProject={selectedProject}
-        onProjectClick={handleProjectClick}
-      />
+     
     </div>
   );
 };

@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import {
   AllCompleteProjects
 } from "../../utils/consents.ts";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import { Project } from "../../utils/type.ts";
 import ProjectLocationSection from "./ProjectLocationSection.tsx";
-
 
 const CompleteProject: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project>(
@@ -19,18 +17,14 @@ const CompleteProject: React.FC = () => {
   };
 
   return (
-    <>
-      <div className="flex flex-col gap-8 p-6">
-        <ProjectLocationSection 
-          // title="Vasai Projects"
-          projects={AllCompleteProjects}
-          selectedProject={selectedProject}
-          onProjectClick={handleProjectClick}
-        />
-
-       
-      </div>
-    </>
+    <div className="flex flex-col gap-8 p-4 md:p-6 lg:p-8">
+      <ProjectLocationSection 
+  
+        projects={AllCompleteProjects}
+        selectedProject={selectedProject}
+        onProjectClick={handleProjectClick}
+      />
+    </div>
   );
 };
 
