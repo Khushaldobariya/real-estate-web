@@ -32,7 +32,9 @@ const Project = () => {
       <div className="space-y-4 mt-28 px-5 md:px-20">
         <div className="flex justify-between items-center">
           <div className="mt-10">
-            <p className=" text-sm md:text-base lg:text-lg">Home {">"} Project</p>
+            <p className=" text-sm md:text-base lg:text-lg">
+              Home {">"} Project
+            </p>
             <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl ">
               Our <span className="text-[#a0238a]">Project</span>
             </h1>
@@ -54,33 +56,30 @@ const Project = () => {
           </p>
         </div>
       </div>
+      <div className="space-y-12 ">
+        <div className="w-full flex justify-around gap-10 pt-10">
+          {["Completed", "Current", "Upcoming"].map((s) => (
+            <button
+              key={s}
+              className={`p-2  delay-150 ease-in-out  text-base md:text-lg lg:text-xl  border-b-2  font-medium transition-all duration-300 hover:bg-black/10 ${
+                status === s
+                  ? "border-[#a0238a] text-[#a0238a]"
+                  : "border-black text-black"
+              }`}
+              onClick={() =>
+                setStatus(s as "Completed" | "Current" | "Upcoming")
+              }
+            >
+              {s}
+            </button>
+          ))}
+        </div>
 
-      <div className="w-full flex justify-around gap-10 p-t10">
-        {["Completed", "Current", "Upcoming"].map((s) => (
-          <button
-            key={s}
-            className={`p-2  delay-150 ease-in-out  text-base md:text-lg lg:text-xl  border-b-2  font-medium transition-all duration-300 hover:bg-black/10 ${
-              status === s
-                ? "border-[#a0238a] text-[#a0238a]"
-                : "border-black text-black"
-            }`}
-            onClick={() => setStatus(s as "Completed" | "Current" | "Upcoming")}
-          >
-            {s}
-          </button>
-        ))}
+        {status == "Completed" && <CompleteProject />}
+
+        {status == "Current" && <CurrentProject />}
+        {status == "Upcoming" && <UpComingProject />}
       </div>
-
-      {status == "Completed" && (
-      <CompleteProject />
-      )}
-
-      {status == "Current" && (
-
-        <CurrentProject />
-      )
-      }
-      {status =="Upcoming" && <UpComingProject /> }
 
       {/* <div className="flex flex-col gap-10 py-24">
         {filteredProjects.map((item, index) => (

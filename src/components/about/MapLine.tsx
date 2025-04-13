@@ -15,7 +15,7 @@ const DefaultIcon = new L.Icon({
 
 L.Marker.prototype.options.icon = DefaultIcon;
 
-interface MapArrayValue {
+interface Project {
   name: string;
   location: string;
   description: string;
@@ -30,7 +30,7 @@ interface Props {
   name: string;
   year: number | null;
   description: string;
-  mapArray?: MapArrayValue[];
+  mapArray?: Project[];
 }
 
 const MapLine: React.FC<Props> = ({
@@ -43,58 +43,54 @@ const MapLine: React.FC<Props> = ({
 }) => {
   const center: [number, number] = [lat, lng];
 
-  return (
-    <MapContainer
-      center={center}
-      zoom={12}
-      scrollWheelZoom={false}
-      doubleClickZoom={true}
-      style={{ height: "500px", width: "100%" }}
-    >
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
+  const handleMarkerClick = () => {
+    const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}&query_place_id=${name}`;
+    window.open(googleMapsUrl, "_blank");
+  };
 
-      {/* {mapArray.map((store, index) => (
+  return (
+    <div
+      className="map-container"
+      style={{
+        width: "100%",
+        height: "100%",
+        minHeight: "300px",
+        position: "relative",
+      }}
+    >
+      <MapContainer
+        center={center}
+        zoom={12}
+        scrollWheelZoom={false}
+        doubleClickZoom={true}
+        style={{ height: "100%", width: "100%" }}
+        className="leaflet-container"
+      >
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+
         <Marker
-          key={index}
-          position={[store.lat, store.lng]}
+          position={[lat, lng]}
           eventHandlers={{
             mouseover: (e) => e.target.openPopup(),
             mouseout: (e) => e.target.closePopup(),
             dblclick: (e) => e.originalEvent.stopPropagation(),
+            click: handleMarkerClick,
           }}
+          title={name} // Add title attribute to show name on hover
         >
           <Popup autoClose={false} closeOnClick={false}>
-            <strong>{store.name}</strong>
+            <strong>{name}</strong>
             <br />
-            {store.description || 'No description available.'}
+            {description || "No description available."}
             <br />
-            <em>Year: {store.year}</em>
+            <em>Year: {year}</em>
           </Popup>
         </Marker>
-      ))} */}
-      {/* {mapArray.map((store, index) => ( */}
-      <Marker
-        // key={index}
-        position={[lat, lng]}
-        eventHandlers={{
-          mouseover: (e) => e.target.openPopup(),
-          mouseout: (e) => e.target.closePopup(),
-          dblclick: (e) => e.originalEvent.stopPropagation(),
-        }}
-      >
-        <Popup autoClose={false} closeOnClick={false}>
-          <strong>{name}</strong>
-          <br />
-          {description || "No description available."}
-          <br />
-          <em>Year: {year}</em>
-        </Popup>
-      </Marker>
-      {/* ))} */}
-    </MapContainer>
+      </MapContainer>
+    </div>
   );
 };
 

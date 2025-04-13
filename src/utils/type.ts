@@ -27,3 +27,11 @@ export interface About_Project {
   description: string;
   icon: LucideIcon; 
 }
+export interface Project {
+  name: string;
+  location: string;
+  description: string;
+  lat: number;
+  lng: number;
+  year: number | null;
+}

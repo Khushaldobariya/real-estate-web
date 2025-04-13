@@ -5,7 +5,7 @@ import { ChevronRight } from "lucide-react";
 
 const InnovationsSection = () => {
   return (
-    <section className="container mx-auto  lg:pr-14  flex flex-col gap-x-6  md:flex-row items-center">
+    <section className="container mx-auto  lg:pr-14  flex flex-col gap-x-6 lg:gap-x-10  md:flex-row items-center">
       <div className="w-full md:w-1/2 flex justify-center md:justify-end overflow-hidden ">
         <img
           className="object-cover w-full h-[400px] md:h-[550px] lg:w-[57rem] lg:h-[57rem] "
