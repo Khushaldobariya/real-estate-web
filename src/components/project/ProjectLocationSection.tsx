@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Project } from "../../utils/type.ts";
 import MapLine from "../about/MapLine.tsx";
+import { MapPinned } from "lucide-react";
 
 interface ProjectLocationSectionProps {
   title?: string;
@@ -20,18 +21,26 @@ const ProjectLocationSection: React.FC<ProjectLocationSectionProps> = ({
 
   // Update the key whenever selectedProject changes to force a re-render of the map
   useEffect(() => {
-    setMapKey(prevKey => prevKey + 1);
+    setMapKey((prevKey) => prevKey + 1);
   }, [selectedProject]);
 
   return (
     <>
-      {title && <h3 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-medium leading-6 text-gray-900 text-center mb-6">{title}</h3>}
+      {title && (
+        <h3 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-medium leading-6 text-gray-900 text-center mb-6">
+          {title}
+        </h3>
+      )}
       <div className="flex flex-row gap-4 md:gap-6 lg:gap-8 px-2 md:px-4 lg:px-6">
         <div className="w-1/2 md:w-2/5 h-[calc(100vh-3rem)] overflow-y-auto space-y-4 md:space-y-6 hide-scrollbar">
           {projects.map((project, index) => (
-            <div 
-              key={index} 
-              className={`overflow-hidden cursor-pointer  ${selectedProject.name === project.name ? 'border-2 border-[#a43694] ' : 'border border-gray-200'}`}
+            <div
+              key={index}
+              className={`overflow-hidden cursor-pointer  ${
+                selectedProject.name === project.name
+                  ? "border-2 border-[#a43694] "
+                  : "border border-gray-200"
+              }`}
               onClick={() => onProjectClick(project)}
             >
               <div className="relative group">
@@ -43,9 +52,16 @@ const ProjectLocationSection: React.FC<ProjectLocationSectionProps> = ({
                   }}
                   alt={`${project.name} Image`}
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center">
-                  <h3 className="text-xl font-bold text-white mb-2">{project.name}</h3>
-                  <p className="text-sm text-white">{project.year}</p>
+                <div className="absolute bottom-0 w-full bg-[#a0238a] flex items-center justify-between py-2 px-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">
+                      {project.name}
+                    </h3>
+                    <p className="text-sm text-white">{project.year}</p>
+                  </div>
+                  <div>
+                    <MapPinned className="text-white text-2xl" />
+                  </div>
                 </div>
               </div>
             </div>

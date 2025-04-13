@@ -61,10 +61,8 @@ const Project = () => {
           {["Completed", "Current", "Upcoming"].map((s) => (
             <button
               key={s}
-              className={`p-2  delay-150 ease-in-out  text-base md:text-lg lg:text-xl  border-b-2  font-medium transition-all duration-300 hover:bg-black/10 ${
-                status === s
-                  ? "border-[#a0238a] text-[#a0238a]"
-                  : "border-black text-black"
+              className={`p-2  delay-150 ease-in-out  text-base md:text-lg lg:text-2xl font-medium transition-all duration-300 ${
+                status === s ? "font-semibold text-[#a0238a]" : " text-black"
               }`}
               onClick={() =>
                 setStatus(s as "Completed" | "Current" | "Upcoming")
