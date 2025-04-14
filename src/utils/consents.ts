@@ -177,6 +177,7 @@ export const Partners_Bank = [
   "/assets/images/partner/10.svg",
   "/assets/images/partner/11.svg",
   "/assets/images/partner/12.svg",
+  "/assets/images/partner/13.svg",
 ];
 
 
