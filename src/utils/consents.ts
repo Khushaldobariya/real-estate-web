@@ -84,7 +84,7 @@ export const Testimonials = [
     review:
       "After some projects, I have seen one of the best projects in the prime location Mira Road, loyal employees and amenities are awesome. Transparent information ghar ho to aisa a well-known brand.",
     date: "Mar 18, 2023",
-    rating: null,
+    rating: 5,
   },
   {
     name: "Adarsh Jaiswal",
@@ -92,7 +92,7 @@ export const Testimonials = [
     review:
       "After some projects, I have seen one of the best projects in the prime location Mira Road, loyal employees and amenities are awesome. Transparent information ghar ho to aisa a well-known brand.",
     date: "Mar 18, 2023",
-    rating: null,
+    rating: 4,
   },
   {
     name: "Shruti",

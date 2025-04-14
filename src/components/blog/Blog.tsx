@@ -46,11 +46,11 @@ const Blog = ({ news }: NewsSectionProps) => {
           </div>
         </div>
 
-        <div className="space-y-6 px-4 md:px-6 lg:px-8">
+        <div className="space-y-6 pl-4 md:pl-6 lg:pl-8">
           {news.slice(1).map((item, index) => (
             <div
               key={index}
-              className="flex flex-col md:flex-row gap-6 md:gap-8 items-start lg:items-center"
+              className="flex flex-col md:flex-row gap-6 md:gap-8 items-start"
             >
               <img
                 src={item.image}
