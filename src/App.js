@@ -8,6 +8,7 @@ import Contact from "./components/contact/Contact.tsx";
 import Innovations from "./components/innovations/Innovations.tsx";
 import LatestBlogs from "./components/latestBlogs/LatestBlogs.tsx";
 import BlogDetail from "./components/latestBlogs/BlogDetail.tsx";
+import SearchProject from "./components/searchProject/SearchProject.tsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         {/* Fix: Use "path" instead of "to" */}
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/searchProject" element={<SearchProject />} />
         <Route path="/about" element={<About />} />
         {/* <Route path="/commercial" element={<Project />} /> */}
         <Route path="/residence" element={<Project />} />

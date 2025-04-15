@@ -7,11 +7,13 @@ interface ProjectLocationSectionProps {
   title?: string;
   projects: Project[];
   selectedProject: Project;
+  isMapShow:Boolean
   onProjectClick: (project: Project) => void;
 }
 
 const ProjectLocationSection: React.FC<ProjectLocationSectionProps> = ({
   title,
+  isMapShow,
   projects,
   selectedProject,
   onProjectClick,
@@ -69,7 +71,7 @@ const ProjectLocationSection: React.FC<ProjectLocationSectionProps> = ({
         </div>
 
         <div className="w-1/2 md:w-3/5 sticky top-6">
-          <div className="h-[calc(100vh-3rem)] bg-gray-50 rounded-lg shadow-lg">
+        {isMapShow &&   <div className="h-[calc(100vh-3rem)] bg-gray-50 rounded-lg shadow-lg">
             {/* Use the key to force re-render when selectedProject changes */}
             <MapLine
               key={mapKey}
@@ -79,7 +81,8 @@ const ProjectLocationSection: React.FC<ProjectLocationSectionProps> = ({
               lat={selectedProject.lat}
               lng={selectedProject.lng}
             />
-          </div>
+          </div>}
+         
         </div>
       </div>
     </>

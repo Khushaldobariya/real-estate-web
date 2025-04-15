@@ -18,7 +18,7 @@ const UpComingProject = () => {
   return (
     <div className="flex flex-col gap-8 p-4 md:p-6 lg:p-8">
       <ProjectLocationSection
-    
+    isMapShow={true}
         projects={AllComingProjects}
         selectedProject={selectedProject}
         onProjectClick={handleProjectClick}
