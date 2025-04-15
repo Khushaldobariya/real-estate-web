@@ -21,7 +21,7 @@ const Gallery = () => {
         Gallery
       </h2>
 
-      <div className="relative py-7">
+      <div className="relative py-7 mx-4 md:mx-8 lg:mx-16 xl:mx-20">
         <Swiper
           effect="coverflow"
           grabCursor={true}
