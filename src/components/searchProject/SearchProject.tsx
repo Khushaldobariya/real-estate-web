@@ -287,6 +287,7 @@ const SearchProject = () => {
         
         {selectedProject && (
           <ProjectLocationSection
+          showBottomName={true}
             isMapShow={isHideMap}
             projects={filteredProjects}
             selectedProject={selectedProject}

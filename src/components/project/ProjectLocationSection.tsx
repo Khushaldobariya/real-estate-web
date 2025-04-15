@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Project } from "../../utils/type.ts";
 import MapLine from "../about/MapLine.tsx";
 import { MapPinned } from "lucide-react";
+import ProjectDetails from "./ProjectDetails.tsx";
 
 interface ProjectLocationSectionProps {
   title?: string;
   projects: Project[];
   selectedProject: Project;
-  isMapShow:Boolean
+  isMapShow: Boolean;
+  showBottomName: boolean;
   onProjectClick: (project: Project) => void;
 }
 
@@ -17,11 +19,12 @@ const ProjectLocationSection: React.FC<ProjectLocationSectionProps> = ({
   projects,
   selectedProject,
   onProjectClick,
+  showBottomName,
 }) => {
-  // Add a key state to force re-render of the MapLine component when selectedProject changes
+
   const [mapKey, setMapKey] = useState(0);
 
-  // Update the key whenever selectedProject changes to force a re-render of the map
+  
   useEffect(() => {
     setMapKey((prevKey) => prevKey + 1);
   }, [selectedProject]);
@@ -54,7 +57,11 @@ const ProjectLocationSection: React.FC<ProjectLocationSectionProps> = ({
                   }}
                   alt={`${project.name} Image`}
                 />
-                <div className="absolute bottom-0 w-full bg-[#a0238a] flex items-center justify-between py-2 px-4">
+                <div
+                  className={` bottom-0 w-full bg-[#a0238a] flex items-center justify-between py-2 px-4 ${
+                    showBottomName ? "hidden" : "absolute"
+                  }`}
+                >
                   <div>
                     <h3 className="text-xl font-bold text-white mb-2">
                       {project.name}
@@ -66,23 +73,27 @@ const ProjectLocationSection: React.FC<ProjectLocationSectionProps> = ({
                   </div>
                 </div>
               </div>
+              {showBottomName && (
+              <ProjectDetails project={project} />
+              )}
             </div>
           ))}
         </div>
 
         <div className="w-1/2 md:w-3/5 sticky top-6">
-        {isMapShow &&   <div className="h-[calc(100vh-3rem)] bg-gray-50 rounded-lg shadow-lg">
-            {/* Use the key to force re-render when selectedProject changes */}
-            <MapLine
-              key={mapKey}
-              description={selectedProject.description}
-              name={selectedProject.name}
-              year={selectedProject.year}
-              lat={selectedProject.lat}
-              lng={selectedProject.lng}
-            />
-          </div>}
-         
+          {isMapShow && (
+            <div className="h-[calc(100vh-3rem)] bg-gray-50 rounded-lg shadow-lg">
+              {/* Use the key to force re-render when selectedProject changes */}
+              <MapLine
+                key={mapKey}
+                description={selectedProject.description}
+                name={selectedProject.name}
+                year={selectedProject.year}
+                lat={selectedProject.lat}
+                lng={selectedProject.lng}
+              />
+            </div>
+          )}
         </div>
       </div>
     </>
