@@ -10,6 +10,7 @@
 }
 
 body {
+  scroll-padding-top: 0;
   margin: 0;
   padding: 0;
   line-height: 1.6; /* Enhances readability */
@@ -40,9 +41,9 @@ body {
   }
 }
 
-
 html {
     scroll-behavior: smooth;
+    overflow-y: scroll;
 }
   
   body {

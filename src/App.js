@@ -9,10 +9,12 @@ import Innovations from "./components/innovations/Innovations.tsx";
 import LatestBlogs from "./components/latestBlogs/LatestBlogs.tsx";
 import BlogDetail from "./components/latestBlogs/BlogDetail.tsx";
 import SearchProject from "./components/searchProject/SearchProject.tsx";
+import ScrollToTop from "./components/ScrollToTop.tsx";
 
 function App() {
   return (
     <BrowserRouter>
+        <ScrollToTop />
       <Routes>
         {/* Fix: Use "path" instead of "to" */}
         <Route path="/" element={<Home />} />

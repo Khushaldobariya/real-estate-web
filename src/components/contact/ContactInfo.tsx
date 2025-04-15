@@ -9,13 +9,13 @@ interface ContactInfoProps {
   
   const ContactInfo = ({ icon, title, description, details }: ContactInfoProps) => {
     return (
-      <div className="flex flex-col items-start space-y-2 max-w-md"    >
-        <div className="flex flex-col items-center space-x-2">
+      <div className="flex flex-col items-start space-y-2 max-w-md">
+        <div className="flex flex-col items-center space-y-4">
           {icon}
-          <h3 className="text-lg font-medium">{title}</h3>
+          <h3 className="text-xl sm:text-2xl font-medium">{title}</h3>
         </div>
-        {description && <p className="text-sm text-wrap text-gray-500">{description}</p>}
-        <div className="text-sm underline text-wrap ">{details}</div>
+        {description && <p className="text-sm sm:text-base lg:text-lg text-wrap t">{description}</p>}
+        <div className="text-sm sm:text-base lg:text-lg underline text-wrap">{details}</div>
       </div>
     );
   };

@@ -5,7 +5,7 @@ import { Email, Phone, Pin } from '../../utils/icons.tsx'
 
 const ContactSection = () => {
   return (
-<div className="flex flex-col mx-auto items-center w-full md:flex-row justify-between space-y-6 md:space-y-0 md:space-x-12 p-6 rounded-lg">
+<div className="flex flex-col mx-auto items-start w-full md:flex-row justify-between space-y-6 md:space-y-0 md:space-x-12 p-6 rounded-lg">
       <ContactInfo
         icon={<Email  />}
         title="Email"

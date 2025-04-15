@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { useState } from "react";
+import { ProjectTypes } from "../../utils/consents.ts";
 
 
 
@@ -45,7 +46,7 @@ const ContactForm = () => {
                 type="text"
                 placeholder="First name"
                 {...register("firstName")}
-                className="w-full  p-2 rounded border-black border"
+                className="w-full  p-2  border-black border"
               />
               <p className="text-red-500 text-sm">{errors.firstName?.message}</p>
             </div>
@@ -56,7 +57,7 @@ const ContactForm = () => {
                 type="text"
                 placeholder="Last name"
                 {...register("lastName")}
-                className="w-full border border-black p-2 rounded"
+                className="w-full border border-black p-2 "
               />
               <p className="text-red-500 text-sm">{errors.lastName?.message}</p>
             </div>
@@ -69,7 +70,7 @@ const ContactForm = () => {
                 type="email"
                 placeholder="Email"
                 {...register("email")}
-                className="w-full border border-black p-2 rounded"
+                className="w-full border border-black p-2 "
               />
               <p className="text-red-500 text-sm">{errors.email?.message}</p>
             </div>
@@ -80,7 +81,7 @@ const ContactForm = () => {
                 type="text"
                 placeholder="Phone number"
                 {...register("phone")}
-                className="w-full border border-black p-2 rounded"
+                className="w-full border border-black p-2 "
               />
               <p className="text-red-500 text-sm">{errors.phone?.message}</p>
             </div>
@@ -88,11 +89,11 @@ const ContactForm = () => {
           <div>
           <label htmlFor="Project">Project</label>
 
-            <select {...register("project")} className="w-full border border-black p-2 rounded">
+            <select {...register("project")} className="w-full border border-black p-2 ">
               <option value="">Select one...</option>
-              <option value="website">Website Development</option>
-              <option value="app">App Development</option>
-              <option value="design">UI/UX Design</option>
+              {ProjectTypes.map((item ,index) => 
+              <option key={index} value={item}>{item}</option>
+              )}
             </select>
             <p className="text-red-500 text-sm">{errors.project?.message}</p>
           </div>
@@ -102,7 +103,7 @@ const ContactForm = () => {
             <textarea
               {...register("message")}
               placeholder="Type your message..."
-              className="w-full border border-black p-2 rounded h-24"
+              className="w-full border border-black p-2  h-24"
             ></textarea>
             <p className="text-red-500 text-sm">{errors.message?.message}</p>
           </div>
