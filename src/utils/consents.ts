@@ -263,6 +263,7 @@ export const AllCompleteProjects: Project[] = [
   // 2014 Projects
   {
     name: "Rashmi Swastik Sadan",
+    image:"/assets/images/project/complete/",
     location: "Bhayander",
     description: "Inaugurated in 2014, Rashmi Swastik Sadan stood tall with its single wing structure spanning up to G+9 floors, offering residents meticulously designed 1 and 2BHK residences with zero wastage flats.",
     year: 2014,
@@ -270,6 +271,7 @@ export const AllCompleteProjects: Project[] = [
     lng: 72.86309738351184,
   },
   {
+    image:"/assets/images/project/complete/",
     name: "Rashmi Star City Phase 1",
     location: "Vasai",
     description: "Completed in 2014, Rashmi Star City Phase 1 comprised 8 buildings, each rising to G+4 storeys, offering meticulously designed 1BHK residences with zero wastage flats.",
@@ -278,6 +280,7 @@ export const AllCompleteProjects: Project[] = [
     lng: 72.8637378,
   },
   {
+    image:"/assets/images/project/complete/Rashmi's-Divya-Complex.png",
     name: "Rashmi's Divya Complex",
     location: "Vasai",
     description: "Completed in 2014, Rashmi's Divya Complex comprised 8 buildings spanning up to G+4 storeys, offering meticulously designed 1BHK residences with zero wastage flats.",
@@ -288,6 +291,7 @@ export const AllCompleteProjects: Project[] = [
 
   // 2011 Projects
   {
+    image:"/assets/images/project/complete/rashmi-pride-raw-house(vasai).png",
     name: "Rashmi Pride Rowhouse",
     location: "Vasai",
     description: "Rashmi Pride Rowhouse, featuring 2 stunning rowhouses with Steel+2 structure, was completed in 2011, offering unparalleled elegance and comfort in its design.",
@@ -298,6 +302,7 @@ export const AllCompleteProjects: Project[] = [
 
   // 2010 Projects
   {
+    image:"/assets/images/project/complete/Rashmi hetal 2.png",
     name: "Rashmi Hetal 2",
     location: "Mira Road",
     description: "Inaugurated in 2010, Rashmi Hetal 2 featured 6 wings, rising gracefully up to G+7 storeys, offering a blend of 1 and 2BHK residences with zero wastage flats.",
@@ -306,6 +311,7 @@ export const AllCompleteProjects: Project[] = [
     lng: 72.8715335999999,
   },
   {
+    image:"/assets/images/project/complete/Rashmi-pride-(vasai).png",
     name: "Rashmi Pride",
     location: "Mira Road",
     description: "Inaugurated in 2010, Rashmi Pride stood tall with its 2 wings, each soaring to G+9 storeys, presenting a blend of 2 and 3BHK residences, characterized by zero wastage flats.",
@@ -314,6 +320,7 @@ export const AllCompleteProjects: Project[] = [
     lng: 72.86851023043491,
   },
   {
+    image:"/assets/images/project/complete/rashmi-pride-raw-house(vasai).png",
     name: "Rashmi Pride Rowhouse",
     location: "Mira Road",
     description: "In 2010, Rashmi Pride Rowhouse project was completed, featuring 8 rowhouses built over two stories each.",
@@ -322,6 +329,7 @@ export const AllCompleteProjects: Project[] = [
     lng: 72.86884142290342,
   },
   {
+    image:"/assets/images/project/complete/rashmi-regency-1.png",
     name: "Rashmi Garden",
     location: "Vasai",
     description: "Inaugurated in 2010, Rashmi Garden boasted 5 wings standing tall at G+7 storeys, featuring meticulously crafted 1 & 2BHK residences with zero wastage flats.",
@@ -330,6 +338,7 @@ export const AllCompleteProjects: Project[] = [
     lng: 72.83552282324203,
   },
   {
+    image:"/assets/images/project/complete/Rashmi-Complex-A-To-I-Vasai.png",
     name: "Rashmi Complex A To I",
     location: "Vasai",
     description: "Constructed in 2010, Rashmi Complex A To I boasted 9 wings, each rising up to G+4 storeys, featuring thoughtfully crafted 1 and 2BHK residences, ensuring zero wastage flats.",
@@ -337,7 +346,9 @@ export const AllCompleteProjects: Project[] = [
     lat: 19.3919,
     lng: 72.8335,
   },
+
   {
+    image:"/assets/images/project/complete/rashmi-vila.png",
     name: "Rashmi's Hill View",
     location: "Vasai",
     description: "Rashmi's Hill View, completed in 2010, boasted 3 wings rising up to G+7 storeys, presenting a range of 1&2BHK residences, featuring zero wastage flats for optimal living space.",
@@ -346,6 +357,7 @@ export const AllCompleteProjects: Project[] = [
     lng: 72.8296122151419,
   },
   {
+    image:"/assets/images/project/complete/rashmi-regency-2.png",
     name: "Rashmi Regency 2",
     location: "Vasai",
     description: "In the year 2010, Rashmi Regency 2, with its 4 wings towering up to G+7 storeys, presented flawlessly crafted 1 and 2BHK residences, featuring zero wastage flats.",
@@ -353,7 +365,9 @@ export const AllCompleteProjects: Project[] = [
     lat: 19.411042794957346,
     lng: 72.82539110869922,
   },
+
   {
+    image:"/assets/images/project/complete/Rashmi's-Yug.png",
     name: "Rashmi's Yug",
     location: "Malad",
     description: "Inaugurated in 2010, Rashmi's Yug stood tall with its single wing, featuring G+7 storeys of 2BHK residences, each meticulously crafted with zero wastage flats.",
@@ -364,6 +378,7 @@ export const AllCompleteProjects: Project[] = [
 
   // 2009 Projects
   {
+    image:"/assets/images/project/complete/Rashmi's-Dhruvita-Park.png",
     name: "Rashmi's Dhruvita Park",
     location: "Vasai East",
     description: "Inaugurated in 2009 with eight wings standing tall at G+7 storeys.",
@@ -372,6 +387,7 @@ export const AllCompleteProjects: Project[] = [
     lng: 72.82446194259852,
   },
   {
+    image:"/assets/images/project/complete/rashmi-regency-1.png",
     name: "Rashmi Regency 1",
     location: "Vasai",
     description: "Inaugurated in 2009, Rashmi Regency 1 featured 4 wings, each rising to G+7 storeys, presenting a range of meticulously crafted 1 and 2BHK residences with zero wastage flats.",
@@ -380,6 +396,7 @@ export const AllCompleteProjects: Project[] = [
     lng: 72.82651289150589,
   },
   {
+    image:"/assets/images/project/complete/Rashmi's-Residency-1.png",
     name: "Rashmi Siddharth",
     location: "Mira Road",
     description: "Inaugurated in 2009, Rashmi Siddharth boasted 3 wings rising up to G+7 floors, featuring meticulously crafted 1&2BHK residences, ensuring zero wastage flats.",
@@ -390,6 +407,7 @@ export const AllCompleteProjects: Project[] = [
 
   // 2008 Projects
   {
+    image:"/assets/images/project/complete/Rashmi's-Residency-1.png",
     name: "Rashmi Utsav",
     location: "Mira Road",
     description: "Inaugurated in 2008, Rashmi Utsav boasted 4 wings reaching up to G+7 storeys, presenting a range of thoughtfully crafted 1&2BHK residences, each featuring zero wastage flats.",
@@ -398,6 +416,7 @@ export const AllCompleteProjects: Project[] = [
     lng: 72.8743363638148,
   },
   {
+    image:"/assets/images/project/complete/Rashmi's-Residency-1.png",
     name: "Rashmi's Pride",
     location: "Vasai",
     description: "In 2008, Rashmi's Pride featured two buildings each soaring to G+7 storeys with modern designs.",
@@ -408,6 +427,7 @@ export const AllCompleteProjects: Project[] = [
 
   // 2007 Projects
   {
+    image:"/assets/images/project/complete/Rashmi's-Residency-1.png",
     name: "Rashmi Pride 2",
     location: "Mira Road",
     description: "In 2007, Rashmi Pride 2, a singular wing with G+7 storeys, presented lavish 4BHK residences, boasting zero wastage flats, marking the completion of another successful project.",
@@ -416,6 +436,7 @@ export const AllCompleteProjects: Project[] = [
     lng: 72.87494191570522,
   },
   {
+    image:"/assets/images/project/complete/Rashmi's-Residency-1.png",
     name: "Rashmi's Residency",
     location: "Vasai",
     description: "Inaugurated in 2007, Rashmi's Residency boasted 14 wings rising majestically to G+7 storeys, featuring meticulously crafted 1 and 2BHK residences with zero wastage flats.",
@@ -426,6 +447,7 @@ export const AllCompleteProjects: Project[] = [
 
   // 2006 Projects
   {
+    image:"/assets/images/project/complete/Rashmi's-Residency-1.png",
     name: "Rashmi's Harsh",
     location: "Mira Road",
     description: "Inaugurated in 2006, Rashmi's Harsh boasted 6 wings across G+4/7 storeys, presenting a range of 1&2BHK residences with zero wastage flats, setting new benchmarks in modern living.",
@@ -434,6 +456,7 @@ export const AllCompleteProjects: Project[] = [
     lng: 72.86261462880456,
   },
   {
+    image:"/assets/images/project/complete/Rashmi's-Residency-1.png",
     name: "Rashmi Villa - Nityanand Nagar",
     location: "Mira Road",
     description: "Rashmi Villa - Nityanand Nagar, consisting of 11 villas with Steal+2 structures, was completed in the year 2006, offering a serene living experience.",
@@ -442,6 +465,7 @@ export const AllCompleteProjects: Project[] = [
     lng: 72.87372924240968,
   },
   {
+    image:"/assets/images/project/complete/Rashmi's-Residency-1.png",
     name: "Rashmi's Laxmi Sadan",
     location: "Bhayander",
     description: "Inaugurated in 2006, Rashmi's Laxmi Sadan boasted 8 buildings rising to G+4 storeys, presenting a range of thoughtfully crafted 1 and 2BHK residences, featuring zero wastage flats.",
@@ -450,6 +474,7 @@ export const AllCompleteProjects: Project[] = [
     lng: 72.85448006642552,
   },
   {
+    image:"/assets/images/project/complete/rashmi-vila.png",
     name: "Rashmi's Villa",
     location: "Vasai",
     description: "In 2006, Rashmi's Villa, featuring three luxurious villas, was completed, boasting stunning architecture and a serene environment.",
@@ -460,6 +485,7 @@ export const AllCompleteProjects: Project[] = [
 
   // 2005 Projects
   {
+    image:"/assets/images/project/complete/Rashmi's-Residency-1.png",
     name: "Rashmi's Prime Corner",
     location: "Mira Road",
     description: "Rashmi's Prime Corner, completed in 2005, featured three buildings reaching up to G+7 storeys, offering a range of 1, 2, and 3BHK residences with zero wastage flats.",
@@ -468,6 +494,7 @@ export const AllCompleteProjects: Project[] = [
     lng: 72.8709016550435,
   },
   {
+    image:"/assets/images/project/complete/Rashmi's-Residency-1.png",
     name: "Rashmi Complex",
     location: "Mira Road",
     description: "Rashmi Complex, with its 6 wings and G+4 storeys, offered 2BHK residences completed in 2005. Each unit boasted zero wastage flats, ensuring optimal space utilization.",
@@ -478,6 +505,7 @@ export const AllCompleteProjects: Project[] = [
 
   // 2003 Projects
   {
+    image:"/assets/images/project/complete/Rashmi's-Residency-1.png",
     name: "Rashmi' Hetal",
     location: "Mira Road",
     description: "Inaugurated in 2003, Rashmi Hetal stands tall with its 6 wings, G+4 storeys, and efficient 1BHK layouts, offering zero wastage flats for optimal living.",
@@ -488,6 +516,7 @@ export const AllCompleteProjects: Project[] = [
 
   // 2002 Projects
   {
+    image:"/assets/images/project/complete/Rashmi's-Residency-1.png",
     name: "Rashmi's Mangal Nagar",
     location: "Mira Road",
     description: "Inaugurated in 2002, Rashmi's Mangal Nagar featured 6 wings with G+4 storeys, offering a range of meticulously designed 1 and 2BHK residences, characterized by zero wastage flats.",
@@ -498,6 +527,7 @@ export const AllCompleteProjects: Project[] = [
 
   // 2000 Projects
   {
+    image:"/assets/images/project/complete/Rashmi's-Residency-1.png",
     name: "Rashmi's Crystal",
     location: "Mira Road",
     description: "Inaugurated in the year 2000, Rashmi's Crystal boasted two wings with up to G+7 storeys, offering an array of meticulously crafted 1 and 2BHK residences, characterized by zero wastage flats.",
@@ -510,6 +540,7 @@ export const AllCompleteProjects: Project[] = [
 
 export const AllComingProjects: Project[] = [
   {
+    image:"/assets/images/projects/coming/Coming-Soon-1.png",
     name: "Rashmi Star City Phase 5",
     location: "Naigaon",
     lat: 19.3906,
@@ -518,6 +549,7 @@ export const AllComingProjects: Project[] = [
     description: "Under Construction",
   },
   {
+    image:"/assets/images/projects/coming/Coming-Soon-1.png",
     name: "Rashmi Lata",
     location: "Bhayander, Mumbai",
     lat: 19.3062,
@@ -526,6 +558,7 @@ export const AllComingProjects: Project[] = [
     description: "Under Construction",
   },
   {
+    image:"/assets/images/projects/coming/Coming-Soon-1.png",
     name: "Rashmi Snehdeep",
     location: "Ghatkopar, Mumbai",
     lat: 19.0866,
@@ -534,6 +567,7 @@ export const AllComingProjects: Project[] = [
     description: "Under Construction",
   },
   {
+    image:"/assets/images/projects/coming/Coming-Soon-1.png",
     name: "Rashmi Star City Phase 3",
     location: "Vasai, Mumbai",
     lat: 19.3919,
@@ -542,6 +576,7 @@ export const AllComingProjects: Project[] = [
     description: "Under Construction",
   },
   {
+    image:"/assets/images/projects/coming/Coming-Soon-1.png",
     name: "Rashmi Star City Phase 2",
     location: "Vasai, Mumbai",
     lat: 19.3919,
@@ -550,6 +585,7 @@ export const AllComingProjects: Project[] = [
     description: "Under Construction",
   },
   {
+    image:"/assets/images/projects/coming/Coming-Soon-1.png",
     name: "Rashmi Amara",
     location: "Vasai, Mumbai",
     lat: 19.3919,
@@ -558,6 +594,7 @@ export const AllComingProjects: Project[] = [
     description: "Under Construction",
   },
   {
+    image:"/assets/images/projects/coming/Coming-Soon-1.png",
     name: "Horizon Heights",
     location: "Vasai, Mumbai",
     lat: 19.3919,
@@ -566,6 +603,7 @@ export const AllComingProjects: Project[] = [
     description: "Under Construction",
   },
   {
+    image:"/assets/images/projects/coming/Coming-Soon-1.png",
     name: "Rashmi Sarvesh",
     location: "Thane, Mumbai",
     lat: 19.2183,
@@ -574,6 +612,7 @@ export const AllComingProjects: Project[] = [
     description: "Under Construction",
   },
   {
+    image:"/assets/images/projects/coming/Coming-Soon-1.png",
     name: "Horizon Complex",
     location: "Mira Road, Mumbai",
     lat: 19.2853,
@@ -586,6 +625,7 @@ export const AllComingProjects: Project[] = [
 
 export const NaigaonComingProject: Project[] = [
   {
+    image:"/assets/images/projects/coming/Coming-Soon-1.png",
     name: "Rashmi Star City Phase 5",
     location: "Naigaon",
     lat: 19.3906,
@@ -597,6 +637,7 @@ export const NaigaonComingProject: Project[] = [
 
 export const BhayanderComingProject: Project[] = [
   {
+    image:"/assets/images/projects/coming/Coming-Soon-1.png",
     name: "Rashmi Lata",
     location: "Bhayander, Mumbai",
     lat: 19.3062,
@@ -608,6 +649,7 @@ export const BhayanderComingProject: Project[] = [
 
 export const GhatkoparComingProject: Project[] = [
   {
+    image:"/assets/images/projects/coming/Coming-Soon-1.png",
     name: "Rashmi Snehdeep",
     location: "Ghatkopar, Mumbai",
     lat: 19.0866,
@@ -619,6 +661,7 @@ export const GhatkoparComingProject: Project[] = [
 
 export const VasaiComingProject: Project[] = [
   {
+    image:"/assets/images/projects/coming/Coming-Soon-1.png",
     name: "Rashmi Star City Phase 3",
     location: "Vasai, Mumbai",
     lat: 19.3919,
@@ -627,6 +670,7 @@ export const VasaiComingProject: Project[] = [
     description: "Under Construction",
   },
   {
+    image:"/assets/images/projects/coming/Coming-Soon-1.png",
     name: "Rashmi Star City Phase 2",
     location: "Vasai, Mumbai",
     lat: 19.3919,
@@ -635,6 +679,7 @@ export const VasaiComingProject: Project[] = [
     description: "Under Construction",
   },
   {
+    image:"/assets/images/projects/coming/Coming-Soon-1.png",
     name: "Rashmi Amara",
     location: "Vasai, Mumbai",
     lat: 19.3919,
@@ -643,6 +688,7 @@ export const VasaiComingProject: Project[] = [
     description: "Under Construction",
   },
   {
+    image:"/assets/images/projects/coming/Coming-Soon-1.png",
     name: "Horizon Heights",
     location: "Vasai, Mumbai",
     lat: 19.3919,
@@ -654,6 +700,7 @@ export const VasaiComingProject: Project[] = [
 
 export const ThaneComingProject: Project[] = [
   {
+    image:"/assets/images/projects/coming/Coming-Soon-1.png",
     name: "Rashmi Sarvesh",
     location: "Thane, Mumbai",
     lat: 19.2183,
@@ -665,6 +712,7 @@ export const ThaneComingProject: Project[] = [
 
 export const MiraRoadComingProject: Project[] = [
   {
+    image:"/assets/images/projects/coming/Coming-Soon-1.png",
     name: "Horizon Complex",
     location: "Mira Road, Mumbai",
     lat: 19.2853,

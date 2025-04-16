@@ -50,7 +50,7 @@ const ProjectLocationSection: React.FC<ProjectLocationSectionProps> = ({
             >
               <div className="relative group">
                 <img
-                  src={`/assets/images/project/project${index + 1}.webp`}
+                  src={project.image}
                   className="w-full h-[350px] object-cover transition-transform duration-300 group-hover:scale-105"
                   onError={(e) => {
                     e.currentTarget.src = "/assets/images/placeholder.webp";

@@ -28,6 +28,7 @@ export interface About_Project {
   icon: LucideIcon; 
 }
 export interface Project {
+  image:string;
   name: string;
   location: string;
   description: string;
