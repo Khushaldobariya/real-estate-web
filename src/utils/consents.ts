@@ -356,7 +356,7 @@ export const AllCompleteProjects: Project[] = [
     lat: 19.50709518154385,
     lng: 72.8296122151419,
   },
-  {
+  { 
     image:"/assets/images/project/complete/rashmi-regency-2.png",
     name: "Rashmi Regency 2",
     location: "Vasai",

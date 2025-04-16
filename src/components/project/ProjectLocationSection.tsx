@@ -53,7 +53,7 @@ const ProjectLocationSection: React.FC<ProjectLocationSectionProps> = ({
                   src={project.image}
                   className="w-full h-[350px] object-cover transition-transform duration-300 group-hover:scale-105"
                   onError={(e) => {
-                    e.currentTarget.src = "/assets/images/placeholder.webp";
+                    e.currentTarget.src = `/assets/images/project/project2.webp`;
                   }}
                   alt={`${project.name} Image`}
                 />
