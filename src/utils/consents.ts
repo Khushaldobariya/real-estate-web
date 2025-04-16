@@ -22,16 +22,13 @@ export const Configurations = [
   "NA",
 ];
 
-export const PriceRanges = [
-  "10L - 25L",
-  "20L - 35L",
-  "40L - 60L",
+export const PriceRanges = [  "35L - 60L",
   "45L - 65L",
   "50L - 1Cr",
   "70L - 90L",
   "80L - 1.2Cr",
   "1.5Cr - 2Cr",
-  "2Cr - 3Cr",
+  "2Cr above",
 ];
 
 export const Locations = [

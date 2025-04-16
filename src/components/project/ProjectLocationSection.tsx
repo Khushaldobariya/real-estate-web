@@ -37,7 +37,7 @@ const ProjectLocationSection: React.FC<ProjectLocationSectionProps> = ({
         </h3>
       )}
       <div className="flex flex-row gap-4 md:gap-6 lg:gap-8 px-2 md:px-4 lg:px-6">
-        <div className="w-1/2 md:w-2/5 h-[calc(100vh-3rem)] overflow-y-auto space-y-4 md:space-y-6 hide-scrollbar">
+        <div className="w-1/2 md:w-2/5 h-[calc(100vh-3rem)] overflow-y-auto space-y-4 md:space-y-6 custom-scrollbar">
           {projects.map((project, index) => (
             <div
               key={index}
