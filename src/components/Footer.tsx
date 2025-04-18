@@ -9,7 +9,7 @@ const Footer = () => {
     className=" relative bg-cover bg-center bg-no-repeat text-white mt-12 h-auto"
     style={{ backgroundImage: "url('/assets/images/footer.png')" }}
   >
-    <div className=" px-4 sm:px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-8 py-10 md:py-14 lg:py-20">
+    <div className=" px-4 sm:px-6 md:px-12   grid grid-cols-1 md:grid-cols-2 gap-8 py-10 md:py-14 lg:py-20 container mx-auto">
       <div>
         <h2 className="text-3xl sm:text-3xl text-center md:text-start  lg:text-5xl font-medium mb-6 sm:mb-8">
           Join Our Parivaar

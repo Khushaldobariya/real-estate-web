@@ -7,7 +7,7 @@ const CurrentProjects = () => {
 
 
 
-<section className=" px-4 md:px-16">
+<section className=" px-4 md:px-16 container mx-auto">
     <div className="flex flex-col md:flex-row mx-auto gap-8">
        
         <div className="md:w-1/4 space-y-6 text-center md:text-left flex  flex-col justify-center">

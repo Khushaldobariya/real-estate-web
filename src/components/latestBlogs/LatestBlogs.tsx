@@ -25,7 +25,9 @@ const LatestBlogs = () => {
   return (
     <>
       <Navbar isHome={false} />
-      <section className="px-4 sm:px-6 lg:px-20 w-full mt-24 md:mt-36 flex flex-col md:flex-row justify-between">
+      <div className="container mx-auto">
+
+      <section className="px-4 sm:px-6 lg:px-20 w-full mt-24 md:mt-36 flex flex-col md:flex-row justify-between ">
         <div>
           <Breadcrumbs
             separator=">"
@@ -61,7 +63,7 @@ const LatestBlogs = () => {
           <CircularText />
         </div>
       </section>
-      <section className="px-4 sm:px-6 lg:px-20 py-16">
+      <section className="px-4 sm:px-6 lg:px-20 py-16 ">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
           <div className="w-full lg:w-1/4">
             <h2 className="text-2xl md:text-3xl font-semibold mb-6">
@@ -132,6 +134,7 @@ const LatestBlogs = () => {
           </div>
         </div>
       </section>
+      </div>
     </>
   );
 };

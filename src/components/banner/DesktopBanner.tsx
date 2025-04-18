@@ -10,7 +10,7 @@ const DesktopBanner = () => {
         spaceBetween={0}
         slidesPerView={1}
         loop={true}
-        autoplay={{ delay: 20000, disableOnInteraction: false }}
+        autoplay={{ delay: 220000, disableOnInteraction: false }}
         effect="fade"
         pagination={{ 
             clickable: true,

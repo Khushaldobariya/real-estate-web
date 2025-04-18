@@ -3,7 +3,7 @@ import React from 'react'
 
 const KnowMore = () => {
   return (
-    <section className="space-y-8 px-4 md:px-10 lg:px-16 xl:px-20">
+    <section className="space-y-8 px-4 md:px-10 lg:px-16 xl:px-20 container mx-auto">
     <h3 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl  text-center md:text-left">
       Know More About Us
     </h3>

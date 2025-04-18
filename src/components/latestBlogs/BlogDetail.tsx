@@ -62,7 +62,7 @@ const BlogDetail = () => {
   return (
     <>
       <Navbar isHome={false} />
-      <section className="mt-[187px] px-4 sm:px-6 lg:px-20 w-full">
+      <section className="mt-[187px] px-4 sm:px-6 lg:px-20 w-full container mx-auto">
         <button className="bg-transparent flex items-center gap-2" onClick={() => navigate(-1)}>
           <ChevronLeft />
           <span className="pt-1">All Posts</span>

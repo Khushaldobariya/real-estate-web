@@ -75,12 +75,12 @@ const Gallery = () => {
               },
             },
             768: {
-              slidesPerView: 1.3,
-              spaceBetween: -500,
+              slidesPerView: 1.5,
+              spaceBetween: -400,
               coverflowEffect: {
                 rotate: 0,
                 stretch: 0,
-                depth: 550,
+                depth: 250,
                 modifier: 1.6,
                 slideShadows: false
               },
@@ -89,7 +89,7 @@ const Gallery = () => {
               slidesPerView: 1.2,
               spaceBetween: -360,
               coverflowEffect: {
-                rotate: 0,
+                rotate: 2,
                 stretch: 0,
                 depth: 395,
                 modifier: 1.8,
@@ -98,7 +98,7 @@ const Gallery = () => {
             },
             1280: {
               slidesPerView: 1.2,
-              spaceBetween: -1005,
+              spaceBetween: -947,
               coverflowEffect: {
                 rotate: 10,
                 stretch: 0,
@@ -108,24 +108,24 @@ const Gallery = () => {
               },
             },
             1360: {
-              slidesPerView: 1.2,
-              spaceBetween: -1072,
+              slidesPerView: 1.3,
+              spaceBetween: -958,
               coverflowEffect: {
                 rotate: 10,
                 stretch: 0,
-                depth: 218,
+                depth: 219,
                 modifier: 2,
                 slideShadows: false
               },
             },
-            1500: {
-              slidesPerView: 2.8,
-              spaceBetween: -860,
+            1520: {
+              slidesPerView: 1.2,
+              spaceBetween: -1131,
               coverflowEffect: {
                 rotate: 10,
                 stretch: 0,
-                depth: 328,
-                modifier: 1.5,
+                depth: 210,
+                modifier: 1.8,
                 slideShadows: false
               },
             },

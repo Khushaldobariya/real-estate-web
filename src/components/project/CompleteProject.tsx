@@ -15,8 +15,9 @@ const CompleteProject: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col gap-8 p-4 md:p-6 lg:p-8">
+    <div className="flex flex-col gap-8 p-4 md:p-6 lg:p-8 ">
       <ProjectLocationSection
+      showBottomName={false}
       isMapShow={true}
         projects={AllCompleteProjects}
         selectedProject={selectedProject}

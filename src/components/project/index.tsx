@@ -56,7 +56,7 @@ const Project = () => {
           </p>
         </div>
       </div>
-      <div className="space-y-12 ">
+      <div className="space-y-12 container mx-auto ">
         <div className="w-full flex justify-around gap-10 pt-10">
           {["Completed", "Current", "Upcoming"].map((s) => (
             <button
